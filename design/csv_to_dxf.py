@@ -403,85 +403,8 @@ def csv_to_dxf(input_file, output_file):
         # 创建一个新的 DXF 文档
         doc = ezdxf.new("R2018")
         msp = doc.modelspace()
-        # 创建自定义尺寸样式
-        dimstyle = doc.dimstyles.new("CUSTOM_DIMSTYLE", dxfattribs={
-            "dimtxt": 3.5,  # 尺寸文字高度
-            "dimclrd": 3,  # 尺寸文字颜色
-            "dimasz": 5,  # 箭头大小
-            "dimtad": 1,  # 文字垂直位置
-            "dimjust": 0,  # 文字水平位置
-            "dimlwd": 0.25,  # 尺寸线线宽
-            "dimexo": 0,  # 尺寸界线超出尺寸线的距离
-            "dimscale": global_scale_factor,  # 全局比例因子
-            "dimalt": 0,  # 禁用换算单位
-            "dimadec": 3,  # 换算单位小数位数
-            "dimdsep": ord('.')
-        })
+        draw = drawing(doc, msp, input_file, output_file)
 
-        layer_dict = {}
-
-        with open(input_file, 'r', encoding='utf-8') as csvfile:
-            reader = csv.DictReader(csvfile)
-            data = list(reader)
-
-        # 第一次遍历整个csv表格
-        for line_num, row in enumerate(data, start=2):  # 从第 2 行开始计数
-            line_num -= 1
-            # 首先读取图层信息
-            if row["实体类型"] == "图层":
-                layer = row["图层"]
-                color = handle_color(row["颜色"])
-                linetype = row["线型"]
-                lineweight = int(row["线宽"])
-                linetype_description = row["线型描述"]
-                linetype_pattern_str = row["线型图案"]
-                linetype_pattern = handle_linetype_pattern(linetype_pattern_str, linetype, input_file, layer)
-                create_layer(doc, layer, color, linetype, lineweight, linetype_description, linetype_pattern,
-                             input_file)
-                layer_dict[layer] = (color, linetype, lineweight)
-            # 读取非块元素
-            elif not row["块名"]:
-                try:
-                    entity_type = row["实体类型"]
-                    layer = row["图层"]
-                    color = handle_color(row["颜色"])
-                    linetype = row["线型"]
-                    lineweight = int(row["线宽"])
-
-                    if entity_type == 'LINE':
-                        handle_line(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                    elif entity_type == 'CIRCLE':
-                        handle_circle(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                    elif entity_type == 'LWPOLYLINE':
-                        handle_lwpolyline(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                    elif entity_type == 'DIMENSION':
-                        handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                    elif entity_type == 'ARC':
-                        handle_arc(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                    elif entity_type in ['TEXT', 'MTEXT']:
-                        handle_text(row, msp, layer, color, input_file, entity_type, line_num)
-                    elif entity_type == 'HATCH':
-                        handle_hatch(row, msp, layer, color, input_file, line_num)
-                except Exception as e:
-                    messagebox.showwarning("警告", f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
-                    logging.warning(f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
-            # 读取块元素
-            elif row["实体类型"] == 'INSERT':
-                try:
-                    layer = row["图层"]
-                    color = handle_color(row["颜色"])
-                    linetype = row["线型"]
-                    lineweight = int(row["线宽"])
-                    handle_insert(data, row, msp, doc, layer, color, linetype, lineweight, input_file)
-
-                except Exception as e:
-                    messagebox.showwarning("警告", f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
-                    logging.warning(f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
-
-        # 保存 DXF 文件
-        doc.saveas(output_file)
-        messagebox.showinfo("成功", f"图纸生成成功！已保存到 {output_file}")
-        logging.info(f"{input_file} 已成功转换为 {output_file} (CSV to DXF)")
     except FileNotFoundError:
         messagebox.showerror("错误", f"文件 {input_file} 未找到")
         logging.error(f"文件 {input_file} 未找到")
@@ -489,3 +412,98 @@ def csv_to_dxf(input_file, output_file):
         messagebox.showerror("错误", f"发生未知错误: {str(e)}")
         logging.error(f"发生未知错误: {str(e)}")
 
+
+# csv转dxf主函数
+def csv_add_dxf(input_file, output_file):
+    try:
+        # 打开一个 DXF 文档
+        doc = ezdxf.readfile(output_file)
+        msp = doc.modelspace()
+        draw = drawing(doc, msp, input_file, output_file)
+
+    except FileNotFoundError:
+        messagebox.showerror("错误", f"文件 {input_file} 未找到")
+        logging.error(f"文件 {input_file} 未找到")
+    except Exception as e:
+        messagebox.showerror("错误", f"发生未知错误: {str(e)}")
+        logging.error(f"发生未知错误: {str(e)}")
+
+def drawing(doc, msp, input_file, output_file):
+    # 创建自定义尺寸样式
+    dimstyle = doc.dimstyles.new("CUSTOM_DIMSTYLE", dxfattribs={
+        "dimtxt": 3.5,  # 尺寸文字高度
+        "dimclrd": 3,  # 尺寸文字颜色
+        "dimasz": 5,  # 箭头大小
+        "dimtad": 1,  # 文字垂直位置
+        "dimjust": 0,  # 文字水平位置
+        "dimlwd": 0.25,  # 尺寸线线宽
+        "dimexo": 0,  # 尺寸界线超出尺寸线的距离
+        "dimscale": global_scale_factor,  # 全局比例因子
+        "dimalt": 0,  # 禁用换算单位
+        "dimadec": 3,  # 换算单位小数位数
+        "dimdsep": ord('.')
+    })
+
+    layer_dict = {}
+
+    with open(input_file, 'r', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        data = list(reader)
+
+    # 第一次遍历整个csv表格
+    for line_num, row in enumerate(data, start=2):  # 从第 2 行开始计数
+        line_num -= 1
+        # 首先读取图层信息
+        if row["实体类型"] == "图层":
+            layer = row["图层"]
+            color = handle_color(row["颜色"])
+            linetype = row["线型"]
+            lineweight = int(row["线宽"])
+            linetype_description = row["线型描述"]
+            linetype_pattern_str = row["线型图案"]
+            linetype_pattern = handle_linetype_pattern(linetype_pattern_str, linetype, input_file, layer)
+            create_layer(doc, layer, color, linetype, lineweight, linetype_description, linetype_pattern,
+                         input_file)
+            layer_dict[layer] = (color, linetype, lineweight)
+        # 读取非块元素
+        elif not row["块名"]:
+            try:
+                entity_type = row["实体类型"]
+                layer = row["图层"]
+                color = handle_color(row["颜色"])
+                linetype = row["线型"]
+                lineweight = int(row["线宽"])
+
+                if entity_type == 'LINE':
+                    handle_line(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type == 'CIRCLE':
+                    handle_circle(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type == 'LWPOLYLINE':
+                    handle_lwpolyline(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type == 'DIMENSION':
+                    handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type == 'ARC':
+                    handle_arc(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type in ['TEXT', 'MTEXT']:
+                    handle_text(row, msp, layer, color, input_file, entity_type, line_num)
+                elif entity_type == 'HATCH':
+                    handle_hatch(row, msp, layer, color, input_file, line_num)
+            except Exception as e:
+                messagebox.showwarning("警告", f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+                logging.warning(f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+        # 读取块元素
+        elif row["实体类型"] == 'INSERT':
+            try:
+                layer = row["图层"]
+                color = handle_color(row["颜色"])
+                linetype = row["线型"]
+                lineweight = int(row["线宽"])
+                handle_insert(data, row, msp, doc, layer, color, linetype, lineweight, input_file)
+
+            except Exception as e:
+                messagebox.showwarning("警告", f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+                logging.warning(f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+
+    # 保存 DXF 文件
+    doc.saveas(output_file)
+    logging.info(f"{input_file} 已成功转换为 {output_file} (CSV to DXF)")

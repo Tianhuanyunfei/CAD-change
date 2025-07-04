@@ -1,0 +1,2279 @@
+2025-05-22 13:32:12,718 - INFO - creating ACAD_COLOR dictionary
+2025-05-22 13:32:12,718 - INFO - creating ACAD_GROUP dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-22 13:32:12,719 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-22 13:32:12,761 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-22 13:32:12,761 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-22 13:32:14,693 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-05-22 16:11:39,302 - INFO - creating ACAD_COLOR dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_GROUP dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-22 16:11:39,303 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-22 16:11:39,349 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-22 16:11:39,349 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-22 16:11:40,976 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-05-23 11:07:57,256 - INFO - creating ACAD_COLOR dictionary
+2025-05-23 11:07:59,747 - WARNING - 无法获取线型 CENTER2 的图案信息，将使用空列表代替。
+2025-05-23 11:08:00,920 - WARNING - 无法获取线型 ACAD_ISO02W100 的图案信息，将使用空列表代替。
+2025-05-23 11:08:01,942 - WARNING - 无法获取线型 CENTER 的图案信息，将使用空列表代替。
+2025-05-23 11:08:02,518 - WARNING - 无法获取线型 CENTER 的图案信息，将使用空列表代替。
+2025-05-23 11:08:04,123 - INFO - D:/Python/CAD-change/design/data/140-50产品结构图.dxf 已成功转换为 D:/Python/CAD-change/design/data/140-50产品结构.csv (DXF to CSV)
+2025-05-23 11:08:20,768 - INFO - creating ACAD_COLOR dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_GROUP dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-23 11:08:20,769 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-23 11:08:22,026 - WARNING - 文件 D:/Python/CAD-change/design/data/140-50产品结构.csv 中图层 '中心线' 使用了未知线型 'CENTER2'，将使用默认实线。
+2025-05-23 11:08:22,514 - WARNING - 文件 D:/Python/CAD-change/design/data/140-50产品结构.csv 中图层 '虚线' 使用了未知线型 'ACAD_ISO02W100'，将使用默认实线。
+2025-05-23 11:08:22,988 - WARNING - 文件 D:/Python/CAD-change/design/data/140-50产品结构.csv 中图层 '3中心线层' 使用了未知线型 'CENTER'，将使用默认实线。
+2025-05-23 11:08:23,472 - WARNING - 文件 D:/Python/CAD-change/design/data/140-50产品结构.csv 中图层 '详图-轴线' 使用了未知线型 'CENTER'，将使用默认实线。
+2025-05-23 11:08:23,524 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-23 11:08:23,524 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-23 11:08:24,569 - INFO - D:/Python/CAD-change/design/data/140-50产品结构.csv 已成功转换为 D:/Python/CAD-change/design/data/tt.dxf (CSV to DXF)
+2025-05-23 11:10:26,130 - INFO - creating ACAD_COLOR dictionary
+2025-05-23 11:10:26,995 - WARNING - 无法获取线型 CENTER2 的图案信息，将使用空列表代替。
+2025-05-23 11:10:27,453 - WARNING - 无法获取线型 ACAD_ISO02W100 的图案信息，将使用空列表代替。
+2025-05-23 11:10:28,090 - WARNING - 无法获取线型 CENTER 的图案信息，将使用空列表代替。
+2025-05-23 11:10:28,623 - WARNING - 无法获取线型 CENTER 的图案信息，将使用空列表代替。
+2025-05-23 11:10:29,675 - INFO - D:/Python/CAD-change/design/data/140-50产品结构图.dxf 已成功转换为 D:/Python/CAD-change/design/data/140-50产品结构.csv (DXF to CSV)
+2025-05-23 11:10:44,331 - INFO - creating ACAD_COLOR dictionary
+2025-05-23 11:10:44,331 - INFO - creating ACAD_GROUP dictionary
+2025-05-23 11:10:44,331 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-23 11:10:44,331 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-23 11:10:44,331 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-23 11:10:44,331 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-23 11:10:44,332 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-23 11:10:44,332 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-23 11:10:44,332 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-23 11:10:44,332 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-23 11:10:44,332 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-23 11:10:45,400 - WARNING - 文件 D:/Python/CAD-change/design/data/140-50产品结构.csv 中图层 '中心线' 使用了未知线型 'CENTER2'，将使用默认实线。
+2025-05-23 11:10:45,857 - WARNING - 文件 D:/Python/CAD-change/design/data/140-50产品结构.csv 中图层 '虚线' 使用了未知线型 'ACAD_ISO02W100'，将使用默认实线。
+2025-05-23 11:10:46,558 - WARNING - 文件 D:/Python/CAD-change/design/data/140-50产品结构.csv 中图层 '3中心线层' 使用了未知线型 'CENTER'，将使用默认实线。
+2025-05-23 11:10:47,082 - WARNING - 文件 D:/Python/CAD-change/design/data/140-50产品结构.csv 中图层 '详图-轴线' 使用了未知线型 'CENTER'，将使用默认实线。
+2025-05-23 11:10:47,108 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-23 11:10:47,108 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-23 11:10:47,686 - INFO - D:/Python/CAD-change/design/data/140-50产品结构.csv 已成功转换为 D:/Python/CAD-change/design/data/tt.dxf (CSV to DXF)
+2025-05-23 15:37:36,460 - INFO - creating ACAD_COLOR dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_GROUP dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-23 15:37:36,461 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-23 15:37:36,508 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-23 15:37:36,509 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-23 15:37:39,199 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-05-23 15:40:41,434 - INFO - creating ACAD_COLOR dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_GROUP dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-23 15:40:41,434 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-23 15:40:41,475 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-23 15:40:41,475 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-23 15:40:43,203 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-05-23 15:40:43,203 - INFO - 图纸生成成功: 项目名称 BRB-2000-L.dxf
+2025-05-23 15:40:50,585 - INFO - creating ACAD_COLOR dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_GROUP dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-23 15:40:50,585 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-23 15:40:50,627 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-23 15:40:50,627 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-23 15:40:54,342 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-05-23 15:40:54,343 - INFO - 图纸生成成功: 项目名称 BRB-2000-L.dxf
+2025-05-23 15:43:51,741 - INFO - creating ACAD_COLOR dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_GROUP dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-23 15:43:51,742 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-23 15:43:51,788 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-23 15:43:51,788 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-23 15:43:53,531 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-05-23 15:43:53,531 - INFO - 图纸生成成功: 项目名称 BRB-2000-L.dxf
+2025-05-29 15:46:44,964 - INFO - creating ACAD_COLOR dictionary
+2025-05-29 15:46:44,965 - INFO - creating ACAD_GROUP dictionary
+2025-05-29 15:46:44,965 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-29 15:46:44,965 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-29 15:46:44,965 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-29 15:46:44,965 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-29 15:46:44,965 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-29 15:46:44,965 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-29 15:46:44,966 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-29 15:46:44,966 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-29 15:46:44,966 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-29 15:46:45,009 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-29 15:46:45,010 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-29 15:46:46,494 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-05-29 15:46:46,495 - INFO - 图纸生成成功: 项目名称 BRB-2000-L.dxf
+2025-05-29 15:48:41,930 - INFO - creating ACAD_COLOR dictionary
+2025-05-29 15:48:41,930 - INFO - creating ACAD_GROUP dictionary
+2025-05-29 15:48:41,930 - INFO - creating ACAD_LAYOUT dictionary
+2025-05-29 15:48:41,930 - INFO - creating ACAD_MATERIAL dictionary
+2025-05-29 15:48:41,931 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-05-29 15:48:41,931 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-05-29 15:48:41,931 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-05-29 15:48:41,931 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-05-29 15:48:41,931 - INFO - creating ACAD_SCALELIST dictionary
+2025-05-29 15:48:41,931 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-05-29 15:48:41,931 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-05-29 15:48:41,969 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-05-29 15:48:41,969 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-05-29 15:48:43,359 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-05-29 15:48:43,359 - INFO - 图纸生成成功: 项目名称 BRB-2000-L.dxf
+2025-05-29 16:00:56,701 - ERROR - 处理数据行时出错: invalid literal for int() with base 10: '地方'
+2025-05-29 16:01:09,663 - ERROR - 处理数据行时出错: invalid literal for int() with base 10: '地方'
+2025-05-29 16:02:05,289 - ERROR - 处理数据行时出错: invalid literal for int() with base 10: '地方'
+2025-05-29 16:11:07,172 - ERROR - 处理数据行时出错: invalid literal for int() with base 10: ''
+2025-06-03 13:49:56,867 - INFO - creating ACAD_COLOR dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_GROUP dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-03 13:49:56,867 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-03 13:49:56,912 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-03 13:49:56,912 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-03 13:49:59,001 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-06-03 13:49:59,003 - INFO - 图纸生成成功: 项目名称 BRB-2000-L.dxf
+2025-06-03 13:56:51,229 - INFO - 新CSV文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已创建，列名: 列1, 列2, 列3
+2025-06-03 13:58:19,631 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 14:02:25,536 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 14:04:22,239 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 14:09:17,664 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 14:29:37,889 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 14:33:02,181 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 14:33:56,616 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 14:34:24,271 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 15:54:12,561 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-03 16:48:23,464 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-04 11:43:12,208 - INFO - 文件 D:/Python/CAD-change/design/data/VFD-型号表.csv 已成功保存
+2025-06-04 11:45:58,049 - INFO - 新CSV文件 D:/Python/CAD-change/design/data/140-50产品图.csv 已创建，列名: 列1, 列2, 列3
+2025-06-04 11:46:53,678 - INFO - 文件 D:/Python/CAD-change/design/data/140-50产品图.csv 已成功保存
+2025-06-04 14:04:44,083 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/VFD-型号表.csv 已成功保存
+2025-06-04 14:08:17,386 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/VFD-型号表.csv 已成功保存
+2025-06-04 14:22:44,161 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:22:45,503 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/工程图文档2.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.csv (DXF to CSV)
+2025-06-04 14:22:55,063 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:22:55,063 - INFO - creating ACAD_GROUP dictionary
+2025-06-04 14:22:55,063 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-04 14:22:55,063 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-04 14:22:55,063 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-04 14:22:55,063 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-04 14:22:55,063 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-04 14:22:55,063 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-04 14:22:55,064 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-04 14:22:55,064 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-04 14:22:55,064 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-04 14:22:55,086 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-04 14:22:55,086 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-04 14:22:56,977 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf (CSV to DXF)
+2025-06-04 14:24:03,811 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv (DXF to CSV)
+2025-06-04 14:24:14,235 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:24:14,235 - INFO - creating ACAD_GROUP dictionary
+2025-06-04 14:24:14,235 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-04 14:24:14,235 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-04 14:24:14,235 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-04 14:24:14,235 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-04 14:24:14,236 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-04 14:24:14,236 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-04 14:24:14,236 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-04 14:24:14,236 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-04 14:24:14,236 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-04 14:24:14,258 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-04 14:24:14,258 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-04 14:24:15,071 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.dxf (CSV to DXF)
+2025-06-04 14:27:20,762 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.csv (DXF to CSV)
+2025-06-04 14:27:38,262 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:27:39,354 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/工程图文档2.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.csv (DXF to CSV)
+2025-06-04 14:27:52,126 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_GROUP dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-04 14:27:52,126 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-04 14:27:52,127 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-04 14:27:52,150 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-04 14:27:52,150 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-04 14:27:52,995 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf (CSV to DXF)
+2025-06-04 14:31:15,885 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:31:16,742 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/工程图文档2.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.csv (DXF to CSV)
+2025-06-04 14:31:29,790 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:31:30,760 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/工程图文档2.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.csv (DXF to CSV)
+2025-06-04 14:31:43,032 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_GROUP dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-04 14:31:43,033 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-04 14:31:43,058 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-04 14:31:43,058 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-04 14:31:44,118 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf (CSV to DXF)
+2025-06-04 14:34:41,518 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:34:42,463 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv (DXF to CSV)
+2025-06-04 14:34:51,157 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_GROUP dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-04 14:34:51,157 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-04 14:34:51,178 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-04 14:34:51,178 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-04 14:34:52,170 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.dxf (CSV to DXF)
+2025-06-04 14:58:19,880 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 14:58:20,787 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv (DXF to CSV)
+2025-06-04 15:07:30,258 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 15:07:31,257 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv (DXF to CSV)
+2025-06-04 15:20:38,505 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 15:20:39,338 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv (DXF to CSV)
+2025-06-04 15:22:15,915 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 15:22:16,873 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv (DXF to CSV)
+2025-06-04 15:23:09,489 - INFO - creating ACAD_COLOR dictionary
+2025-06-04 15:23:10,149 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/123.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/345.csv (DXF to CSV)
+2025-06-10 11:05:53,584 - INFO - creating ACAD_COLOR dictionary
+2025-06-10 11:05:55,545 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv (DXF to CSV)
+2025-06-10 11:06:12,290 - INFO - creating ACAD_COLOR dictionary
+2025-06-10 11:06:12,290 - INFO - creating ACAD_GROUP dictionary
+2025-06-10 11:06:12,290 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-10 11:06:12,292 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-10 11:06:12,292 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-10 11:06:12,292 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-10 11:06:12,292 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-10 11:06:12,292 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-10 11:06:12,292 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-10 11:06:12,292 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-10 11:06:12,292 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-10 11:06:12,321 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-10 11:06:12,321 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-10 11:06:14,154 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf (CSV to DXF)
+2025-06-10 11:09:45,143 - INFO - creating ACAD_COLOR dictionary
+2025-06-10 11:09:45,963 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv (DXF to CSV)
+2025-06-10 11:09:56,245 - INFO - creating ACAD_COLOR dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_GROUP dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-10 11:09:56,245 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-10 11:09:56,267 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-10 11:09:56,267 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-10 11:09:57,343 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf (CSV to DXF)
+2025-06-10 11:13:41,874 - INFO - creating ACAD_COLOR dictionary
+2025-06-10 11:13:42,932 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv (DXF to CSV)
+2025-06-10 11:13:56,244 - INFO - creating ACAD_COLOR dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_GROUP dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-10 11:13:56,244 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-10 11:13:56,266 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-10 11:13:56,267 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-10 11:13:57,088 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf (CSV to DXF)
+2025-06-10 11:18:57,143 - INFO - creating ACAD_COLOR dictionary
+2025-06-10 11:18:58,487 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv (DXF to CSV)
+2025-06-10 11:23:33,598 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv 已成功保存
+2025-06-10 11:23:44,760 - INFO - creating ACAD_COLOR dictionary
+2025-06-10 11:23:44,760 - INFO - creating ACAD_GROUP dictionary
+2025-06-10 11:23:44,760 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-10 11:23:44,760 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-10 11:23:44,761 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-10 11:23:44,761 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-10 11:23:44,761 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-10 11:23:44,761 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-10 11:23:44,761 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-10 11:23:44,761 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-10 11:23:44,761 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-10 11:23:44,822 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-10 11:23:44,822 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-10 11:23:46,125 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例产品图数据.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf (CSV to DXF)
+2025-06-10 11:24:01,854 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/11.csv (DXF to CSV)
+2025-06-16 10:47:43,578 - INFO - creating ACAD_COLOR dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_GROUP dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-16 10:47:43,579 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-16 10:47:43,616 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-16 10:47:43,616 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-16 10:47:45,294 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-06-16 10:47:45,294 - INFO - 图纸生成成功: 项目名称 BRB-2000-L.dxf
+2025-06-17 13:55:23,332 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-17 14:14:06,732 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-17 14:16:49,641 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/VFD-型号表.csv 已成功保存
+2025-06-19 15:06:38,631 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-19 15:40:06,111 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-19 16:30:06,676 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-19 16:49:57,422 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-19 16:50:47,822 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-19 17:03:24,077 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-24 09:06:54,309 - INFO - creating ACAD_COLOR dictionary
+2025-06-24 09:06:54,310 - INFO - creating ACAD_GROUP dictionary
+2025-06-24 09:06:54,310 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-24 09:06:54,310 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-24 09:06:54,310 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-24 09:06:54,310 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-24 09:06:54,311 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-24 09:06:54,311 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-24 09:06:54,311 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-24 09:06:54,311 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-24 09:06:54,311 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-24 09:06:54,356 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-24 09:06:54,356 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-24 09:06:56,423 - INFO - data\王一.csv 已成功转换为 项目名称 BRB-2000-L.dxf (CSV to DXF)
+2025-06-24 09:06:56,424 - INFO - 图纸生成成功: 项目名称 BRB-2000-L.dxf
+2025-06-24 09:55:41,475 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-24 10:01:57,457 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-24 14:36:49,941 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-24 14:45:57,145 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-24 14:54:14,194 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-24 15:03:07,881 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-24 15:11:23,213 - INFO - creating ACAD_COLOR dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_GROUP dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-24 15:11:23,213 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-24 15:11:23,234 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-24 15:11:23,234 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-24 15:11:24,205 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf (CSV to DXF)
+2025-06-24 15:13:19,812 - INFO - creating ACAD_COLOR dictionary
+2025-06-24 15:13:20,950 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图-2.csv (DXF to CSV)
+2025-06-24 17:00:00,288 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-26 15:34:10,034 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-26 15:40:51,546 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-27 08:52:42,496 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-27 08:56:25,280 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-27 09:30:31,281 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-27 10:09:41,624 - INFO - creating ACAD_COLOR dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_GROUP dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-27 10:09:41,624 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-27 10:09:50,654 - ERROR - 发生未知错误: expected str, bytes or os.PathLike object, not list
+2025-06-27 10:14:06,421 - INFO - creating ACAD_COLOR dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_GROUP dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-27 10:14:06,422 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-27 10:14:13,746 - ERROR - 发生未知错误: expected str, bytes or os.PathLike object, not list
+2025-06-27 10:15:01,530 - INFO - creating ACAD_COLOR dictionary
+2025-06-27 10:15:01,530 - INFO - creating ACAD_GROUP dictionary
+2025-06-27 10:15:01,530 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-27 10:15:01,530 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-27 10:15:01,530 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-27 10:15:01,531 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-27 10:15:01,531 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-27 10:15:01,531 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-27 10:15:01,531 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-27 10:15:01,531 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-27 10:15:01,531 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-27 10:18:12,294 - ERROR - 生成图纸时出错: name 'output_dxf_file' is not defined
+2025-06-30 08:57:52,344 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 08:58:18,608 - ERROR - 生成图纸时出错: name 'output_dxf_file' is not defined
+2025-06-30 09:13:50,589 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 09:13:50,590 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 09:13:50,614 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 09:13:50,614 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 09:13:56,465 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 09:15:07,660 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 09:15:07,662 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 09:15:07,683 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 09:15:07,683 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 09:15:10,460 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 09:30:19,541 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 09:30:19,541 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 09:30:19,572 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 09:30:19,572 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 09:30:22,182 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 09:56:01,900 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 09:56:01,900 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 09:56:01,916 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 09:56:01,916 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 09:56:03,285 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 09:56:57,206 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 09:56:57,206 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 09:56:57,237 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 09:56:57,238 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 09:56:58,729 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 10:02:36,416 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 10:02:47,620 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 10:02:47,620 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 10:02:47,620 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 10:02:47,620 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 10:02:47,620 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 10:02:47,635 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 10:02:47,635 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 10:02:47,635 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 10:02:47,635 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 10:02:47,635 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 10:02:47,635 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 10:02:47,651 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 10:02:47,651 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 10:02:49,505 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 11:02:51,612 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 11:02:51,612 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 11:02:51,644 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 11:02:51,644 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 11:02:53,178 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:11:18,282 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:11:18,282 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:11:20,303 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-06-30 15:11:53,266 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:11:58,587 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:11:58,587 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:11:58,618 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:11:58,618 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:12:00,255 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:12:57,149 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:12:57,149 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:12:57,171 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:12:57,173 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:13:00,398 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:14:37,818 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:14:37,818 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:14:37,834 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:14:37,834 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:14:39,528 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:15:16,729 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:15:16,729 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:15:16,744 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:15:16,744 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:15:18,282 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:15:51,567 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:15:55,913 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:15:55,913 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:15:55,945 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:15:55,945 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:15:57,326 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:17:35,975 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:17:51,062 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:17:51,062 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:17:51,078 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:17:51,078 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:17:52,679 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:18:25,119 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:20:42,246 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:22:09,706 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:22:16,026 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:22:16,026 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:22:16,043 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:22:16,043 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:22:17,215 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:23:04,886 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:23:15,625 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:23:15,625 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:23:15,642 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:23:15,642 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:23:16,912 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:24:11,786 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:24:15,244 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:24:15,244 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:24:15,269 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:24:15,269 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:24:16,398 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:24:47,528 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:25:01,094 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:25:01,094 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:25:01,118 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:25:01,118 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:25:02,257 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:25:17,376 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:25:28,565 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:25:28,565 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:25:28,596 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:25:28,596 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:25:29,718 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:25:50,479 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:25:54,871 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:25:54,871 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:25:54,885 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:25:54,885 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:25:56,202 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:26:38,309 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:26:41,863 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:26:41,863 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:26:43,639 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-06-30 15:26:49,938 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:26:49,938 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:26:49,954 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:26:49,954 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:26:50,648 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:29:07,061 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:29:16,204 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:29:16,204 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:29:16,220 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:29:16,220 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:29:17,651 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:31:36,272 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:31:42,863 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:31:42,863 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:31:42,887 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:31:42,887 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:31:44,804 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:32:59,791 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:33:05,348 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:33:05,348 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:33:05,369 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:33:05,369 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:33:06,561 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:35:57,495 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:36:10,729 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:36:10,729 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:36:10,761 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:36:10,761 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:36:12,612 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:36:51,657 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:37:03,830 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:37:03,830 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:37:03,846 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:37:03,846 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:37:05,217 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:37:18,559 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:37:27,395 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:37:27,395 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:37:27,427 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:37:27,427 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:37:28,622 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:38:03,880 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:38:03,880 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:38:03,896 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:38:03,896 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:38:05,029 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:38:33,041 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:38:45,334 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:38:45,334 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:38:45,350 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:38:45,350 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:38:46,625 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:39:35,200 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-06-30 15:41:32,657 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:41:32,657 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:41:32,785 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:41:32,785 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:41:34,576 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:41:38,539 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:41:38,539 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:41:38,542 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:41:38,565 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:41:38,565 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:41:40,005 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:43:18,612 - INFO - creating ACAD_COLOR dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_GROUP dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_LAYOUT dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_MATERIAL dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_SCALELIST dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-06-30 15:43:18,612 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-06-30 15:43:18,645 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-06-30 15:43:18,645 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-06-30 15:43:20,048 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-06-30 15:44:52,874 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 13:52:48,751 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 13:52:48,752 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 13:52:48,778 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 13:52:48,778 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 13:52:50,576 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 13:54:33,619 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 13:57:01,641 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 13:57:01,641 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 13:57:01,641 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 13:57:01,641 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 13:57:01,641 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 13:57:01,641 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 13:57:01,641 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 13:57:01,641 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 13:57:01,645 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 13:57:01,645 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 13:57:01,645 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 13:57:05,381 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 13:57:13,933 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 13:57:13,933 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 13:57:13,957 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 13:57:13,957 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 13:57:15,238 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 13:58:19,212 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 13:58:30,809 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 13:58:30,813 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 13:58:30,833 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 13:58:30,833 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 13:58:32,648 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:00:50,840 - INFO - 文件 D:/Python/CAD-change/design/项目名称 VFD-400-50.csv 已成功保存
+2025-07-02 14:01:02,754 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:01:02,754 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:01:02,786 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:01:02,786 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:01:04,400 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:01:43,668 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:01:52,847 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:01:52,847 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:01:52,867 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:01:52,867 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:01:54,270 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:05:30,261 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:05:30,261 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:05:30,285 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:05:30,285 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:05:31,872 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:05:47,174 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:05:47,174 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:05:47,203 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:05:47,203 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:05:48,829 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:06:02,040 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:06:12,416 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:06:12,416 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:06:12,448 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:06:12,448 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:06:13,656 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:11:32,961 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:15:52,873 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:15:52,873 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:15:52,873 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:15:52,873 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:15:52,873 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:15:52,873 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:15:52,873 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:15:52,873 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:15:52,877 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:15:52,877 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:15:52,877 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:15:55,132 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 14:16:03,989 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:16:03,989 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:16:04,012 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:16:04,012 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:16:05,227 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:17:56,181 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:17:56,181 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:17:56,197 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:17:56,197 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:17:57,686 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:18:33,027 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:18:33,027 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:18:34,572 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 14:18:41,535 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:18:41,535 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:18:41,566 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:18:41,566 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:18:42,952 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:21:09,508 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:21:09,508 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:21:09,508 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:21:09,512 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:21:09,512 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:21:09,512 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:21:09,512 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:21:09,512 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:21:09,512 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:21:09,512 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:21:09,512 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:21:09,532 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:21:09,532 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:21:11,071 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:21:40,517 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:21:40,517 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:21:40,517 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:21:40,517 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:21:40,517 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:21:40,517 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:21:40,517 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:21:40,517 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:21:40,521 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:21:40,521 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:21:40,521 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:21:42,774 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 14:21:51,057 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:21:51,057 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:21:51,057 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:21:51,061 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:21:51,061 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:21:51,061 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:21:51,061 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:21:51,061 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:21:51,061 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:21:51,061 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:21:51,061 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:21:51,085 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:21:51,085 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:21:52,461 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:23:09,379 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:23:09,379 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:23:09,379 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:23:09,379 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:23:09,379 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:23:09,379 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:23:09,379 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:23:09,379 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:23:09,379 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:23:09,383 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:23:09,383 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:23:09,407 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:23:09,407 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:23:11,194 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:23:44,894 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:23:44,894 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:23:44,914 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:23:44,914 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:23:46,215 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:24:23,969 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:24:23,969 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:24:23,992 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:24:23,992 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:24:25,587 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:26:04,529 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:26:04,529 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:26:05,807 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 14:26:12,425 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:26:12,425 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:26:12,447 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:26:12,447 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:26:14,639 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:26:25,949 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:26:35,266 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:26:35,266 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:26:35,290 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:26:35,290 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:28:06,310 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:28:06,310 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:28:06,334 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:28:06,334 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:28:07,813 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:29:11,643 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:29:11,643 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:29:11,668 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:29:11,668 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:29:12,924 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:31:37,856 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:31:37,856 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:31:37,856 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:31:37,856 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:31:37,856 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:31:37,856 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:31:37,856 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:31:37,856 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:31:37,860 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:31:37,860 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:31:37,860 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:31:37,884 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:31:37,884 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:31:39,076 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:32:35,209 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:32:42,704 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:32:42,704 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:32:42,728 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:32:42,728 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:32:43,891 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:33:34,764 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:33:34,764 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:33:34,789 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:33:34,789 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:33:36,167 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:34:33,946 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:35:49,248 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:35:49,248 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:35:49,272 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:35:49,272 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:35:50,580 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:36:52,887 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:37:55,399 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:39:51,499 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:39:51,499 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:39:51,527 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:39:51,527 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:39:52,868 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:40:50,894 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 14:40:57,137 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:40:57,137 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:40:57,137 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:40:57,139 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:40:57,139 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:40:57,139 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:40:57,139 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:40:57,139 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:40:57,139 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:40:57,139 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:40:57,139 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:40:57,160 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:40:57,160 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:40:58,603 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:42:17,478 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:42:17,478 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:42:20,255 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 14:42:31,142 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:42:31,146 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:42:31,166 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:42:31,166 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:42:32,760 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:42:57,959 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:42:57,959 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:42:57,984 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:42:57,984 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:42:59,934 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:45:38,910 - ERROR - 修改 CSV 数据时出现错误: could not convert string to float: ''
+2025-07-02 14:45:42,162 - WARNING - 处理第 3 行时出错: could not convert string to float: ''
+2025-07-02 14:46:22,542 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:46:22,542 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:46:22,542 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:46:22,542 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:46:22,542 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:46:22,543 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:46:22,543 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:46:22,543 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:46:22,543 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:46:22,543 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:46:22,543 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:46:22,567 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:46:22,567 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:46:25,541 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:46:55,472 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:46:55,472 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:46:55,499 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:46:55,499 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:46:57,225 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:49:16,976 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 14:49:16,976 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 14:49:16,999 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 14:49:16,999 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 14:49:17,976 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 14:51:16,589 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 15:04:15,729 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 15:05:05,533 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:05:05,534 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:05:05,558 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:05:05,559 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:05:06,744 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf (CSV to DXF)
+2025-07-02 15:06:16,835 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:06:17,958 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv (DXF to CSV)
+2025-07-02 15:07:18,831 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:07:18,831 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:07:18,832 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:07:18,853 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:07:18,854 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:07:20,169 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf (CSV to DXF)
+2025-07-02 15:09:13,709 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:09:14,793 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv (DXF to CSV)
+2025-07-02 15:10:00,291 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 15:12:45,927 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:12:47,136 - INFO - D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/样例输出产品图.dxf 已成功转换为 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv (DXF to CSV)
+2025-07-02 15:15:25,555 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:15:25,555 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:15:25,555 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:15:25,555 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:15:25,556 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:15:25,556 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:15:25,556 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:15:25,556 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:15:25,556 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:15:25,556 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:15:25,556 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:15:25,578 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:15:25,578 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:15:26,954 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 15:16:23,669 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 15:16:33,580 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:16:33,580 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:16:33,581 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:16:33,603 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:16:33,604 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:16:36,454 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 15:17:12,175 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:17:12,176 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:17:12,198 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:17:12,198 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:17:13,564 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 15:17:42,821 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:17:42,821 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:17:44,141 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 15:17:49,801 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:17:49,801 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:17:49,802 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:17:49,823 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:17:49,823 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:17:51,343 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 15:24:53,884 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:24:53,884 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:24:55,181 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 15:25:06,075 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:25:06,075 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:25:06,075 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:25:06,075 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:25:06,075 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:25:06,075 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:25:06,075 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:25:06,075 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:25:06,076 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:25:06,076 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:25:06,076 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:25:06,096 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:25:06,096 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:25:07,603 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 15:25:46,276 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-02 15:26:08,642 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:26:08,642 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:26:08,643 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:26:08,667 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:26:08,667 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:26:09,733 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-02 15:39:48,444 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:39:48,444 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:39:50,115 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-02 15:39:56,530 - INFO - creating ACAD_COLOR dictionary
+2025-07-02 15:39:56,530 - INFO - creating ACAD_GROUP dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-02 15:39:56,531 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-02 15:39:56,551 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-02 15:39:56,551 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-02 15:39:57,801 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 09:09:14,759 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 09:09:14,761 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 09:09:16,180 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-03 09:09:47,708 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 09:09:47,708 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 09:09:47,708 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 09:09:47,708 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 09:09:47,708 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 09:09:47,708 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 09:09:47,708 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 09:09:47,708 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 09:09:47,708 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 09:09:47,709 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 09:09:47,709 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 09:09:47,736 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 09:09:47,736 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 09:09:49,530 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 09:11:55,620 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 09:11:55,620 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 09:11:55,621 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 09:11:55,643 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 09:11:55,643 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 09:11:57,209 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 09:17:09,273 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 09:17:09,274 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 09:17:09,298 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 09:17:09,298 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 09:17:10,745 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:37:06,144 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:37:13,045 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:37:13,046 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:37:13,067 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:37:13,067 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:37:14,678 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:37:51,643 - INFO - 文件 D:/Python/CAD-change/design/data/王工.csv 已成功保存
+2025-07-03 10:38:13,614 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:38:28,634 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:38:28,634 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:38:28,658 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:38:28,658 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:38:30,052 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:39:03,135 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:39:12,593 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:39:12,593 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:39:12,593 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:39:12,593 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:39:12,593 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:39:12,594 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:39:12,594 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:39:12,594 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:39:12,594 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:39:12,594 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:39:12,595 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:39:12,704 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:39:12,704 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:39:17,089 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:39:17,089 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:39:17,089 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:39:17,090 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:39:17,090 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:39:17,090 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:39:17,090 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:39:17,090 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:39:17,090 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:39:17,090 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:39:17,090 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:39:17,109 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:39:17,109 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:39:18,433 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:40:05,547 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:40:15,063 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:40:15,063 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:40:15,063 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:40:15,063 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:40:15,063 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:40:15,063 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:40:15,064 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:40:15,064 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:40:15,064 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:40:15,064 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:40:15,064 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:40:15,084 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:40:15,085 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:40:16,239 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:41:09,941 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:41:15,851 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:41:15,852 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:41:15,874 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:41:15,874 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:41:17,079 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:41:41,795 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:41:53,896 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:41:53,896 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:41:53,896 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:41:53,897 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:41:53,897 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:41:53,897 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:41:53,897 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:41:53,897 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:41:53,897 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:41:53,897 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:41:53,897 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:41:53,919 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:41:53,919 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:41:56,704 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:42:45,080 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:44:28,097 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:44:34,280 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:44:34,280 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:44:34,301 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:44:34,301 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:44:35,497 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:46:27,456 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:46:28,240 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:46:29,825 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:46:35,332 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:46:35,333 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:46:35,354 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:46:35,354 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:46:36,629 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:47:57,188 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:48:05,504 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:48:05,504 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:48:05,527 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:48:05,527 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:48:07,204 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:50:59,998 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:51:11,632 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:51:20,762 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:51:20,762 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:51:20,783 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:51:20,783 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:51:22,124 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:52:12,260 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:52:24,333 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:52:28,984 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:52:28,984 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:52:28,984 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:52:28,984 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:52:28,984 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:52:28,984 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:52:28,984 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:52:28,984 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:52:28,984 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:52:28,985 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:52:28,985 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:52:29,008 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:52:29,008 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:52:30,103 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:52:56,706 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:53:03,348 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:53:03,348 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:53:03,348 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:53:03,348 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:53:03,348 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:53:03,348 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:53:03,349 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:53:03,349 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:53:03,349 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:53:03,349 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:53:03,349 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:53:03,370 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:53:03,370 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:53:04,583 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:55:42,985 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:55:47,893 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:55:47,893 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:55:47,914 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:55:47,914 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:55:49,306 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:57:26,753 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:57:31,779 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:57:31,780 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:57:31,802 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:57:31,802 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:57:33,226 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 10:57:53,879 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 10:58:01,326 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 10:58:01,326 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 10:58:01,327 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 10:58:01,348 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 10:58:01,348 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 10:58:02,328 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:02:57,203 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:03:09,532 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:04:22,012 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:04:30,959 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:04:30,959 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:04:30,959 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:04:30,959 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:04:30,959 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:04:30,959 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:04:30,960 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:04:30,960 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:04:30,960 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:04:30,960 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:04:30,960 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:04:30,983 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:04:30,983 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:04:32,385 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:12:56,240 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:13:14,770 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:13:14,770 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:13:14,793 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:13:14,793 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:13:16,334 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:23:12,585 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:23:12,585 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:23:13,985 - ERROR - 发生未知错误: [Errno 13] Permission denied: '项目名称 VFD-400-50.dxf'
+2025-07-03 11:23:22,285 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:23:22,286 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:23:22,308 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:23:22,308 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:23:24,220 - INFO - 项目名称 VFD-400-50.csv 已成功转换为 项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:25:00,395 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:25:00,395 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:25:00,396 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:25:00,419 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:25:00,419 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:25:02,442 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:26:10,844 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:26:10,844 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:26:10,865 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:26:10,865 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:26:13,654 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:32:31,552 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:32:31,552 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:32:31,552 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:32:31,552 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:32:31,552 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:32:31,552 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:32:31,552 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:32:31,553 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:32:31,553 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:32:31,553 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:32:31,553 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:32:31,579 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:32:31,581 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:32:33,126 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:33:05,808 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:33:05,808 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:33:05,809 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:33:05,831 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:33:05,831 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:33:07,218 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:35:02,476 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:35:02,476 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:35:02,476 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:35:02,476 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:35:02,476 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:35:02,477 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:35:02,477 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:35:02,477 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:35:02,477 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:35:02,477 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:35:02,477 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:35:02,499 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:35:02,499 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:35:04,041 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:37:27,885 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:37:34,886 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:37:34,886 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:37:34,886 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:37:34,886 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:37:34,886 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:37:34,887 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:37:34,887 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:37:34,887 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:37:34,887 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:37:34,887 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:37:34,887 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:37:34,910 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:37:34,911 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:37:36,846 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:38:12,154 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:38:30,233 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:38:49,875 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:38:49,875 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:38:49,897 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:38:49,897 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:38:51,568 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:39:37,277 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:39:47,607 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:39:52,862 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:39:52,862 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:39:52,863 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:39:52,887 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:39:52,888 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:39:54,485 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 11:42:04,447 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 11:42:08,512 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 11:42:08,512 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 11:42:08,536 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 11:42:08,537 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 11:42:10,246 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 13:18:49,403 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:18:49,404 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:18:49,404 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:18:49,404 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:18:49,404 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:18:49,404 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:18:49,404 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:18:49,404 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:18:49,404 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:18:49,406 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:18:49,406 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:18:49,433 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:18:49,433 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:18:51,006 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 13:21:05,317 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:21:05,318 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:21:05,341 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:21:05,341 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:21:13,453 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 13:25:20,646 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:25:20,646 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:25:20,671 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:25:20,671 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:25:22,467 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 13:27:52,461 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:27:52,461 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:27:52,461 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:27:52,462 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:27:52,462 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:27:52,462 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:27:52,462 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:27:52,462 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:27:52,462 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:27:52,462 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:27:52,462 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:27:52,489 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:27:52,489 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:27:54,129 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 13:28:52,985 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 13:29:14,839 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:29:14,839 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:29:14,839 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:29:14,839 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:29:14,839 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:29:14,840 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:29:14,840 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:29:14,840 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:29:14,840 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:29:14,840 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:29:14,840 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:29:14,864 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:29:14,864 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:29:16,672 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 13:30:45,302 - INFO - 文件 D:/Python/CAD-change/design/data/vfd/缸径140-轴径50/140-50产品图.csv 已成功保存
+2025-07-03 13:30:53,379 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:30:53,379 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:30:53,379 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:30:53,379 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:30:53,379 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:30:53,381 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:30:53,381 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:30:53,381 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:30:53,381 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:30:53,381 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:30:53,381 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:30:53,408 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:30:53,409 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:30:54,997 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 13:35:35,708 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:35:35,708 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:35:35,734 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:35:35,734 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:35:37,642 - INFO - 这是一个很长的项目名称 VFD-400-50.csv 已成功转换为 这是一个很长的项目名称 VFD-400-50.dxf (CSV to DXF)
+2025-07-03 13:37:21,933 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:37:21,933 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:37:21,934 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:37:21,957 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:37:21,958 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:37:24,954 - INFO - 这是一个很长的项目名称 VFD-400-60.csv 已成功转换为 这是一个很长的项目名称 VFD-400-60.dxf (CSV to DXF)
+2025-07-03 13:37:40,607 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:37:40,607 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:37:40,608 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:37:40,639 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:37:40,639 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:37:42,393 - INFO - 这是一个超级长的项目名称 VFD-400-60.csv 已成功转换为 这是一个超级长的项目名称 VFD-400-60.dxf (CSV to DXF)
+2025-07-03 13:38:38,589 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:38:38,589 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:38:38,589 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:38:38,589 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:38:38,589 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:38:38,589 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:38:38,589 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:38:38,590 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:38:38,590 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:38:38,590 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:38:38,590 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:38:38,618 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:38:38,618 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:38:40,737 - INFO - 这是一个超级长的项目名称 VFD-400-60.csv 已成功转换为 这是一个超级长的项目名称 VFD-400-60.dxf (CSV to DXF)
+2025-07-03 13:41:13,133 - INFO - creating ACAD_COLOR dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_GROUP dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-03 13:41:13,133 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-03 13:41:13,160 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-03 13:41:13,160 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-03 13:41:15,253 - INFO - 这是一个超级长的项目名称 VFD-400-30.csv 已成功转换为 这是一个超级长的项目名称 VFD-400-30.dxf (CSV to DXF)

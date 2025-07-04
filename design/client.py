@@ -3,7 +3,7 @@ from tkinter import filedialog, messagebox, ttk
 import dxf_to_csv
 import csv_to_dxf
 from edit_csv import show_and_edit_csv
-from drawing import generate_drawing
+from brb_drawing import brb_drawing
 
 
 class CADApp:
@@ -524,7 +524,7 @@ class ViscousDesignForm:
             # 注意：这里假设存在一个 generate_viscous_drawing 函数
             # 如果没有，请替换为实际的函数调用
             print(params)
-            generate_drawing(*params)
+            brb_drawing(*params)
             messagebox.showinfo("成功", "粘滞产品图纸生成成功！")
         except Exception as e:
             messagebox.showerror("错误", f"图纸生成失败: {str(e)}")
