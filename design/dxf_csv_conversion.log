@@ -2277,3 +2277,59 @@
 2025-07-03 13:41:13,160 - INFO - did not write header var $INTERFEREOBJVS, value is None.
 2025-07-03 13:41:13,160 - INFO - did not write header var $INTERFEREVPVS, value is None.
 2025-07-03 13:41:15,253 - INFO - 这是一个超级长的项目名称 VFD-400-30.csv 已成功转换为 这是一个超级长的项目名称 VFD-400-30.dxf (CSV to DXF)
+2025-07-08 11:16:30,819 - INFO - creating ACAD_COLOR dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_GROUP dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-08 11:16:30,819 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-08 11:16:30,851 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-08 11:16:30,851 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-08 11:16:30,866 - INFO - 这是一个超级长的项目名称 VFD-400-30.csv 已成功转换为 这是一个超级长的项目名称 VFD-400-30.dxf (CSV to DXF)
+2025-07-08 11:17:40,973 - INFO - creating ACAD_COLOR dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_GROUP dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-08 11:17:40,973 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-08 11:17:40,991 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-08 11:17:40,991 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-08 11:17:41,020 - INFO - 这是一个超级长的项目名称 VFD-400-30.csv 已成功转换为 这是一个超级长的项目名称 VFD-400-30.dxf (CSV to DXF)
+2025-07-09 11:31:32,883 - INFO - creating ACAD_COLOR dictionary
+2025-07-09 11:31:32,885 - INFO - creating ACAD_GROUP dictionary
+2025-07-09 11:31:32,885 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-09 11:31:32,885 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-09 11:31:32,885 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-09 11:31:32,885 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-09 11:31:32,885 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-09 11:31:32,885 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-09 11:31:32,886 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-09 11:31:32,886 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-09 11:31:32,886 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-09 11:31:32,909 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-09 11:31:32,909 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-09 11:31:32,933 - INFO - 这是一个超级长的项目名称 VFD-400-30.csv 已成功转换为 这是一个超级长的项目名称 VFD-400-30.dxf (CSV to DXF)
+2025-07-09 11:39:50,215 - INFO - creating ACAD_COLOR dictionary
+2025-07-09 11:39:50,215 - INFO - creating ACAD_GROUP dictionary
+2025-07-09 11:39:50,215 - INFO - creating ACAD_LAYOUT dictionary
+2025-07-09 11:39:50,215 - INFO - creating ACAD_MATERIAL dictionary
+2025-07-09 11:39:50,215 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-07-09 11:39:50,215 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-07-09 11:39:50,215 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-07-09 11:39:50,215 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-07-09 11:39:50,216 - INFO - creating ACAD_SCALELIST dictionary
+2025-07-09 11:39:50,216 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-07-09 11:39:50,216 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-07-09 11:39:50,239 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-07-09 11:39:50,239 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-07-09 11:39:50,264 - INFO - 这是一个超级长的项目名称 VFD-400-30.csv 已成功转换为 这是一个超级长的项目名称 VFD-400-30.dxf (CSV to DXF)

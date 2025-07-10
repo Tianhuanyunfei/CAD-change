@@ -12,49 +12,53 @@ def format_number(num):
 
 
 # 结构图 移动
-def x_move(line, x, csv_vfd_P_data):
+def x_move(line, x, csv_data_vfd_design):
     # 获取列名
-    header = csv_vfd_P_data[0]
+    header = csv_data_vfd_design[0]
     # 生成列名和索引的映射字典
     column_index_map = {col_name: header.index(col_name) for col_name in header}
 
-    if csv_vfd_P_data[line][column_index_map['起点 X']]:  # 如果有起点 x
-        start_x = float(csv_vfd_P_data[line][column_index_map['起点 X']])
-        end_x = float(csv_vfd_P_data[line][column_index_map['终点 X']])
+    if csv_data_vfd_design[line][column_index_map['起点 X']]:  # 如果有起点 x
+        start_x = float(csv_data_vfd_design[line][column_index_map['起点 X']])
+        end_x = float(csv_data_vfd_design[line][column_index_map['终点 X']])
         # 先计算新值，再格式化
         new_start_x = start_x + x
         new_end_x = end_x + x
-        csv_vfd_P_data[line][column_index_map['起点 X']] = format_number(new_start_x)
-        csv_vfd_P_data[line][column_index_map['终点 X']] = format_number(new_end_x)
-    if csv_vfd_P_data[line][column_index_map['圆心 X']]:  # 如果没有起点 x，但有圆心 x
-        circle_x = float(csv_vfd_P_data[line][column_index_map['圆心 X']])
+        csv_data_vfd_design[line][column_index_map['起点 X']] = format_number(new_start_x)
+        csv_data_vfd_design[line][column_index_map['终点 X']] = format_number(new_end_x)
+    if csv_data_vfd_design[line][column_index_map['圆心 X']]:  # 如果没有起点 x，但有圆心 x
+        circle_x = float(csv_data_vfd_design[line][column_index_map['圆心 X']])
         new_circle_x = circle_x + x
-        csv_vfd_P_data[line][column_index_map['圆心 X']] = format_number(new_circle_x)
-    if csv_vfd_P_data[line][column_index_map['类型/名称']] == 'LINEAR':
-        location_x = float(csv_vfd_P_data[line][column_index_map['位置 X']])
+        csv_data_vfd_design[line][column_index_map['圆心 X']] = format_number(new_circle_x)
+    if csv_data_vfd_design[line][column_index_map['类型/名称']] == 'LINEAR':
+        location_x = float(csv_data_vfd_design[line][column_index_map['位置 X']])
         new_location_x = location_x + x
-        csv_vfd_P_data[line][column_index_map['位置 X']] = format_number(new_location_x)
-    if csv_vfd_P_data[line][column_index_map['实体类型']] == 'INSERT':
-        location_x = float(csv_vfd_P_data[line][column_index_map['位置 X']])
+        csv_data_vfd_design[line][column_index_map['位置 X']] = format_number(new_location_x)
+    if csv_data_vfd_design[line][column_index_map['实体类型']] == 'INSERT':
+        location_x = float(csv_data_vfd_design[line][column_index_map['位置 X']])
         new_location_x = location_x + x
-        csv_vfd_P_data[line][column_index_map['位置 X']] = format_number(new_location_x)
+        csv_data_vfd_design[line][column_index_map['位置 X']] = format_number(new_location_x)
 
 
 # 结构图 延长
-def x_extend(line, point, x, csv_vfd_P_data):
+def x_extend(line, point, x, csv_data_vfd_design):
     # 获取列名
-    header = csv_vfd_P_data[0]
+    header = csv_data_vfd_design[0]
     # 生成列名和索引的映射字典
     column_index_map = {col_name: header.index(col_name) for col_name in header}
 
-    point_x = float(csv_vfd_P_data[line][column_index_map[point]])
+    point_x = float(csv_data_vfd_design[line][column_index_map[point]])
     new_point_x = point_x + x
-    csv_vfd_P_data[line][column_index_map[point]] = format_number(new_point_x)
+    csv_data_vfd_design[line][column_index_map[point]] = format_number(new_point_x)
 
-# 结构图数据更新
-def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, quantity, δpiston_width,
-                                                 δdt1, δdt2, δdt3, δdt4, δdt5):
+# 结构图数据并绘制
+def draw_vfd_design(csv_vfd_design, output_dxf_file, project_name, force, design_displacement, quantity, δpiston_width,
+                                                 δdt1, δdt2, δdt3, δdt4, δdt5, offset_x, offset_y):
     try:
+        # 读取产品图数据
+        with open(csv_vfd_design, 'r', encoding='utf-8') as vfd_design:
+            csv_reader = csv.reader(vfd_design)
+            csv_data_vfd_design = list(csv_reader)
         # 以活塞中心为原点
 
         # 活塞轮廓移动距离
@@ -74,14 +78,14 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
         # 移动
     # 活塞轮廓移动距离
         for i in [19, 20, 91, 92]:
-            x_move_x1 = x_move(i, -x1, csv_vfd_P_data)
+            x_move(i, -x1, csv_data_vfd_design)
         for i in [21, 22, 101]:
-            x_move__x1 = x_move(i, x1, csv_vfd_P_data)
+            x_move(i, x1, csv_data_vfd_design)
 
         for i in [23, 24, 25, 26, 27, 28, 29, 30,  # 直线
             90,  # 尺寸
             183]:
-            x_move_x2 = x_move(i, x2, csv_vfd_P_data)
+            x_move(i, x2, csv_data_vfd_design)
 
         for i in [
             31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44,  # 直线
@@ -89,17 +93,17 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
             86, 88, 89,   # 尺寸
             102, 108,
         ]:
-            x_move_x3 = x_move(i, x3, csv_vfd_P_data)
+            x_move(i, x3, csv_data_vfd_design)
 
         for i in [
             45, 46, 47, 48, 49, 50, 51, 52, 53, 54  # 直线
         ]:
-            x_move_x4 = x_move(i, x4, csv_vfd_P_data)  # 线条移动
+            x_move(i, x4, csv_data_vfd_design)  # 线条移动
 
         for i in [
             55, 56, 57, 58   # 直线
         ]:
-            x_move_x5 = x_move(i, x5, csv_vfd_P_data)
+            x_move(i, x5, csv_data_vfd_design)
 
         for i in [
             59, 60, 61, 62, 63, 64, 65, 66, 67, 68,   # 直线
@@ -107,10 +111,10 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
             87, 93,   # 尺寸
             114, 120
             ]:
-            x_move_x6 = x_move(i, x6, csv_vfd_P_data)
+            x_move(i, x6, csv_data_vfd_design)
 
         for i in [192, 193, 194, 195, 196]:
-            x_move__δdt1 = x_move(i, -δdt1  , csv_vfd_P_data)
+            x_move(i, -δdt1  , csv_data_vfd_design)
 
 
         END_POINTS = [
@@ -127,7 +131,7 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
                 point = '终点 X'
             else:
                 point = '起点 X'
-            x_extend_x2 = x_extend(j, point, x2, csv_vfd_P_data) # 端点延伸
+            x_extend(j, point, x2, csv_data_vfd_design) # 端点延伸
 
         # 延伸
         END_POINTS = []
@@ -142,7 +146,7 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
                 point = '终点 X'
             else:
                 point = '起点 X'
-            x_extend_x3 = x_extend(j, point, x3, csv_vfd_P_data)  # 端点延伸
+            x_extend(j, point, x3, csv_data_vfd_design)  # 端点延伸
 
         END_POINTS = [
             69, 70, 71, 72, 73, 74,   # 直线
@@ -158,7 +162,7 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
                 point = '终点 X'
             else:
                 point = '起点 X'
-            x_extend_x4 = x_extend(j, point, x4, csv_vfd_P_data)  # 端点延伸
+            x_extend(j, point, x4, csv_data_vfd_design)  # 端点延伸
 
         END_POINTS = [
             75, 76,   # 直线
@@ -173,7 +177,7 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
                 point = '终点 X'
             else:
                 point = '起点 X'
-            x_extend_x5 = x_extend(j, point, x5, csv_vfd_P_data)  # 端点延伸
+            x_extend(j, point, x5, csv_data_vfd_design)  # 端点延伸
 
         END_POINTS = [
             77, 78, 79, 80,   # 直线
@@ -187,7 +191,7 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
                 point = '终点 X'
             else:
                 point = '起点 X'
-            x_extend_x6 = x_extend(j, point, x6, csv_vfd_P_data)  # 端点延伸
+            x_extend(j, point, x6, csv_data_vfd_design)  # 端点延伸
 
         END_POINTS = []
         START_POINTS = [188, 189, 190, 191]
@@ -197,35 +201,45 @@ def update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, qu
                 point = '终点 X'
             else:
                 point = '起点 X'
-            x_extend__δdt1 = x_extend(j, point, -δdt1, csv_vfd_P_data)  # 端点延伸
+            x_extend(j, point, -δdt1, csv_data_vfd_design)  # 端点延伸
 
 
         # 标题栏更改
         # 获取列名
-        header = csv_vfd_P_data[0]
+        header = csv_data_vfd_design[0]
         # 生成列名和索引的映射字典
         column_index_map = {col_name: header.index(col_name) for col_name in header}
 
-        csv_vfd_P_data[182][column_index_map['值']] = f'\W0.7;\T1.1;{quantity}'
+        csv_data_vfd_design[182][column_index_map['值']] = f'\W0.7;\T1.1;{quantity}'
 
-        csv_vfd_P_data[179][column_index_map['值']] = calculate_dynamic_width(
+        csv_data_vfd_design[179][column_index_map['值']] = calculate_dynamic_width(
             project_name,
             max_width=160
         )
 
         product_model = f'VFD-{force}-{design_displacement}'
-        csv_vfd_P_data[181][column_index_map['值']] = calculate_dynamic_width(
+        csv_data_vfd_design[181][column_index_map['值']] = calculate_dynamic_width(
             product_model,
             max_width=92
         )
+
+        # 结构图数据整体偏移
+        csv_data_vfd_design = offset(csv_data_vfd_design, offset_x, offset_y)
+
+        # 调用 csv_to_dxf 函数进行转换，输出 DXF 文件名称为产品型号输入的参数
+        input_file = f'{project_name} VFD-{force}-{design_displacement}.csv'
+        with open(input_file, 'w', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerows(csv_data_vfd_design)
+
+        # 调用 csv_to_dxf，传递文件路径
+        csv_to_dxf(input_file, output_dxf_file)
 
 
     except (IndexError, ValueError) as e:
         logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
         messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
         raise  # 重新抛出异常，让上层调用者处理
-
-    return csv_vfd_P_data
 
 # 限制字符总长
 def calculate_dynamic_width(text, max_width=300, base_width_cn=23.7, base_width_en=11.85):
@@ -258,6 +272,84 @@ def calculate_dynamic_width(text, max_width=300, base_width_cn=23.7, base_width_
     # 构建并返回最终字符串
     return f'\W{dynamic_multiplier:.2f};\T1.1;{text}'
 
+
+# 图偏移函数
+def offset(csv_data, offset_x, offset_y):
+    # 从第一行获取列名到索引的映射
+    header = csv_data[0]
+    col_index = {col: idx for idx, col in enumerate(header)}
+
+    # 元素偏移处理函数
+    def element_offset(value, offset):
+        try:
+            return float(value) + float(offset)
+        except (ValueError, TypeError):
+            print(f"警告: 无法将 '{value}' 或 '{offset}' 转换为数值")
+            return value
+
+    for line_num, row in enumerate(csv_data[1:], start=2):  # 从第 2 行开始处理
+        try:
+            # 读取非块元素
+            if not row[col_index.get("块名", -1)]:  # 使用列索引访问"块名"
+                entity_type = row[col_index.get("实体类型", "")]
+
+                if entity_type == 'LINE':
+                    if "起点 X" in col_index and "起点 Y" in col_index and "终点 X" in col_index and "终点 Y" in col_index:
+                        row[col_index["起点 X"]] = element_offset(row[col_index["起点 X"]], offset_x)
+                        row[col_index["起点 Y"]] = element_offset(row[col_index["起点 Y"]], offset_y)
+                        row[col_index["终点 X"]] = element_offset(row[col_index["终点 X"]], offset_x)
+                        row[col_index["终点 Y"]] = element_offset(row[col_index["终点 Y"]], offset_y)
+
+                elif entity_type == 'CIRCLE':
+                    if "圆心 X" in col_index and "圆心 Y" in col_index:
+                        row[col_index["圆心 X"]] = element_offset(row[col_index["圆心 X"]], offset_x)
+                        row[col_index["圆心 Y"]] = element_offset(row[col_index["圆心 Y"]], offset_y)
+
+                elif entity_type == 'DIMENSION':
+                    if row[col_index.get("类型/名称", "")] == 'LINEAR':
+                        if "位置 X" in col_index and "位置 Y" in col_index and "起点 X" in col_index and "起点 Y" in col_index and "终点 X" in col_index and "终点 Y" in col_index:
+                            row[col_index["位置 X"]] = element_offset(row[col_index["位置 X"]], offset_x)
+                            row[col_index["位置 Y"]] = element_offset(row[col_index["位置 Y"]], offset_y)
+                            row[col_index["起点 X"]] = element_offset(row[col_index["起点 X"]], offset_x)
+                            row[col_index["起点 Y"]] = element_offset(row[col_index["起点 Y"]], offset_y)
+                            row[col_index["终点 X"]] = element_offset(row[col_index["终点 X"]], offset_x)
+                            row[col_index["终点 Y"]] = element_offset(row[col_index["终点 Y"]], offset_y)
+
+                    elif row[col_index.get("类型/名称", "")] == 'RADIUS':
+                        if "位置 X" in col_index and "位置 Y" in col_index and "圆心 X" in col_index and "圆心 Y" in col_index:
+                            row[col_index["位置 X"]] = element_offset(row[col_index["位置 X"]], offset_x)
+                            row[col_index["位置 Y"]] = element_offset(row[col_index["位置 Y"]], offset_y)
+                            row[col_index["圆心 X"]] = element_offset(row[col_index["圆心 X"]], offset_x)
+                            row[col_index["圆心 Y"]] = element_offset(row[col_index["圆心 Y"]], offset_y)
+
+                elif entity_type == 'ARC':
+                    if "圆心 X" in col_index and "圆心 Y" in col_index:
+                        row[col_index["圆心 X"]] = element_offset(row[col_index["圆心 X"]], offset_x)
+                        row[col_index["圆心 Y"]] = element_offset(row[col_index["圆心 Y"]], offset_y)
+
+                elif entity_type in ['TEXT', 'MTEXT']:
+                    if "位置 X" in col_index and "位置 Y" in col_index:
+                        row[col_index["位置 X"]] = element_offset(row[col_index["位置 X"]], offset_x)
+                        row[col_index["位置 Y"]] = element_offset(row[col_index["位置 Y"]], offset_y)
+
+                elif entity_type == 'HATCH':
+                    if "位置 X" in col_index and "位置 Y" in col_index:
+                        row[col_index["位置 X"]] = element_offset(row[col_index["位置 X"]], offset_x)
+                        row[col_index["位置 Y"]] = element_offset(row[col_index["位置 Y"]], offset_y)
+
+            # 读取块元素
+            elif row[col_index.get("实体类型", "")] == 'INSERT':
+                if "位置 X" in col_index and "位置 Y" in col_index:
+                    row[col_index["位置 X"]] = element_offset(row[col_index["位置 X"]], offset_x)
+                    row[col_index["位置 Y"]] = element_offset(row[col_index["位置 Y"]], offset_y)
+
+        except Exception as e:
+            messagebox.showwarning("警告", f"第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+            logging.warning(f"第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+
+    return csv_data
+
+
 # 主函数，绘制vfd图纸
 def vfd_drawing(data_table):
     """根据数据表格生成图纸"""
@@ -285,26 +377,21 @@ def vfd_drawing(data_table):
             logging.error(f"处理数据行时出错: {str(e)}")
             messagebox.showerror("错误", f"错误数据: {str(e)}，请确保为正确的值类型")
 
-    # 生成产品图
     # 打开VFD-型号表，读取数据
-    with open('data/vfd/VFD-型号表.csv', 'r', encoding='utf-8') as VFD_style:
-        csv_reader = csv.DictReader(VFD_style)
-        csv_VFD_style_data = list(csv_reader)
+    with open('data/vfd/VFD-型号表.csv', 'r', encoding='utf-8') as VFD_table:
+        csv_reader = csv.DictReader(VFD_table)
+        csv_data_VFD_table = list(csv_reader)
 
     # 遍历型号表数据，根据缸径和轴径，确定其他零件的尺寸和数据文件
     found = False
-    for line_num, row in enumerate(csv_VFD_style_data, start=2):
+    for line_num, row in enumerate(csv_data_VFD_table, start=2):
         try:
             # 将CSV中的字符串值转换为整数进行比较
             csv_cylinder_diameter = int(row["缸径"])
             csv_axis_diameter = int(row["轴径"])
 
-            # 比较整数类型
+            # 读取产品其他参数
             if csv_cylinder_diameter == cylinder_diameter and csv_axis_diameter == axis_diameter:
-                print(f"找到匹配项在第 {line_num} 行")
-                print(f"缸径: {csv_cylinder_diameter}")
-                print(f"轴径: {csv_axis_diameter}")
-                print(f"产品结构图数据: {row['产品结构图数据']}")
                 found = True
                 δdt1 = dt1 - int(row["ex_dt1"])  # 前吊耳距离变化
                 δdt2 = dt2 - int(row["ex_dt2"])  # 前腔变化
@@ -312,26 +399,17 @@ def vfd_drawing(data_table):
                 δdt4 = dt4 - int(row["ex_dt4"])  # 活塞杆后端变化
                 δdt5 = dt5 - int(row["ex_dt5"])  # 活塞杆到后吊耳距离变化
                 δpiston_width = piston_width - int(row["ex_piston_width"])  # 活塞变化
-                # 可以在这里添加进一步的处理逻辑
-                # 读取产品图数据
-                with open(row['产品结构图数据'], 'r', encoding='utf-8') as vfd_P:
-                    csv_reader = csv.reader(vfd_P)
-                    csv_vfd_P_data = list(csv_reader)
+                csv_vfd_design = row['产品结构图数据']
+                # csv_vfd_QDL = ['前吊耳数据']
 
-                # 根据参数更改结构图数据
-                csv_vfd_P_data = update_csv_data(csv_vfd_P_data, project_name, force, design_displacement, quantity, δpiston_width,
-                                                 δdt1, δdt2, δdt3, δdt4, δdt5)
-
-                # 调用 csv_to_dxf 函数进行转换，输出 DXF 文件名称为产品型号输入的参数
-                input_file = f'{project_name} VFD-{force}-{design_displacement}.csv'
-                with open(input_file, 'w', newline='', encoding='utf-8') as file:
-                    writer = csv.writer(file)
-                    writer.writerows(csv_vfd_P_data)
-
+                # 创建dxf文件
                 output_dxf_file = f'{project_name} VFD-{force}-{design_displacement}.dxf'
 
-                # 调用 csv_to_dxf，传递文件路径
-                csv_to_dxf(input_file, output_dxf_file)
+                # 根据参数更改并绘制结构图
+                draw_vfd_design(csv_vfd_design, output_dxf_file, project_name, force, design_displacement, quantity, δpiston_width,
+                                                 δdt1, δdt2, δdt3, δdt4, δdt5, 775, 800)
+                # 根据参数更改绘制前吊耳
+                # draw_vdf_QDL(csv_vfd_QDL, output_dxf_file)
 
                 break  # 找到匹配项后跳出循环
 
