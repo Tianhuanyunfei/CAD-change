@@ -1,17 +1,14 @@
 import csv
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox, filedialog
 import logging
 from csv_to_dxf import csv_to_dxf
+import os  # 新增：导入os模块用于设置工作目录
 
-# 预加载模板配置，避免每次循环都重新创建
-template_files = {
-    '王工': 'data\\王工.csv',
-    '十一': 'data\\十一.csv',
-    '王一': 'data\\王一.csv'
-}
 
-def update_common_data(csv_data, input_param, width, height, thick, force, tube_width, weld, table, config):
+"""更新数据"""
+# 王工
+def update_data1(csv_data, input_param, width, height, thick, force, tube_width, tube_thickness, weld, core_material, table):
     """通用的CSV数据更新函数"""
     try:
         # 获取列名
@@ -32,79 +29,240 @@ def update_common_data(csv_data, input_param, width, height, thick, force, tube_
             if count % 4 == 0 and index < total_count - 1:
                 result_str += '\P'
         result_str = result_str.rstrip(' ， ')
-        csv_data[config['length_desc_row']][column_index_map['值']] = f'\W0.7;\T1.1;{result_str}\P共计{product_quantity}件'
+        csv_data[81][column_index_map['值']] = f'\W0.7;\T1.1;{result_str}\P共计{product_quantity}件'
 
-        # 端面设置（合并重复代码）
-        face_start_row = config['end_face_start_row']
-        update_cell_value(csv_data, face_start_row, column_index_map, '覆盖值', thick)
-        update_cell_value(csv_data, face_start_row + 1, column_index_map, '覆盖值', width)
-        update_cell_value(csv_data, face_start_row + 2, column_index_map, '覆盖值', thick)
-        update_cell_value(csv_data, face_start_row + 3, column_index_map, '覆盖值', height - thick - thick)
-        update_cell_value(csv_data, face_start_row + 4, column_index_map, '覆盖值', thick)
-        update_cell_value(csv_data, face_start_row + 5, column_index_map, '覆盖值', thick)
-        update_cell_value(csv_data, face_start_row + 6, column_index_map, '覆盖值', tube_width)
-        update_cell_value(csv_data, face_start_row + 7, column_index_map, '覆盖值', tube_width)
+        # 端面
+        update_cell_value(csv_data, 149, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 150, column_index_map, '覆盖值', width)
+        update_cell_value(csv_data, 151, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 152, column_index_map, '覆盖值', height - thick - thick)
+        update_cell_value(csv_data, 153, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 154, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 155, column_index_map, '覆盖值', tube_width)
+        update_cell_value(csv_data, 156, column_index_map, '覆盖值', tube_width)
+        
+        # 方管厚度
+        update_cell_value(csv_data, 111, column_index_map, '覆盖值', tube_thickness)
 
         # 端面焊缝
-        update_cell_value(csv_data, config['weld_row'], column_index_map, '值', f'\T1.1;{format_number(weld)}')
+        update_cell_value(csv_data, 110, column_index_map, '值', f'\T1.1;{format_number(weld)}')
 
         # 耗能面设置
-        energy_start_row = config['energy_absorbing_start_row']
-        if config['plate_type'] == 1:
-            update_cell_value(csv_data, energy_start_row, column_index_map, '覆盖值', thick)
-            update_cell_value(csv_data, energy_start_row + 1, column_index_map, '覆盖值', thick)
-            update_cell_value(csv_data, energy_start_row + 2, column_index_map, '覆盖值', thick)
-            update_cell_value(csv_data, energy_start_row + 3, column_index_map, '覆盖值', height)
-            update_cell_value(csv_data, energy_start_row + 4, column_index_map, '覆盖值', width)
-        else:
-            update_cell_value(csv_data, energy_start_row, column_index_map, '覆盖值', thick)
-            update_cell_value(csv_data, energy_start_row + 1, column_index_map, '覆盖值', height - thick - thick)
+       
+        update_cell_value(csv_data, 185, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 186, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 187, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 188, column_index_map, '覆盖值', height)
+        update_cell_value(csv_data, 189, column_index_map, '覆盖值', width)
 
-        # 连接板设置
-        if config['plate_type'] == 2:
-            # 两种连接板的情况
-            # 板1，尺寸
-            update_cell_value(csv_data, config['connecting_plate1_start_row'], column_index_map, '覆盖值', width)
-            # 板1，数量
-            csv_data[config['connecting_plate1_start_row'] - 2][column_index_map[
-                '值']] = f'\W0.7;\T1.1;连接板1 H={format_number(thick)}-{format_number(product_quantity * 4)}件'
+        # 连接板尺寸
+        update_cell_value(csv_data, 201, column_index_map, '覆盖值', (width - thick) / 2)
 
-            # 板2，尺寸
-            update_cell_value(csv_data, config['connecting_plate2_start_row'], column_index_map, '覆盖值',
-                              (width - thick) / 2)
-            # 板2，数量
-            csv_data[config['connecting_plate2_start_row'] - 2][column_index_map[
-                '值']] = f'\W0.7;\T1.1;连接板2 H={format_number(thick)}-{format_number(product_quantity * 4)}件'
-        else:
-            # 一种连接板的情况
-            # 连接板，尺寸
-            update_cell_value(csv_data, config['connecting_plate_start_row'], column_index_map, '覆盖值',
-                              (width - thick) / 2)
-            # 连接板，数量
-            csv_data[config['connecting_plate_start_row'] - 2][column_index_map[
-                '值']] = f'\W0.7;\T1.1;连接板 H={format_number(thick)}-{format_number(product_quantity * 4)}件'
+        # 连接板数量
+        update_cell_value(csv_data, 199, column_index_map, '值', f'\W0.7;\T1.1;连接板 H={format_number(thick)}-{format_number(product_quantity * 4)}件')
 
-        # 挡板
-        baffle_start_row = config['baffle_start_row']
-        update_cell_value(csv_data, baffle_start_row, column_index_map, '覆盖值', width + 5)
-        update_cell_value(csv_data, baffle_start_row + 1, column_index_map, '覆盖值', thick + 5)
-        update_cell_value(csv_data, baffle_start_row + 2, column_index_map, '覆盖值', thick + 5)
-        update_cell_value(csv_data, baffle_start_row + 3, column_index_map, '覆盖值', thick + 5)
-        update_cell_value(csv_data, baffle_start_row + 4, column_index_map, '覆盖值', thick + 5)
-        update_cell_value(csv_data, baffle_start_row + 5, column_index_map, '覆盖值', height - thick - thick - 5)
-        update_cell_value(csv_data, baffle_start_row - 5, column_index_map, '覆盖值', tube_width + 20)
-        update_cell_value(csv_data, baffle_start_row - 2, column_index_map, '覆盖值', tube_width + 20)
+        # 挡板尺寸
+        update_cell_value(csv_data, 216, column_index_map, '覆盖值', width + 5)
+        update_cell_value(csv_data, 217, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 218, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 219, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 222, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 223, column_index_map, '覆盖值', height - thick - thick - 5)
+        update_cell_value(csv_data, 206, column_index_map, '覆盖值', tube_width + 20)
+        update_cell_value(csv_data, 209, column_index_map, '覆盖值', tube_width + 20)
 
         # 挡板焊缝
-        update_cell_value(csv_data, config['baffle_weld_row'], column_index_map, '值', f'\T1.1;C{format_number(weld)}')
+        update_cell_value(csv_data, 245, column_index_map, '值', f'\T1.1;C{format_number(weld)}')
         # 挡板数量
-        csv_data[baffle_start_row - 4][
-            column_index_map['值']] = f'\W0.7;\T1.1;挡板H=6-{format_number(product_quantity * 2)}件'
+        update_cell_value(csv_data, 207, column_index_map, '值', f'\W0.7;\T1.1;挡板H=6-{format_number(product_quantity * 2)}件')
 
         # 标题栏，项目名称
-        update_cell_value(csv_data, config['title_row'], column_index_map, '值', f'\W0.5;\T1.1;{input_param}')
+        cell_with = 540 # 单元格宽度
+        max_width = cell_with-20 # 字符串最大限制宽度
+        dynamic_multiplier, true_length = calculate_dynamic_width(input_param, max_width) # 对项目名称字符串进行缩放，并返回倍率和实际宽度
+        update_cell_value(csv_data, 292, column_index_map, '值', f'\W{dynamic_multiplier:.2f};\T1.1;{input_param}') # 更新值单元格值
+        # 标题栏，项目名称，位置置中
+        update_cell_value(csv_data, 292, column_index_map, '位置 X', - cell_with / 2 - true_length / 2) # 更新位置X单元格值
+        
         # 标题栏，产品型号
-        update_cell_value(csv_data, config['model_row'], column_index_map, '值', f'\W0.7;\T1.1;YSX-BRB-{force}-L')
+        update_cell_value(csv_data, 294, column_index_map, '值', f'\W0.7;\T1.1;YSX-BRB-{force}-L')
+
+        # 芯板材料
+        update_cell_value(csv_data, 297, column_index_map, '值', f'芯板材料：{core_material}')
+
+    except (IndexError, ValueError) as e:
+        logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
+        messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
+        raise  # 重新抛出异常，让上层调用者处理
+
+    return csv_data
+# 十一
+def update_data2(csv_data, input_param, width, height, thick, force, tube_width, tube_thickness, weld, core_material, table):
+    """通用的CSV数据更新函数"""
+    try:
+        # 获取列名
+        header = csv_data[0]
+
+        # 生成列名和索引的映射字典
+        column_index_map = {col_name: header.index(col_name) for col_name in header}
+
+        # 主视图，长度数量说明
+        result_str = ''
+        product_quantity = 0
+        count = 0
+        total_count = len(table)
+        for index, (length, quantity) in enumerate(table):
+            result_str += f'L={length}-{quantity}件, '
+            product_quantity += quantity
+            count += 1
+            if count % 4 == 0 and index < total_count - 1:
+                result_str += '\P'
+        result_str = result_str.rstrip(' ， ')
+        csv_data[75][column_index_map['值']] = f'\W0.7;\T1.1;{result_str}\P共计{product_quantity}件'
+
+        # 端面
+        update_cell_value(csv_data, 129, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 130, column_index_map, '覆盖值', width)
+        update_cell_value(csv_data, 131, column_index_map, '覆盖值', height)
+        update_cell_value(csv_data, 132, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 133, column_index_map, '覆盖值', tube_width)
+        update_cell_value(csv_data, 134, column_index_map, '覆盖值', tube_width)
+
+        # 方管厚度
+        update_cell_value(csv_data, 104, column_index_map, '覆盖值', tube_thickness)
+
+        # 端面焊缝
+        update_cell_value(csv_data, 103, column_index_map, '值', f'\T1.1;{format_number(weld)}')
+
+        # 耗能面设置
+       
+        update_cell_value(csv_data, 157, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 158, column_index_map, '覆盖值', height)
+
+        # 连接板尺寸
+        update_cell_value(csv_data, 170, column_index_map, '覆盖值', (width - thick) / 2)
+
+        # 连接板数量
+        update_cell_value(csv_data, 168, column_index_map, '值', f'\W0.7;\T1.1;连接板 H={format_number(thick)}-{format_number(product_quantity * 4)}件')
+
+        # 挡板尺寸
+        update_cell_value(csv_data, 181, column_index_map, '覆盖值', width + 5)
+        update_cell_value(csv_data, 182, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 185, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 186, column_index_map, '覆盖值', height + 5)
+        update_cell_value(csv_data, 175, column_index_map, '覆盖值', tube_width + 20)
+        update_cell_value(csv_data, 178, column_index_map, '覆盖值', tube_width + 20)
+
+        # 挡板焊缝
+        update_cell_value(csv_data, 200, column_index_map, '值', f'\T1.1;C{format_number(weld)}')
+        # 挡板数量
+        update_cell_value(csv_data, 176, column_index_map, '值', f'\W0.7;\T1.1;挡板H=6-{format_number(product_quantity * 2)}件')
+
+
+        # 标题栏，项目名称
+        cell_with = 540 # 单元格宽度
+        max_width = cell_with-20 # 字符串最大限制宽度
+        dynamic_multiplier, true_length = calculate_dynamic_width(input_param, max_width) # 对项目名称字符串进行缩放，并返回倍率和实际宽度
+        update_cell_value(csv_data, 247, column_index_map, '值', f'\W{dynamic_multiplier:.2f};\T1.1;{input_param}') # 更新值单元格值
+        # 标题栏，项目名称，位置置中
+        update_cell_value(csv_data, 247, column_index_map, '位置 X', - cell_with / 2 - true_length / 2) # 更新位置X单元格值
+
+        # 标题栏，产品型号
+        update_cell_value(csv_data, 249, column_index_map, '值', f'\W0.7;\T1.1;YSX-BRB-{force}-L')
+
+        # 芯板材料
+        update_cell_value(csv_data, 252, column_index_map, '值', f'芯板材料：{core_material}')
+        
+
+    except (IndexError, ValueError) as e:
+        logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
+        messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
+        raise  # 重新抛出异常，让上层调用者处理
+
+    return csv_data
+# 王一
+def update_data3(csv_data, input_param, width, height, thick, force, tube_width, tube_thickness, weld, core_material, table):
+    """通用的CSV数据更新函数"""
+    try:
+        # 获取列名
+        header = csv_data[0]
+
+        # 生成列名和索引的映射字典
+        column_index_map = {col_name: header.index(col_name) for col_name in header}
+
+        # 主视图，长度数量说明
+        result_str = ''
+        product_quantity = 0
+        count = 0
+        total_count = len(table)
+        for index, (length, quantity) in enumerate(table):
+            result_str += f'L={length}-{quantity}件, '
+            product_quantity += quantity
+            count += 1
+            if count % 4 == 0 and index < total_count - 1:
+                result_str += '\P'
+        result_str = result_str.rstrip(' ， ')
+        csv_data[77][column_index_map['值']] = f'\W0.7;\T1.1;{result_str}\P共计{product_quantity}件'
+
+        # 端面
+        update_cell_value(csv_data, 155, column_index_map, '覆盖值', width)
+        update_cell_value(csv_data, 156, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 157, column_index_map, '覆盖值', height - thick - thick)
+        update_cell_value(csv_data, 158, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 159, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 160, column_index_map, '覆盖值', tube_width)
+        update_cell_value(csv_data, 161, column_index_map, '覆盖值', tube_width)
+        update_cell_value(csv_data, 162, column_index_map, '覆盖值', thick)
+
+        # 方管厚度
+        update_cell_value(csv_data, 125, column_index_map, '覆盖值', tube_thickness)
+
+        # 端面焊缝
+        update_cell_value(csv_data, 124, column_index_map, '值', f'\T1.1;{format_number(weld)}')
+
+        # 耗能面设置
+       
+        update_cell_value(csv_data, 193, column_index_map, '覆盖值', thick)
+        update_cell_value(csv_data, 194, column_index_map, '覆盖值', height-thick-thick)
+
+        # 连接板1尺寸
+        update_cell_value(csv_data, 309, column_index_map, '覆盖值', width)
+        # 连接板1数量
+        update_cell_value(csv_data, 307, column_index_map, '值', f'\W0.7;\T1.1;连接板 H={format_number(thick)}-{format_number(product_quantity * 4)}件')
+
+        # 连接板2尺寸
+        update_cell_value(csv_data, 206, column_index_map, '覆盖值', (width - thick) / 2)
+        # 连接板2数量
+        update_cell_value(csv_data, 204, column_index_map, '值', f'\W0.7;\T1.1;连接板2 H={format_number(thick)}-{format_number(product_quantity * 4)}件')
+
+        # 挡板尺寸
+        update_cell_value(csv_data, 221, column_index_map, '覆盖值', width + 5)
+        update_cell_value(csv_data, 222, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 223, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 224, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 227, column_index_map, '覆盖值', thick + 5)
+        update_cell_value(csv_data, 228, column_index_map, '覆盖值', height - thick - thick - 5)
+        update_cell_value(csv_data, 211, column_index_map, '覆盖值', tube_width + 20)
+        update_cell_value(csv_data, 214, column_index_map, '覆盖值', tube_width + 20)
+
+        # 挡板焊缝
+        update_cell_value(csv_data, 250, column_index_map, '值', f'\T1.1;C{format_number(weld)}')
+        # 挡板数量
+        update_cell_value(csv_data, 212, column_index_map, '值', f'\W0.7;\T1.1;挡板H=6-{format_number(product_quantity * 2)}件')
+
+         # 标题栏，项目名称
+        cell_with = 540 # 单元格宽度
+        max_width = cell_with-20 # 字符串最大限制宽度
+        dynamic_multiplier, true_length = calculate_dynamic_width(input_param, max_width) # 对项目名称字符串进行缩放，并返回倍率和实际宽度
+        update_cell_value(csv_data, 297, column_index_map, '值', f'\W{dynamic_multiplier:.2f};\T1.1;{input_param}') # 更新值单元格值
+        # 标题栏，项目名称，位置置中
+        update_cell_value(csv_data, 297, column_index_map, '位置 X', - cell_with / 2 - true_length / 2) # 更新位置X单元格值
+
+        # 标题栏，产品型号
+        update_cell_value(csv_data, 299, column_index_map, '值', f'\W0.7;\T1.1;YSX-BRB-{force}-L')
+        
+        # 芯板材料
+        update_cell_value(csv_data, 310, column_index_map, '值', f'芯板材料：{core_material}')
 
     except (IndexError, ValueError) as e:
         logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
@@ -113,62 +271,24 @@ def update_common_data(csv_data, input_param, width, height, thick, force, tube_
 
     return csv_data
 
-
-update_functions = {
-    '王工': update_common_data,
-    '十一': update_common_data,
-    '王一': update_common_data
-}
-
+# 预加载模板配置，避免每次循环都重新创建
 template_configs = {
     '王工': {
-        'length_desc_row': 81,
-        'end_face_start_row': 149,
-        'energy_absorbing_start_row': 185,
-        'connecting_plate_start_row': 201,
-        'baffle_start_row': 216,
-        'weld_row': 110,
-        'baffle_weld_row': 246,
-        'title_row': 292,
-        'model_row': 294,
-        'plate_type': 1,
-        'csv_file': template_files['王工'],
-        'update_function': update_functions['王工']
+        'csv_file': 'data\\王工.csv',
+        'update_function': update_data1
     },
     '十一': {
-        'length_desc_row': 75,
-        'end_face_start_row': 129,
-        'energy_absorbing_start_row': 157,
-        'connecting_plate_start_row': 170,
-        'baffle_start_row': 181,
-        'weld_row': 103,
-        'baffle_weld_row': 200,
-        'title_row': 247,
-        'model_row': 249,
-        'plate_type': 1,
-        'csv_file': template_files['十一'],
-        'update_function': update_functions['十一']
+        'csv_file': 'data\\十一.csv',
+        'update_function': update_data2
     },
     '王一': {
-        'length_desc_row': 77,
-        'end_face_start_row': 163,
-        'energy_absorbing_start_row': 193,
-        'connecting_plate1_start_row': 309,
-        'connecting_plate2_start_row': 206,
-        'baffle_start_row': 221,
-        'weld_row': 124,
-        'baffle_weld_row': 250,
-        'title_row': 297,
-        'model_row': 299,
-        'plate_type': 2,
-        'csv_file': template_files['王一'],
-        'update_function': update_functions['王一']
+        'csv_file': 'data\\王一.csv',
+        'update_function': update_data3
     }
 }
 
-
-def brb_drawing(data_table):
-    """根据数据表格生成图纸"""
+"""处理参数"""
+def brb_drawing(data_table, project_folder=None):
     # 确保数据表格是列表类型
     if not isinstance(data_table, list):
         data_table = [data_table]
@@ -184,9 +304,12 @@ def brb_drawing(data_table):
                 "thickness": row.get("thickness"),  # 板厚
                 "force": row.get("force"),  # 力
                 "tube_width": row.get("tube_width"),  # 方管宽度
+                "tube_thickness": row.get("tube_thickness"),  # 方管厚度
                 "weld": row.get("weld"),  # 焊缝
+                "core_material": row.get("core_material", "Q235"),  # 芯板材料，默认值Q235
                 "table": row.get("length_quantity", [])  # 长度-数量表格
             }
+            print(parameters["core_material"])
 
             # 验证必要参数是否存在
             if not validate_required_parameters(parameters):
@@ -198,22 +321,22 @@ def brb_drawing(data_table):
                 continue
 
             # 直接使用预加载的模板配置
-            template_config = template_configs.get(parameters["template"])
-            if template_config is None:
+            config = template_configs.get(parameters["template"])
+            if config is None:
                 messagebox.showerror("错误", f"未知的模板类型: {parameters['template']}")
                 continue
 
             # 处理并生成图纸
-            process_and_generate_drawing(parameters, template_config)
+            process_and_generate_drawing(parameters, config, project_folder)
 
         except Exception as e:
             logging.error(f"处理数据行时出错: {str(e)}")
             messagebox.showerror("错误", f"处理数据行时出错: {str(e)}")
 
-
+"""验证必要参数是否存在"""
 def validate_required_parameters(params):
-    """验证必要参数是否存在"""
-    required_params = ["template", "project_name", "width", "height", "thickness", "force", "tube_width", "weld"]
+
+    required_params = ["template", "project_name", "width", "height", "thickness", "force", "tube_width", "tube_thickness", "weld"]
     missing_params = []
 
     for param in required_params:
@@ -225,21 +348,19 @@ def validate_required_parameters(params):
         return False
     return True
 
-
+"""将参数转换为数值类型"""
 def convert_to_numeric(params):
-    """将参数转换为数值类型"""
-    numeric_params = ["width", "height", "thickness", "force", "tube_width", "weld"]
+    numeric_params = ["width", "height", "thickness", "force", "tube_width", "tube_thickness", "weld"]
     for param in numeric_params:
         try:
-            params[param] = float(params[param])
+            params[param] = int(params[param])
         except ValueError:
-            messagebox.showwarning("输入错误", f"'{param}' 必须为有效数字（如 123 或 123.45）！")
+            messagebox.showwarning("输入错误", f"'{param}' 必须为有效整数（如 123 ）！")
             return None
     return params
 
-
-def process_and_generate_drawing(params, config):
-    """处理数据并生成图纸"""
+"""生成图纸"""
+def process_and_generate_drawing(params, config, project_folder=None):
     try:
         # 读取CSV文件
         with open(config['csv_file'], 'r', encoding='utf-8') as file:
@@ -247,19 +368,30 @@ def process_and_generate_drawing(params, config):
             csv_data = list(csv_reader)
 
         # 输入参数并更新数据
-        csv_data = config['update_function'](csv_data, params["project_name"], params["width"],
-                                             params["height"], params["thickness"], params["force"],
-                                             params["tube_width"], params["weld"], params["table"], config)
+            csv_data = config['update_function'](csv_data, params["project_name"], params["width"],
+                                                 params["height"], params["thickness"], params["force"],
+                                                 params["tube_width"], params["tube_thickness"], params["weld"], params["core_material"], params["table"])
 
         # 将修改后的数据写回到 CSV 文件
         with open(config['csv_file'], 'w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerows(csv_data)
 
-        # 调用 csv_to_dxf 函数进行转换，输出 DXF 文件名称为产品型号输入的参数
-        output_dxf_file = f'{params["project_name"]} BRB-{format_number(params["force"])}-L.dxf'
+        # 直接保存到项目文件夹，不弹出选择对话框
+        default_filename = f'{params["project_name"]} BRB-{format_number(params["force"])}-L 方管宽{format_number(params["tube_width"])}.dxf'
+        # 设置保存目录为项目文件夹或当前目录
+        save_dir = project_folder if project_folder else os.getcwd()
+        
+        # 确保保存目录存在
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
+            
+        # 构建完整的保存路径
+        output_dxf_file = os.path.join(save_dir, default_filename)
+        # 执行保存操作
         csv_to_dxf(config['csv_file'], output_dxf_file)
         logging.info(f"图纸生成成功: {output_dxf_file}")
+        # messagebox.showinfo("成功", f"图纸生成成功！文件已保存为: {os.path.basename(output_dxf_file)}")
         # messagebox.showinfo("成功", f"图纸生成成功！文件已保存为: {output_dxf_file}")
 
     except FileNotFoundError:
@@ -270,23 +402,58 @@ def process_and_generate_drawing(params, config):
         messagebox.showerror("错误", f"处理文件时出错: {str(e)}")
 
 
-def format_number(num):
-    """格式化数字，去除多余的零和小数点"""
+"""格式化数字，去除多余的零和小数点"""
+def format_number(num):   
     formatted = "{:.3f}".format(num).rstrip('0').rstrip('.') if isinstance(num, (int, float)) else str(num)
     return formatted
 
 
-
+"""安全地更新单元格值"""
 def update_cell_value(csv_data, row_index, column_map, column_name, value):
-    """安全地更新单元格值"""
     if row_index < len(csv_data) and column_name in column_map:
         csv_data[row_index][column_map[column_name]] = format_number(value)
     else:
         logging.warning(f"无法更新单元格: 行索引 {row_index} 或列名 {column_name} 不存在")
 
+# 限制字符总长，并返回比例和总宽度
+def calculate_dynamic_width(text, max_width=300, base_width_cn=60):
+
+    base_width_en = base_width_cn/2
+
+    # 计算不同类型字符的数量
+    cn_count = 0  # 中文字符数量
+    en_count = 0  # 英文字符数量（包括数字和符号）
+
+    for char in text:
+        # 判断是否为中文字符（Unicode范围：0x4E00-0x9FFF）
+        if 0x4E00 <= ord(char) <= 0x9FFF:
+            cn_count += 1
+        else:
+            en_count += 1
+
+    # 计算总字符数量
+    total_count = cn_count + en_count
+
+    # 估算1倍率下的总宽度
+    estimated_total_length = (cn_count * base_width_cn) + (en_count * base_width_en)
+
+    # 计算动态宽度倍率
+    if total_count > 0 and estimated_total_length > 0:
+        dynamic_multiplier = max_width / estimated_total_length
+        # 限制倍率范围
+        dynamic_multiplier = max(0.3, min(dynamic_multiplier, 0.8))
+    else:
+        dynamic_multiplier = 0.8  # 默认倍率
+
+    true_length = (cn_count * base_width_cn * dynamic_multiplier) + (en_count * base_width_en * dynamic_multiplier)
+
+    # 返回动态倍率和实际宽度
+    return dynamic_multiplier, true_length
 
 # 测试
 if __name__ == "__main__":
+    # 新增：设置工作目录为当前文件所在目录
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     # 配置日志
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -295,17 +462,18 @@ if __name__ == "__main__":
     """
 
     data_table = [{
-        "template": "王一",
-        "project_name": "项目名称",
+        "template": "王工",
+        "core_material": "Q345",  # 芯板材料
+        "project_name": "等等的点点滴滴项目名称",
         "width": 160,  # 截面宽度
         "height": 160,  # 截面高度
         "thickness": 12,  # 板厚
         "force": 2000,  # 力
         "tube_width": 250,  # 方管宽度
-        "weld": 6,  # 焊缝
+        "tube_thickness": 6,  # 方管厚度
+        "weld": 10,  # 焊缝
         "length_quantity": [(5000, 2), (6000, 3)]  # 添加长度-数量表格
     }]
-    print(data_table)
 
     # 调用函数
     brb_drawing(data_table)

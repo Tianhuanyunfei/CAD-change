@@ -41,6 +41,27 @@ def show_and_edit_csv(root):
     edit_window.title(f"编辑 {input_file}")
     edit_window.geometry("800x600")
     edit_window.state('zoomed')
+    
+    # 创建ttk样式
+    style = ttk.Style()
+    # 使用与主程序相同的主题
+    style.theme_use('clam')
+    style.configure('Rounded.TButton', 
+                    borderwidth=3,
+                    relief="raised",  # 凸起立体效果
+                    padding=8,
+                    background="#4a7ba6",  # 更亮的蓝色主题
+                    foreground="white",
+                    font=('Microsoft YaHei', 11, 'bold'),
+                    borderradius=8,
+                    lightcolor="#7ba3c5",  # 相应调整的高光颜色
+                    darkcolor="#375a7f")  # 相应调整的阴影颜色
+    style.map('Rounded.TButton',
+              background=[('active', '#375a7f')],
+              foreground=[('active', 'white')],
+              relief=[('active', 'sunken')],  # 按下时凹陷
+              lightcolor=[('active', '#4a7ba6')],
+              darkcolor=[('active', '#2c435c')])
 
     status_var = tk.StringVar()
     status_label = tk.Label(edit_window, textvariable=status_var, anchor='w')
@@ -51,11 +72,8 @@ def show_and_edit_csv(root):
     # 添加表格
     tree = ttk.Treeview(edit_window, columns=display_headers, show='headings')
 
-    # 创建样式对象
+    # 设置滚动条宽度
     style = ttk.Style()
-    # 尝试更换为clam主题
-    style.theme_use('clam')
-    # 设置垂直滚动条宽度
     style.configure("Custom.Vertical.TScrollbar", thickness=20)
     # 设置水平滚动条宽度
     style.configure("Custom.Horizontal.TScrollbar", thickness=20)
@@ -392,10 +410,12 @@ def show_and_edit_csv(root):
         button_frame = tk.Frame(frame)
         button_frame.pack(side=tk.BOTTOM, fill=tk.X, pady=(10, 0))
 
-        btn_confirm = tk.Button(button_frame, text="确认", command=confirm)
+        btn_confirm = ttk.Button(button_frame, text="确认", command=confirm,
+                               style='Rounded.TButton')
         btn_confirm.pack(side=tk.RIGHT, padx=(5, 0))
 
-        btn_cancel = tk.Button(button_frame, text="取消", command=dialog.destroy)
+        btn_cancel = ttk.Button(button_frame, text="取消", command=dialog.destroy,
+                              style='Rounded.TButton')
         btn_cancel.pack(side=tk.RIGHT, padx=(0, 5))
 
     def delete_column():
@@ -462,10 +482,12 @@ def show_and_edit_csv(root):
         button_frame = tk.Frame(frame)
         button_frame.pack(side=tk.BOTTOM, fill=tk.X, pady=(10, 0))
 
-        btn_confirm = tk.Button(button_frame, text="确认", command=confirm)
+        btn_confirm = tk.Button(button_frame, text="确认", command=confirm,
+                               bd=0, highlightthickness=0, relief="flat", borderwidth=0)
         btn_confirm.pack(side=tk.RIGHT, padx=(5, 0))
 
-        btn_cancel = tk.Button(button_frame, text="取消", command=dialog.destroy)
+        btn_cancel = tk.Button(button_frame, text="取消", command=dialog.destroy,
+                              bd=0, highlightthickness=0, relief="flat", borderwidth=0)
         btn_cancel.pack(side=tk.RIGHT, padx=(0, 5))
 
     def rename_column():
@@ -533,53 +555,65 @@ def show_and_edit_csv(root):
         button_frame = tk.Frame(frame)
         button_frame.pack(side=tk.BOTTOM, fill=tk.X, pady=(10, 0))
 
-        btn_confirm = tk.Button(button_frame, text="确认", command=confirm)
+        btn_confirm = tk.Button(button_frame, text="确认", command=confirm,
+                               bd=0, highlightthickness=0, relief="flat", borderwidth=0)
         btn_confirm.pack(side=tk.RIGHT, padx=(5, 0))
 
-        btn_cancel = tk.Button(button_frame, text="取消", command=dialog.destroy)
+        btn_cancel = tk.Button(button_frame, text="取消", command=dialog.destroy,
+                              bd=0, highlightthickness=0, relief="flat", borderwidth=0)
         btn_cancel.pack(side=tk.RIGHT, padx=(0, 5))
 
     button_frame = tk.Frame(edit_window)
     button_frame.pack(side='bottom', pady=10)
 
     # 添加行按钮
-    add_button = tk.Button(button_frame, text="添加行", command=add_row)
+    add_button = ttk.Button(button_frame, text="添加行", command=add_row,
+                          style='Rounded.TButton')
     add_button.pack(side='left', padx=5)
 
     # 删除行按钮
-    delete_button = tk.Button(button_frame, text="删除选中行", command=delete_selected_row)
+    delete_button = ttk.Button(button_frame, text="删除选中行", command=delete_selected_row,
+                             style='Rounded.TButton')
     delete_button.pack(side='left', padx=5)
 
     # 上移按钮
-    move_up_button = tk.Button(button_frame, text="上移", command=lambda: move_row(-1))
+    move_up_button = ttk.Button(button_frame, text="上移", command=lambda: move_row(-1),
+                             style='Rounded.TButton')
     move_up_button.pack(side='left', padx=5)
 
     # 下移按钮
-    move_down_button = tk.Button(button_frame, text="下移", command=lambda: move_row(1))
+    move_down_button = ttk.Button(button_frame, text="下移", command=lambda: move_row(1),
+                               style='Rounded.TButton')
     move_down_button.pack(side='left', padx=5)
 
     # 添加列按钮
-    add_col_button = tk.Button(button_frame, text="添加列", command=add_column)
+    add_col_button = ttk.Button(button_frame, text="添加列", command=add_column,
+                             style='Rounded.TButton')
     add_col_button.pack(side='left', padx=5)
 
     # 删除列按钮
-    delete_col_button = tk.Button(button_frame, text="删除列", command=delete_column)
+    delete_col_button = ttk.Button(button_frame, text="删除列", command=delete_column,
+                                style='Rounded.TButton')
     delete_col_button.pack(side='left', padx=5)
 
     # 重命名列按钮
-    rename_col_button = tk.Button(button_frame, text="重命名列", command=rename_column)
+    rename_col_button = ttk.Button(button_frame, text="重命名列", command=rename_column,
+                                 style='Rounded.TButton')
     rename_col_button.pack(side='left', padx=5)
 
     # 应用按钮
-    apply_button = tk.Button(button_frame, text="应用", command=lambda: save_csv(close_window=False))
+    apply_button = ttk.Button(button_frame, text="应用", command=lambda: save_csv(close_window=False),
+                            style='Rounded.TButton')
     apply_button.pack(side='left', padx=5)
 
     # 保存按钮
-    save_button = tk.Button(button_frame, text="保存并关闭", command=lambda: save_csv(close_window=True))
+    save_button = ttk.Button(button_frame, text="保存并关闭", command=lambda: save_csv(close_window=True),
+                           style='Rounded.TButton')
     save_button.pack(side='left', padx=5)
 
     # 关闭按钮
-    shut_button = tk.Button(button_frame, text="关闭", command=lambda: edit_window.destroy())
+    shut_button = ttk.Button(button_frame, text="关闭", command=lambda: edit_window.destroy(),
+                          style='Rounded.TButton')
     shut_button.pack(side='left', padx=5)
 
     tree.pack(side='top', fill='both', expand=True)
@@ -674,10 +708,12 @@ def create_new_csv(root):
                 messagebox.showerror("错误", f"创建文件时发生错误: {str(e)}")
                 logging.error(f"创建文件 {file_path} 时发生错误: {str(e)}")
 
-        btn_confirm = tk.Button(button_frame, text="确认", command=confirm_columns)
+        btn_confirm = ttk.Button(button_frame, text="确认", command=confirm_columns,
+                               style='Rounded.TButton')
         btn_confirm.pack(side=tk.RIGHT, padx=(5, 0))
 
-        btn_cancel = tk.Button(button_frame, text="取消", command=dialog.destroy)
+        btn_cancel = ttk.Button(button_frame, text="取消", command=dialog.destroy,
+                              style='Rounded.TButton')
         btn_cancel.pack(side=tk.RIGHT, padx=(0, 5))
 
     except Exception as e:
@@ -689,13 +725,36 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.title("CSV 文件编辑器")
     root.geometry("400x200")
+    
+    # 创建ttk样式
+    style = ttk.Style()
+    # 确保使用支持圆角和立体效果的主题
+    style.theme_use('clam')
+    style.configure('Rounded.TButton', 
+                    borderwidth=3,
+                    relief="raised",  # 凸起立体效果
+                    padding=8,
+                    background="#4a7ba6",  # 更亮的蓝色主题
+                    foreground="white",
+                    font=('Microsoft YaHei', 11, 'bold'),
+                    borderradius=8,
+                    lightcolor="#7ba3c5",  # 相应调整的高光颜色
+                    darkcolor="#375a7f")  # 相应调整的阴影颜色
+    style.map('Rounded.TButton',
+              background=[('active', '#375a7f')],
+              foreground=[('active', 'white')],
+              relief=[('active', 'sunken')],  # 按下时凹陷
+              lightcolor=[('active', '#4a7ba6')],
+              darkcolor=[('active', '#2c435c')])
 
     # 创建一个按钮，点击时调用 show_and_edit_csv 函数
-    open_button = tk.Button(root, text="打开 CSV 文件", command=lambda: show_and_edit_csv(root))
+    open_button = ttk.Button(root, text="打开 CSV 文件", command=lambda: show_and_edit_csv(root),
+                           style='Rounded.TButton')
     open_button.pack(pady=10)
 
     # 创建新CSV文件的按钮
-    new_button = tk.Button(root, text="创建新 CSV 文件", command=lambda: create_new_csv(root))
+    new_button = ttk.Button(root, text="创建新 CSV 文件", command=lambda: create_new_csv(root),
+                          style='Rounded.TButton')
     new_button.pack(pady=10)
 
     root.mainloop()

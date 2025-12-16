@@ -2,7 +2,9 @@ import csv
 import tkinter as tk
 from tkinter import messagebox
 import logging
+import os
 from csv_to_dxf import csv_to_dxf
+from csv_to_dxf import csv_add_dxf
 
 
 # 数字格式化，去除末尾0
@@ -241,6 +243,34 @@ def draw_vfd_design(csv_vfd_design, output_dxf_file, project_name, force, design
         messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
         raise  # 重新抛出异常，让上层调用者处理
 
+
+def draw_vdf_QDE(csv_vfd_QDE, output_dxf_file, project_name, force, design_displacement, offset_x, offset_y):
+    try:
+        # 读取产品图数据
+        with open(csv_vfd_QDE, 'r', encoding='utf-8') as vfd_QDE:
+            csv_reader = csv.reader(vfd_QDE)
+            csv_data_vfd_QDE = list(csv_reader)
+
+        # 结构图数据整体偏移
+        csv_data_vfd_QDE = offset(csv_data_vfd_QDE, offset_x, offset_y)
+
+        # 调用 csv_to_dxf 函数进行转换，输出 DXF 文件名称为产品型号输入的参数
+        input_file = f'{project_name} VFD-{force}-{design_displacement}-前吊耳.csv'
+        with open(input_file, 'w', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerows(csv_data_vfd_QDE)
+
+        # 调用 csv_to_dxf，传递文件路径
+        csv_add_dxf(input_file, output_dxf_file)
+
+
+
+    except (IndexError, ValueError) as e:
+        logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
+        messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
+        raise  # 重新抛出异常，让上层调用者处理
+
+
 # 限制字符总长
 def calculate_dynamic_width(text, max_width=300, base_width_cn=23.7, base_width_en=11.85):
 
@@ -265,7 +295,7 @@ def calculate_dynamic_width(text, max_width=300, base_width_cn=23.7, base_width_
     if total_count > 0 and estimated_total_length > 0:
         dynamic_multiplier = max_width / estimated_total_length
         # 限制倍率范围
-        dynamic_multiplier = max(0.3, min(dynamic_multiplier, 1.0))
+        dynamic_multiplier = max(0.3, min(dynamic_multiplier, 0.7))
     else:
         dynamic_multiplier = 0.7  # 默认倍率
 
@@ -400,7 +430,7 @@ def vfd_drawing(data_table):
                 δdt5 = dt5 - int(row["ex_dt5"])  # 活塞杆到后吊耳距离变化
                 δpiston_width = piston_width - int(row["ex_piston_width"])  # 活塞变化
                 csv_vfd_design = row['产品结构图数据']
-                # csv_vfd_QDL = ['前吊耳数据']
+                csv_vfd_QDE = row['前吊耳']
 
                 # 创建dxf文件
                 output_dxf_file = f'{project_name} VFD-{force}-{design_displacement}.dxf'
@@ -409,7 +439,7 @@ def vfd_drawing(data_table):
                 draw_vfd_design(csv_vfd_design, output_dxf_file, project_name, force, design_displacement, quantity, δpiston_width,
                                                  δdt1, δdt2, δdt3, δdt4, δdt5, 775, 800)
                 # 根据参数更改绘制前吊耳
-                # draw_vdf_QDL(csv_vfd_QDL, output_dxf_file)
+                draw_vdf_QDE(csv_vfd_QDE, output_dxf_file, project_name, force, design_displacement, 160, -500)
 
                 break  # 找到匹配项后跳出循环
 
@@ -423,11 +453,13 @@ def vfd_drawing(data_table):
 
 # 测试
 if __name__ == "__main__":
+    # 新增：设置工作目录为当前文件所在目录
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     # 配置日志
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     data_table = [{
-        "project_name": "这是一个超级长的项目名称",
+        "project_name": "项目名称",
         "force": 400,  # 阻尼力
         "design_displacement": 30,  # 设计位移
         "quantity": 10,  # 数量

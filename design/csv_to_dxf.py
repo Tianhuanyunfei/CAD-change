@@ -8,7 +8,7 @@ import logging
 logging.basicConfig(filename='dxf_csv_conversion.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-
+# 全局缩放因子，默认为5
 global_scale_factor = 5
 
 # 定义默认颜色
@@ -230,10 +230,15 @@ def handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, l
             center = (float(row["圆心 X"]), float(row["圆心 Y"]))
             radius = dim_value
             location = (float(row["位置 X"]), float(row["位置 Y"]))
+            if row["覆盖值"]:
+                dim_text = row["覆盖值"]
+            else:
+                dim_text = row["值"]
             dim = msp.add_radius_dim(
                 center=center,
                 radius=radius,
                 angle=dim_angle,
+                text=dim_text,
                 dimstyle="CUSTOM_DIMSTYLE",
                 # location=location,
                 dxfattribs={"layer": layer, "color": color, "linetype": linetype, "lineweight": lineweight},
@@ -403,7 +408,7 @@ def csv_to_dxf(input_file, output_file):
         # 创建一个新的 DXF 文档
         doc = ezdxf.new("R2018")
         msp = doc.modelspace()
-        draw = drawing(doc, msp, input_file, output_file)
+        drawing(doc, msp, input_file, output_file)
 
     except FileNotFoundError:
         messagebox.showerror("错误", f"文件 {input_file} 未找到")
@@ -419,7 +424,7 @@ def csv_add_dxf(input_file, output_file):
         # 打开一个 DXF 文档
         doc = ezdxf.readfile(output_file)
         msp = doc.modelspace()
-        draw = drawing(doc, msp, input_file, output_file)
+        drawing(doc, msp, input_file, output_file)
 
     except FileNotFoundError:
         messagebox.showerror("错误", f"文件 {input_file} 未找到")
@@ -429,20 +434,38 @@ def csv_add_dxf(input_file, output_file):
         logging.error(f"发生未知错误: {str(e)}")
 
 def drawing(doc, msp, input_file, output_file):
+    global global_scale_factor  # 声明使用全局变量
     # 创建自定义尺寸样式
-    dimstyle = doc.dimstyles.new("CUSTOM_DIMSTYLE", dxfattribs={
-        "dimtxt": 3.5,  # 尺寸文字高度
-        "dimclrd": 3,  # 尺寸文字颜色
-        "dimasz": 5,  # 箭头大小
-        "dimtad": 1,  # 文字垂直位置
-        "dimjust": 0,  # 文字水平位置
-        "dimlwd": 0.25,  # 尺寸线线宽
-        "dimexo": 0,  # 尺寸界线超出尺寸线的距离
-        "dimscale": global_scale_factor,  # 全局比例因子
-        "dimalt": 0,  # 禁用换算单位
-        "dimadec": 3,  # 换算单位小数位数
-        "dimdsep": ord('.')
-    })
+    # 定义标注样式名称
+    dimstyle_name = "CUSTOM_DIMSTYLE"
+    try:
+        # 检查是否已存在同名样式
+        if dimstyle_name in doc.dimstyles:
+            print(f"标注样式 '{dimstyle_name}' 已存在，直接使用")
+            dimstyle = doc.dimstyles.get(dimstyle_name)
+        else:
+            # 创建新样式
+            dimstyle = doc.dimstyles.new(dimstyle_name, dxfattribs={
+                "dimtxt": 3.5,          # 尺寸文本高度为3.5个绘图单位
+                "dimclrd": 3,           # 尺寸线和尺寸界线的颜色，值3通常代表绿色(根据CAD颜色索引表)
+                "dimasz": 3,            # 尺寸箭头大小为3个绘图单位
+                "dimtad": 1,            # 尺寸文本垂直位置：1=上方(相对于尺寸线)
+                "dimjust": 0,           # 尺寸文本水平对齐：0=左对齐
+                "dimlwd": 0.25,         # 尺寸线和尺寸界线的线宽为0.25个单位
+                "dimexo": 0,            # 尺寸界线超出尺寸线的长度为0
+                "dimscale": global_scale_factor,  # 尺寸标注全局比例因子，与图纸打印比例相关
+                "dimalt": 0,            # 是否启用替代单位：0=不启用
+                "dimadec": 3,           # 尺寸标注的小数位数精度：保留3位小数
+                "dimdsep": ord('.'),    # 尺寸标注的小数分隔符：使用英文句号(ASCII码值46)
+                # 其他可选参数...
+            })
+            print(f"成功创建标注样式 '{dimstyle_name}'")
+
+    except Exception as e:
+        print(f"处理标注样式时出错: {e}")
+        # 可选：回退到默认样式
+        dimstyle = doc.dimstyles.get("Standard")
+
 
     layer_dict = {}
 
@@ -453,6 +476,42 @@ def drawing(doc, msp, input_file, output_file):
     # 第一次遍历整个csv表格
     for line_num, row in enumerate(data, start=2):  # 从第 2 行开始计数
         line_num -= 1
+
+        if row["实体类型"] == "dimstyle":
+            dimstyle_name = row["类型/名称"]
+            if dimstyle_name in doc.dimstyles:
+                print(f"标注样式 '{dimstyle_name}' 已存在，直接使用")
+                dimstyle = doc.dimstyles.get(dimstyle_name)
+            else:
+                try:
+                    # 尝试从CSV获取缩放比例，如果失败则使用默认值
+                    scale_factor = float(row["缩放比例"])
+                except (ValueError, KeyError):
+                    scale_factor = global_scale_factor  # 使用默认值
+                    print(f"警告：无法获取有效的缩放比例，使用默认值 {scale_factor}")
+                
+                # 创建新样式
+                dimstyle = doc.dimstyles.new(dimstyle_name, dxfattribs={
+                    "dimtxt": 3.5,  # 尺寸文本高度为3.5个绘图单位
+                    "dimclrd": 3,  # 尺寸线和尺寸界线的颜色，值3通常代表绿色(根据CAD颜色索引表)
+                    "dimasz": 3,  # 尺寸箭头大小为3个绘图单位
+                    "dimtad": 1,  # 尺寸文本垂直位置：1=上方(相对于尺寸线)
+                    "dimjust": 0,  # 尺寸文本水平对齐：0=左对齐
+                    "dimlwd": 0.25,  # 尺寸线和尺寸界线的线宽为0.25个单位
+                    "dimexo": 0,  # 尺寸界线超出尺寸线的长度为0
+                    "dimscale": scale_factor,  # 使用获取的缩放比例
+                    "dimalt": 0,  # 是否启用替代单位：0=不启用
+                    "dimadec": 3,  # 尺寸标注的小数位数精度：保留3位小数
+                    "dimdsep": ord('.'),  # 尺寸标注的小数分隔符：使用英文句号(ASCII码值46)
+                    # 其他可选参数...
+                })
+                print(f"成功创建标注样式 '{dimstyle_name}'")
+
+
+
+
+
+
         # 首先读取图层信息
         if row["实体类型"] == "图层":
             layer = row["图层"]

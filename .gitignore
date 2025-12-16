@@ -1,0 +1,48 @@
+# IDE配置文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python相关文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 日志文件
+*.log
+logs/
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 测试文件
+*.pyc
+*.pyo
+*.pyd
+
+# 其他临时文件
+*.tmp
+*.temp
+.cache/
