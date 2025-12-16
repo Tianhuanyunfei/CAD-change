@@ -2070,3 +2070,123 @@
 2025-12-16 14:42:52,116 - INFO - D:/Python/CAD-change/design/data/王工.dxf 已成功转换为 D:/Python/CAD-change/design/data/王工.csv (DXF to CSV)
 2025-12-16 14:42:59,769 - INFO - creating ACAD_COLOR dictionary
 2025-12-16 14:43:00,667 - INFO - D:/Python/CAD-change/design/data/王一.dxf 已成功转换为 D:/Python/CAD-change/design/data/王一.csv (DXF to CSV)
+2025-12-16 16:54:45,455 - INFO - creating ACAD_COLOR dictionary
+2025-12-16 16:54:45,457 - INFO - creating ACAD_GROUP dictionary
+2025-12-16 16:54:45,457 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-16 16:54:45,457 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-16 16:54:45,457 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-16 16:54:45,457 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-16 16:54:45,457 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-16 16:54:45,457 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-16 16:54:45,458 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-16 16:54:45,458 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-16 16:54:45,458 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-16 16:54:45,501 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-16 16:54:45,501 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-16 16:54:45,538 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-4500-L 方管宽350.dxf (CSV to DXF)
+2025-12-16 16:54:45,539 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-4500-L 方管宽350.dxf
+2025-12-16 16:54:45,542 - INFO - creating ACAD_COLOR dictionary
+2025-12-16 16:54:45,542 - INFO - creating ACAD_GROUP dictionary
+2025-12-16 16:54:45,542 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-16 16:54:45,542 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-16 16:54:45,542 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-16 16:54:45,542 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-16 16:54:45,542 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-16 16:54:45,542 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-16 16:54:45,542 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-16 16:54:45,543 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-16 16:54:45,543 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-16 16:54:45,578 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-16 16:54:45,578 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-16 16:54:45,615 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-3000-L 方管宽300.dxf (CSV to DXF)
+2025-12-16 16:54:45,616 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-3000-L 方管宽300.dxf
+2025-12-16 16:54:45,618 - INFO - creating ACAD_COLOR dictionary
+2025-12-16 16:54:45,618 - INFO - creating ACAD_GROUP dictionary
+2025-12-16 16:54:45,618 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-16 16:54:45,618 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-16 16:54:45,619 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-16 16:54:45,619 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-16 16:54:45,619 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-16 16:54:45,619 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-16 16:54:45,619 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-16 16:54:45,619 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-16 16:54:45,619 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-16 16:54:45,656 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-16 16:54:45,656 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-16 16:54:45,693 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1500-L 方管宽200.dxf (CSV to DXF)
+2025-12-16 16:54:45,693 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1500-L 方管宽200.dxf
+2025-12-16 16:54:45,696 - INFO - creating ACAD_COLOR dictionary
+2025-12-16 16:54:45,696 - INFO - creating ACAD_GROUP dictionary
+2025-12-16 16:54:45,696 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-16 16:54:45,696 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-16 16:54:45,696 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-16 16:54:45,696 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-16 16:54:45,698 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-16 16:54:45,698 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-16 16:54:45,698 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-16 16:54:45,698 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-16 16:54:45,698 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-16 16:54:45,734 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-16 16:54:45,735 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-16 16:54:45,772 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf (CSV to DXF)
+2025-12-16 16:54:45,772 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf
+2025-12-16 16:56:57,144 - INFO - creating ACAD_COLOR dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_GROUP dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-16 16:56:57,144 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-16 16:56:57,145 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-16 16:56:57,185 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-16 16:56:57,185 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-16 16:56:57,220 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-4500-L 方管宽350.dxf (CSV to DXF)
+2025-12-16 16:56:57,300 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-4500-L 方管宽350.dxf
+2025-12-16 16:56:57,311 - INFO - creating ACAD_COLOR dictionary
+2025-12-16 16:56:57,311 - INFO - creating ACAD_GROUP dictionary
+2025-12-16 16:56:57,311 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-16 16:56:57,311 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-16 16:56:57,311 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-16 16:56:57,311 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-16 16:56:57,312 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-16 16:56:57,312 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-16 16:56:57,312 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-16 16:56:57,312 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-16 16:56:57,312 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-16 16:56:57,354 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-16 16:56:57,354 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-16 16:56:57,390 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-3000-L 方管宽300.dxf (CSV to DXF)
+2025-12-16 16:56:57,390 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-3000-L 方管宽300.dxf
+2025-12-16 16:56:57,393 - INFO - creating ACAD_COLOR dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_GROUP dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-16 16:56:57,393 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-16 16:56:57,421 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-16 16:56:57,421 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-16 16:56:57,455 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1500-L 方管宽200.dxf (CSV to DXF)
+2025-12-16 16:56:57,456 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1500-L 方管宽200.dxf
+2025-12-16 16:56:57,458 - INFO - creating ACAD_COLOR dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_GROUP dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-16 16:56:57,458 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-16 16:56:57,459 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-16 16:56:57,488 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-16 16:56:57,488 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-16 16:56:57,528 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf (CSV to DXF)
+2025-12-16 16:56:57,530 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf
