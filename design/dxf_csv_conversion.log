@@ -2190,3 +2190,837 @@
 2025-12-16 16:56:57,488 - INFO - did not write header var $INTERFEREVPVS, value is None.
 2025-12-16 16:56:57,528 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf (CSV to DXF)
 2025-12-16 16:56:57,530 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf
+2025-12-18 15:21:49,504 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 15:21:49,506 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 15:21:49,506 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 15:21:49,506 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 15:21:49,506 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 15:21:49,506 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 15:21:49,506 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 15:21:49,506 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 15:21:49,507 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 15:21:49,507 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 15:21:49,507 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 15:21:49,560 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-18 15:21:49,560 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-18 15:21:49,598 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 C:/Users/wfei0/Desktop/123.dxf (CSV to DXF)
+2025-12-18 16:15:17,399 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:15:17,400 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:15:17,400 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:15:17,400 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:15:17,400 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:15:17,400 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:15:17,400 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:15:17,400 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:15:17,400 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:15:17,401 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:15:17,401 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:15:17,438 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-18 16:15:17,438 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-18 16:15:17,475 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 C:/Users/wfei0/Desktop/111.dxf (CSV to DXF)
+2025-12-18 16:21:58,323 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:21:58,324 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:21:58,324 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:21:58,324 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:21:58,324 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:21:58,324 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:21:58,324 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:21:58,325 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:21:58,325 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:21:58,325 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:21:58,325 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:21:58,364 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-18 16:21:58,364 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-18 16:21:58,404 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-18 16:27:28,294 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:27:28,295 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:27:28,295 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:27:28,295 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:27:28,295 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:27:28,295 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:27:28,295 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:27:28,296 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:27:28,296 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:27:28,296 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:27:28,296 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:27:28,332 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-18 16:27:28,332 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-18 16:27:28,371 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-18 16:48:02,924 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:48:02,925 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:48:02,926 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:48:02,962 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-18 16:48:02,962 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-18 16:48:03,000 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-18 16:49:37,096 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:49:37,097 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:49:37,097 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:49:37,097 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:49:37,097 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:49:37,098 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:49:37,098 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:49:37,098 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:49:37,098 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:49:37,098 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:49:37,098 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:49:37,135 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-18 16:49:37,135 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-18 16:49:37,172 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-18 16:49:55,550 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:49:55,551 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:49:55,552 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:49:55,587 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-18 16:49:55,587 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-18 16:49:55,624 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-18 16:51:04,690 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:51:04,691 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:51:04,691 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:51:04,691 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:51:04,691 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:51:04,691 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:51:04,691 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:51:04,691 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:51:04,692 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:51:04,692 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:51:04,692 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:51:04,729 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-18 16:51:04,729 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-18 16:51:04,768 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-18 16:52:57,004 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:52:57,005 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:53:01,855 - ERROR - 发生未知错误: local variable 'scale_factor' referenced before assignment
+2025-12-18 16:53:56,097 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:53:56,098 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:54:03,757 - ERROR - 发生未知错误: local variable 'scale_factor' referenced before assignment
+2025-12-18 16:54:47,081 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:54:47,082 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:54:47,082 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:54:47,082 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:54:47,082 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:54:47,082 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:54:47,082 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:54:47,082 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:54:47,083 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:54:47,083 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:54:47,083 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:54:48,791 - ERROR - 发生未知错误: local variable 'scale_factor' referenced before assignment
+2025-12-18 16:56:50,738 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:56:50,739 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:56:50,739 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:56:50,739 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:56:50,739 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:56:50,739 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:56:50,739 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:56:50,739 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:56:50,739 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:56:50,740 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:56:50,740 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:56:52,128 - ERROR - 发生未知错误: local variable 'scale_factor' referenced before assignment
+2025-12-18 16:57:09,176 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:57:09,177 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:57:09,177 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:57:09,177 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:57:09,177 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:57:09,177 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:57:09,177 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:57:09,177 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:57:09,177 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:57:09,178 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:57:09,178 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:57:10,400 - ERROR - 发生未知错误: local variable 'scale_factor' referenced before assignment
+2025-12-18 16:58:27,598 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:58:27,599 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:58:27,599 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:58:27,599 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:58:27,599 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:58:27,599 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:58:27,599 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:58:27,599 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:58:27,599 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:58:27,600 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:58:27,600 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:58:29,024 - ERROR - 发生未知错误: local variable 'scale_factor' referenced before assignment
+2025-12-18 16:59:52,348 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 16:59:52,349 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 16:59:52,349 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 16:59:52,349 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 16:59:52,349 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 16:59:52,349 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 16:59:52,350 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 16:59:52,350 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 16:59:52,350 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 16:59:52,350 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 16:59:52,350 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 16:59:58,256 - ERROR - 发生未知错误: local variable 'scale_factor' referenced before assignment
+2025-12-18 17:00:20,363 - INFO - creating ACAD_COLOR dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_GROUP dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-18 17:00:20,365 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-18 17:00:29,968 - ERROR - 发生未知错误: local variable 'scale_factor' referenced before assignment
+2025-12-23 13:51:22,905 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 13:51:22,905 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 13:51:22,905 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 13:51:22,905 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 13:51:22,905 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 13:51:22,905 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 13:51:22,905 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 13:51:22,905 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 13:51:22,909 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 13:51:22,909 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 13:51:22,909 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 13:51:26,782 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 24 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:34,639 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 25 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:35,239 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 26 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:35,709 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 54 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:36,157 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 55 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:36,621 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 70 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:37,063 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 71 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:37,508 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 73 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:37,773 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 76 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:38,012 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 125 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:38,228 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 155 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:38,452 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 156 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:38,789 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 157 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:40,037 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 158 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:41,314 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 159 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:41,600 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 160 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:41,871 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 161 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:42,903 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 162 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:43,587 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 193 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:43,894 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 194 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:44,131 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 205 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:44,347 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 206 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:44,512 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 211 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:44,707 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 213 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:44,883 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 214 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:45,046 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 221 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:45,294 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 222 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:45,515 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 223 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:45,720 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 224 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:45,943 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 227 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:46,194 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 228 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:46,418 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 308 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:46,784 - WARNING - 文件 D:/Python/CAD-change/design/data/王一.csv 第 309 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:51:46,790 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 13:51:46,790 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 13:51:46,814 - INFO - D:/Python/CAD-change/design/data/王一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 13:52:50,453 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 13:52:50,455 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 13:52:50,455 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 13:52:50,455 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 13:52:50,455 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 13:52:50,456 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 13:52:50,456 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 13:52:50,456 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 13:52:50,456 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 13:52:50,456 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 13:52:50,456 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 13:53:00,614 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 24 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:01,125 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 25 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:01,325 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 26 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:01,517 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 50 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:01,699 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 51 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:01,877 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 66 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:02,050 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 67 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:02,244 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 69 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:02,437 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 74 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:02,630 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 104 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:02,812 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 129 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:02,997 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 130 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:03,205 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 131 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:03,363 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 132 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:03,556 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 133 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:03,750 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 134 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:03,940 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 157 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:04,157 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 158 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:04,349 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 169 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:04,550 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 170 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:04,757 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 175 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:04,965 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 177 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:05,171 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 178 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:05,389 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 181 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:05,592 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 182 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:05,788 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 185 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:05,996 - WARNING - 文件 D:/Python/CAD-change/design/data/十一.csv 第 186 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:53:06,002 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 13:53:06,002 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 13:53:06,019 - INFO - D:/Python/CAD-change/design/data/十一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 13:56:16,028 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 13:56:16,029 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 13:56:16,030 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 13:56:18,554 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 24 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:19,056 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 25 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:19,446 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 26 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:19,741 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 56 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:24,117 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 57 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:24,286 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 72 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:24,470 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 73 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:24,656 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 75 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:25,037 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 80 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:25,366 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 111 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:25,884 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 149 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:26,389 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 150 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:26,862 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 151 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:27,380 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 152 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:27,958 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 153 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:28,397 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 154 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:28,646 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 155 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:28,870 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 156 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:29,343 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 185 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:29,670 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 186 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:29,878 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 187 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:30,077 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 188 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:30,268 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 189 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:30,483 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 200 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:30,670 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 201 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:30,852 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 206 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:31,038 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 208 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:31,214 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 209 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:31,406 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 216 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:31,590 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 217 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:31,768 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 218 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:31,946 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 219 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:32,126 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 222 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:32,310 - WARNING - 文件 D:/Python/CAD-change/design/data/王工.csv 第 223 行发生未知错误: handle_dimension() missing 1 required positional argument: 'dimstyle_name'，将略过此数据。
+2025-12-23 13:56:32,316 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 13:56:32,316 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 13:56:32,333 - INFO - D:/Python/CAD-change/design/data/王工.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 13:59:33,654 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 13:59:33,655 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 13:59:33,694 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 13:59:33,694 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 13:59:33,731 - INFO - D:/Python/CAD-change/design/data/王工.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 14:24:06,247 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:24:06,249 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:24:11,187 - ERROR - 发生未知错误: 'str' object does not support item assignment
+2025-12-23 14:24:22,731 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:24:22,731 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:24:22,732 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:24:30,710 - ERROR - 发生未知错误: 'str' object does not support item assignment
+2025-12-23 14:25:05,201 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:25:05,201 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:25:05,201 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:25:05,201 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:25:05,201 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:25:05,201 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:25:05,203 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:25:05,203 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:25:05,203 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:25:05,203 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:25:05,203 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:25:06,823 - ERROR - 发生未知错误: 'str' object does not support item assignment
+2025-12-23 14:28:47,466 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:28:47,467 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:28:47,467 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:28:47,467 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:28:47,467 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:28:47,467 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:28:47,467 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:28:47,467 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:28:47,467 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:28:47,468 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:28:47,468 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:28:49,608 - ERROR - 发生未知错误: 'str' object does not support item assignment
+2025-12-23 14:31:18,607 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:31:18,608 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:31:20,240 - ERROR - 发生未知错误: 'str' object does not support item assignment
+2025-12-23 14:33:14,623 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:33:14,624 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:33:58,746 - ERROR - 发生未知错误: float() argument must be a string or a real number, not 'NoneType'
+2025-12-23 14:36:12,247 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:36:12,248 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:36:19,385 - ERROR - 发生未知错误: float() argument must be a string or a real number, not 'NoneType'
+2025-12-23 14:36:56,123 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:36:56,123 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:36:56,124 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:37:03,068 - ERROR - 发生未知错误: float() argument must be a string or a real number, not 'NoneType'
+2025-12-23 14:37:59,106 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:37:59,107 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:37:59,107 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:37:59,107 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:37:59,107 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:37:59,107 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:37:59,107 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:37:59,107 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:37:59,108 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:37:59,108 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:37:59,108 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:38:13,760 - ERROR - 发生未知错误: float() argument must be a string or a real number, not 'NoneType'
+2025-12-23 14:43:54,809 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:43:54,811 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:44:00,178 - WARNING - 文件 D:/Python/CAD-change/design/data/十一 copy.csv 第 253 行发生未知错误: invalid literal for int() with base 10: ''，将略过此数据。
+2025-12-23 14:44:00,183 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 14:44:00,183 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 14:44:00,214 - INFO - D:/Python/CAD-change/design/data/十一 copy.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 14:46:32,560 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:46:32,560 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:46:41,380 - WARNING - 文件 D:/Python/CAD-change/design/data/十一 copy.csv 第 253 行发生未知错误: invalid literal for int() with base 10: ''，将略过此数据。
+2025-12-23 14:46:41,385 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 14:46:41,385 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 14:46:41,421 - INFO - D:/Python/CAD-change/design/data/十一 copy.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 14:50:15,700 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:50:15,701 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:50:17,323 - WARNING - 文件 D:/Python/CAD-change/design/data/十一 copy.csv 第 253 行发生未知错误: invalid literal for int() with base 10: ''，将略过此数据。
+2025-12-23 14:50:17,328 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 14:50:17,328 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 14:50:17,361 - INFO - D:/Python/CAD-change/design/data/十一 copy.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 14:55:32,903 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:55:32,904 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:55:32,940 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 14:55:32,941 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 14:55:32,978 - INFO - D:/Python/CAD-change/design/data/王工.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 14:57:02,981 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:57:02,982 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:57:02,983 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 14:57:07,604 - WARNING - 文件 D:/Python/CAD-change/design/data/十一 copy.csv 第 253 行发生未知错误: invalid literal for int() with base 10: ''，将略过此数据。
+2025-12-23 14:57:07,610 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 14:57:07,610 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 14:57:07,645 - INFO - D:/Python/CAD-change/design/data/十一 copy.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 14:59:13,857 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 14:59:13,858 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:07:22,200 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:07:22,201 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:07:22,201 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:07:22,201 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:07:22,201 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:07:22,201 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:07:22,202 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:07:22,202 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:07:22,202 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:07:22,202 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:07:22,202 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:07:22,243 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:07:22,243 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:07:22,281 - INFO - D:/Python/CAD-change/design/data/王工.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 15:07:35,122 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:07:35,122 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:07:35,123 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:07:38,986 - WARNING - 文件 D:/Python/CAD-change/design/data/十一 copy.csv 第 253 行发生未知错误: invalid literal for int() with base 10: ''，将略过此数据。
+2025-12-23 15:07:38,991 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:07:38,991 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:07:39,035 - INFO - D:/Python/CAD-change/design/data/十一 copy.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 15:07:59,372 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:07:59,372 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:07:59,373 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:18:06,949 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:18:06,949 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:18:06,949 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:18:06,949 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:18:06,949 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:18:06,949 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:18:06,950 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:18:06,950 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:18:06,950 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:18:06,950 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:18:06,950 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:18:06,988 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:18:06,988 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:18:07,017 - INFO - data/十一 copy.csv 已成功转换为 test_output.dxf (CSV to DXF)
+2025-12-23 15:19:25,013 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:19:25,014 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:19:25,014 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:19:25,014 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:19:25,014 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:19:25,014 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:19:25,014 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:19:25,014 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:19:25,015 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:19:25,015 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:19:25,015 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:19:25,049 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:19:25,049 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:19:25,083 - INFO - D:/Python/CAD-change/design/data/十一 copy.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 15:20:23,810 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:20:23,811 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:20:23,811 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:20:23,811 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:20:23,811 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:20:23,811 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:20:23,811 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:20:23,812 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:20:23,812 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:20:23,812 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:20:23,812 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:20:23,843 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:20:23,843 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:20:23,880 - INFO - D:/Python/CAD-change/design/data/十一.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 15:25:54,082 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:25:54,082 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:25:54,082 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:25:54,082 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:25:54,082 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:25:54,082 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:25:54,082 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:25:54,082 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:25:54,082 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:25:54,086 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:25:54,086 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:26:05,714 - ERROR - 文件 design/data/十一 copy.csv 未找到
+2025-12-23 15:27:12,964 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:27:12,964 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:27:12,964 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:27:12,965 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:27:12,965 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:27:12,965 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:27:12,965 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:27:12,965 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:27:12,965 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:27:12,965 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:27:12,965 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:27:13,001 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:27:13,001 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:27:13,033 - INFO - data/十一 copy.csv 已成功转换为 test_output.dxf (CSV to DXF)
+2025-12-23 15:28:23,928 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:28:23,928 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:28:23,975 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:28:23,975 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:28:24,008 - INFO - data/十一 copy.csv 已成功转换为 test_output.dxf (CSV to DXF)
+2025-12-23 15:42:04,094 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:42:04,094 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:42:04,146 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:42:04,146 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:42:04,179 - INFO - data/十一 copy.csv 已成功转换为 test_output.dxf (CSV to DXF)
+2025-12-23 15:43:11,879 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:43:11,879 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:43:11,926 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:43:11,926 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:43:11,952 - INFO - data/十一 copy.csv 已成功转换为 test_output.dxf (CSV to DXF)
+2025-12-23 15:49:32,294 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:49:32,294 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:49:32,336 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:49:32,337 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:49:32,370 - INFO - data/十一 copy.csv 已成功转换为 test_output.dxf (CSV to DXF)
+2025-12-23 15:50:34,631 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 15:50:34,631 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 15:50:40,904 - WARNING - 文件 test_multiple_dimstyles.csv 第 6 行的 LINE 实体坐标字段包含无效数据，将略过此数据。
+2025-12-23 15:50:41,666 - WARNING - 文件 test_multiple_dimstyles.csv 第 7 行的 LINE 实体坐标字段包含无效数据，将略过此数据。
+2025-12-23 15:50:42,120 - WARNING - 文件 test_multiple_dimstyles.csv 第 8 行的 DIMENSION 实体线性尺寸坐标字段包含无效数据，将略过此数据。
+2025-12-23 15:50:42,124 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 15:50:42,124 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 15:50:42,128 - INFO - test_multiple_dimstyles.csv 已成功转换为 test_multiple_dimstyles.dxf (CSV to DXF)
+2025-12-23 16:09:14,636 - ERROR - 文件 design/data/十一 copy.dxf 未找到或不是有效的 DXF 文件
+2025-12-23 16:16:38,597 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:16:39,920 - INFO - D:/Python/CAD-change/design/data/十一.dxf 已成功转换为 D:/Python/CAD-change/design/data/十一test.csv (DXF to CSV)
+2025-12-23 16:29:18,833 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:36:02,690 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:36:03,743 - INFO - D:/Python/CAD-change/design/data/十一.dxf 已成功转换为 D:/Python/CAD-change/design/data/十一test.csv (DXF to CSV)
+2025-12-23 16:43:48,147 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:43:49,358 - INFO - D:/Python/CAD-change/design/data/十一.dxf 已成功转换为 D:/Python/CAD-change/design/data/十一test.csv (DXF to CSV)
+2025-12-23 16:44:35,265 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 16:44:35,266 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 16:44:35,301 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 16:44:35,301 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 16:44:35,337 - INFO - D:/Python/CAD-change/design/data/十一test.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 16:55:52,685 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:55:52,685 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 16:55:52,686 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 16:55:52,729 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 16:55:52,729 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 16:55:52,764 - INFO - D:/Python/CAD-change/design/data/十一test.csv 已成功转换为 D:/Python/CAD-change/design/data/123.dxf (CSV to DXF)
+2025-12-23 16:56:56,188 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:56:57,277 - INFO - D:/Python/CAD-change/design/data/十一.dxf 已成功转换为 D:/Python/CAD-change/design/data/十一.csv (DXF to CSV)
+2025-12-23 16:57:06,135 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:57:07,049 - INFO - D:/Python/CAD-change/design/data/王工.dxf 已成功转换为 D:/Python/CAD-change/design/data/王工.csv (DXF to CSV)
+2025-12-23 16:57:15,582 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:57:16,473 - INFO - D:/Python/CAD-change/design/data/王一.dxf 已成功转换为 D:/Python/CAD-change/design/data/王一.csv (DXF to CSV)
+2025-12-23 16:57:58,285 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 16:57:58,286 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 16:57:58,339 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 16:57:58,339 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 16:57:58,372 - INFO - data\十一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-4500-L 方管宽350.dxf (CSV to DXF)
+2025-12-23 16:57:58,372 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-4500-L 方管宽350.dxf
+2025-12-23 16:57:58,375 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:57:58,375 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 16:57:58,375 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 16:57:58,375 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 16:57:58,375 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 16:57:58,375 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 16:57:58,375 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 16:57:58,375 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 16:57:58,375 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 16:57:58,376 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 16:57:58,376 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 16:57:58,412 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 16:57:58,412 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 16:57:58,451 - INFO - data\王工.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-3000-L 方管宽300.dxf (CSV to DXF)
+2025-12-23 16:57:58,451 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-3000-L 方管宽300.dxf
+2025-12-23 16:57:58,455 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 16:57:58,455 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 16:57:58,495 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 16:57:58,495 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 16:57:58,534 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1500-L 方管宽200.dxf (CSV to DXF)
+2025-12-23 16:57:58,534 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1500-L 方管宽200.dxf
+2025-12-23 16:57:58,537 - INFO - creating ACAD_COLOR dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_GROUP dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_LAYOUT dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_MATERIAL dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_MLINESTYLE dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_SCALELIST dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_TABLESTYLE dictionary
+2025-12-23 16:57:58,537 - INFO - creating ACAD_VISUALSTYLE dictionary
+2025-12-23 16:57:58,574 - INFO - did not write header var $INTERFEREOBJVS, value is None.
+2025-12-23 16:57:58,574 - INFO - did not write header var $INTERFEREVPVS, value is None.
+2025-12-23 16:57:58,618 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf (CSV to DXF)
+2025-12-23 16:57:58,618 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf

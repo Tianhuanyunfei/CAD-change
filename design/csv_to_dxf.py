@@ -16,9 +16,183 @@ def handle_color(color):
     if color == 'BYLAYER':
         return 256
     try:
-        return int(color)
-    except ValueError:
+        return int(color) if color is not None else 256
+    except (ValueError, TypeError):
         return 256
+
+# 安全转换数值函数
+def safe_float(value, default=0.0):
+    try:
+        return float(value) if value is not None else default
+    except (ValueError, TypeError):
+        return default
+
+# csv转dxf主函数，创建新的DXF文档
+def csv_to_dxf(input_file, output_file):
+    try:
+        # 创建一个新的 DXF 文档
+        doc = ezdxf.new("R2018")
+        msp = doc.modelspace()
+        drawing(doc, msp, input_file, output_file)
+
+    except FileNotFoundError:
+        messagebox.showerror("错误", f"文件 {input_file} 未找到")
+        logging.error(f"文件 {input_file} 未找到")
+    except Exception as e:
+        messagebox.showerror("错误", f"发生未知错误: {str(e)}")
+        logging.error(f"发生未知错误: {str(e)}")
+
+
+# csv转dxf主函数，添加到已有的DXF文档
+def csv_add_dxf(input_file, output_file):
+    try:
+        # 打开一个 DXF 文档
+        doc = ezdxf.readfile(output_file)
+        msp = doc.modelspace()
+        drawing(doc, msp, input_file, output_file)
+
+    except FileNotFoundError:
+        messagebox.showerror("错误", f"文件 {input_file} 未找到")
+        logging.error(f"文件 {input_file} 未找到")
+    except Exception as e:
+        messagebox.showerror("错误", f"发生未知错误: {str(e)}")
+        logging.error(f"发生未知错误: {str(e)}")
+
+# 绘制函数，用于绘制实体到DXF文档，根据输入文件类型选择不同的绘制方法
+def drawing(doc, msp, input_file, output_file):
+    global global_scale_factor  # 声明使用全局变量
+    layer_dict = {}
+    dimstyles_dict = {}  # 存储所有dimstyle
+    scale_factor = global_scale_factor  # 初始化缩放比例为全局默认值
+
+    with open(input_file, 'r', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        data = list(reader)
+
+    # 第一次遍历整个csv表格，仅处理 dimstyle 与图层信息
+    dimstyle_name = ""  # 用于存储默认dimstyle名称
+    for line_num, row in enumerate(data, start=2):  # 从第 2 行开始计数
+        line_num -= 1
+       
+        # 首先读取图层信息
+        if row["实体类型"] == "图层":
+            layer = row["图层"]
+            color = handle_color(row["颜色"])
+            linetype = row["线型"]
+            lineweight = int(row["线宽"])
+            linetype_description = row["线型描述"]
+            linetype_pattern_str = row["线型图案"]
+            linetype_pattern = handle_linetype_pattern(linetype_pattern_str, linetype, input_file, layer)
+            create_layer(doc, layer, color, linetype, lineweight, linetype_description, linetype_pattern,
+                         input_file)
+            layer_dict[layer] = (color, linetype, lineweight)
+
+        # 处理标注样式
+        if row["实体类型"] == "dimstyle":
+            current_dimstyle_name = row["类型/名称"]
+            # 解析dimstyle属性并替换scale_factor变量
+            dim_attribs_str = row["值"]
+            dim_attribs_str = dim_attribs_str.replace('scale_factor', str(scale_factor))
+            current_dxf_attribs = eval(dim_attribs_str)
+            # 将dimstyle存储到字典中
+            dimstyles_dict[current_dimstyle_name] = current_dxf_attribs
+            # 将最后一个遇到的dimstyle设置为默认dimstyle
+            dimstyle_name = current_dimstyle_name
+            dxf_attribs = current_dxf_attribs                         
+
+    
+    # 创建默认的dimstyle    
+    if dimstyle_name == "":
+        dimstyle_name = "CUSTOM_DIMSTYLE"
+        dxf_attribs = {
+                    "dimtxt": 3.5,  # 尺寸文本高度为3.5个绘图单位
+                    "dimclrd": 3,  # 尺寸线和尺寸界线的颜色，值3通常代表绿色(根据CAD颜色索引表)
+                    "dimasz": 3,  # 尺寸箭头大小为3个绘图单位
+                    "dimtad": 1,  # 尺寸文本垂直位置：1=上方(相对于尺寸线)
+                    "dimjust": 0,  # 尺寸文本水平对齐：0=左对齐
+                    "dimlwd": 0.25,  # 尺寸线和尺寸界线的线宽为0.25个单位
+                    "dimexo": 0,  # 尺寸界线超出尺寸线的长度为0
+                    "dimscale": scale_factor,  # 使用获取的缩放比例
+                    "dimalt": 0,  # 是否启用替代单位：0=不启用
+                    "dimadec": 3,  # 尺寸标注的小数位数精度：保留3位小数
+                    "dimdsep": ord('.'),  # 尺寸标注的小数分隔符：使用英文句号(ASCII码值46)
+                    # 其他可选参数...
+                }
+    
+
+    # 将默认dimstyle添加到字典中
+    if dimstyle_name not in dimstyles_dict:
+        dimstyles_dict[dimstyle_name] = dxf_attribs
+    
+    # 创建所有dimstyle
+    for name, attribs in dimstyles_dict.items():
+        # 检查dimstyle是否已存在
+        if name not in doc.dimstyles:
+            doc.dimstyles.new(name, dxfattribs=attribs)
+        else:
+            # 如果已存在，可以选择更新属性或跳过
+            print(f"dimstyle '{name}' 已存在，将跳过创建")
+
+
+    # 第二次遍历，处理实体
+    for line_num, row in enumerate(data, start=2):
+        line_num -= 1
+        # 读取非块元素
+        if not row["块名"]:
+            try:
+                entity_type = row["实体类型"]
+                layer = row["图层"]
+                color = handle_color(row["颜色"])
+                linetype = row["线型"]
+                try:
+                    lineweight = int(row["线宽"]) if row["线宽"] else -1
+                except (ValueError, TypeError):
+                    lineweight = -1
+
+                # 跳过dimstyle定义行
+                if entity_type.lower() == 'dimstyle':
+                    continue
+                
+                if entity_type == 'LINE':
+                    handle_line(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type == 'CIRCLE':
+                    handle_circle(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type == 'LWPOLYLINE':
+                    handle_lwpolyline(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type == 'DIMENSION':
+                    handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, line_num, dimstyle_name)
+                elif entity_type == 'ARC':
+                    handle_arc(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                elif entity_type in ['TEXT', 'MTEXT']:
+                    handle_text(row, msp, layer, color, input_file, entity_type, line_num)
+                elif entity_type == 'HATCH':
+                    handle_hatch(row, msp, layer, color, input_file, line_num)
+            except Exception as e:
+                messagebox.showwarning("警告", f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+                logging.warning(f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+        # 读取块元素
+        elif row["实体类型"] == 'INSERT':
+            try:
+                layer = row["图层"]
+                color = handle_color(row["颜色"])
+                linetype = row["线型"]
+                try:
+                    lineweight = int(row["线宽"]) if row["线宽"] else -1
+                except (ValueError, TypeError):
+                    lineweight = -1
+                handle_insert(data, row, msp, doc, layer, color, linetype, lineweight, input_file, dimstyle_name)
+
+            except Exception as e:
+                messagebox.showwarning("警告", f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+                logging.warning(f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
+
+    # 保存 DXF 文件
+    print(f"正在保存 DXF 文件: {output_file}")
+    doc.saveas(output_file)
+    print(f"DXF 文件已成功保存")
+    logging.info(f"{input_file} 已成功转换为 {output_file} (CSV to DXF)")
+
+
 
 
 # 设置线型函数
@@ -78,7 +252,7 @@ def handle_line(row, msp, layer, color, linetype, lineweight, input_file, line_n
         end = (float(row["终点 X"]), float(row["终点 Y"]))
         msp.add_line(start, end,
                      dxfattribs={"layer": layer, "color": color, "linetype": linetype, "lineweight": lineweight})
-    except ValueError:
+    except (ValueError, TypeError):
         messagebox.showwarning("警告",
                                f"文件 {input_file} 第 {line_num} 行的 LINE 实体坐标字段包含无效数据，将略过此数据。")
         logging.warning(f"文件 {input_file} 第 {line_num} 行的 LINE 实体坐标字段包含无效数据，将略过此数据。")
@@ -91,7 +265,7 @@ def handle_circle(row, msp, layer, color, linetype, lineweight, input_file, line
         radius = float(row["半径"])
         msp.add_circle(center, radius,
                        dxfattribs={"layer": layer, "color": color, "linetype": linetype, "lineweight": lineweight})
-    except ValueError:
+    except (ValueError, TypeError):
         messagebox.showwarning("警告",
                                f"文件 {input_file} 第 {line_num} 行的 CIRCLE 实体坐标或半径字段包含无效数据，将略过此数据。")
         logging.warning(f"文件 {input_file} 第 {line_num} 行的 CIRCLE 实体坐标或半径字段包含无效数据，将略过此数据。")
@@ -124,14 +298,16 @@ def handle_lwpolyline(row, msp, layer, color, linetype, lineweight, input_file, 
 
 
 # 绘制尺寸函数
-def handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, line_num):
+def handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, line_num, dimstyle_name="CUSTOM_DIMSTYLE"):
     dim_type = row["类型/名称"]
     dim_code = row["尺寸编码"]
 
-    try:
-        dim_angle = float(row["角度"])
-    except ValueError:
-        dim_angle = 0
+    # 优先使用CSV中保存的尺寸样式
+    entity_dimstyle = row.get("尺寸样式", "")
+    if entity_dimstyle:
+        dimstyle_name = entity_dimstyle
+
+    dim_angle = safe_float(row["角度"])
     if dim_type == "UNKNOWN":
         messagebox.showwarning("警告", f"第 {line_num} 行的尺寸标注类型未知，尺寸编码为 {dim_code}，将略过此尺寸。")
         logging.warning(f"第 {line_num} 行的尺寸标注类型未知，尺寸编码为 {dim_code}，将略过此尺寸。")
@@ -169,7 +345,7 @@ def handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, l
                 p1=p1,
                 p2=p2,
                 text=dim_text,
-                dimstyle="CUSTOM_DIMSTYLE",
+                dimstyle=dimstyle_name,  
                 dxfattribs={"layer": layer, "color": color, "linetype": linetype, "lineweight": lineweight},
                 angle=dim_angle
             )
@@ -189,7 +365,7 @@ def handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, l
                 p1=p1,
                 p2=p2,
                 p3=p3,
-                dimstyle="CUSTOM_DIMSTYLE",
+                dimstyle=dimstyle_name,
                 dxfattribs={"layer": layer, "color": color, "linetype": linetype, "lineweight": lineweight}
             )
             dim.render()
@@ -214,7 +390,7 @@ def handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, l
                 angle=dim_angle,
                 # location=location,
                 text=dim_text,
-                dimstyle="CUSTOM_DIMSTYLE",
+                dimstyle=dimstyle_name,
                 dxfattribs={"layer": layer, "color": color, "linetype": linetype, "lineweight": lineweight},
                 override={"dimtoh": 1, "dimtix": 0}
             )
@@ -239,7 +415,7 @@ def handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, l
                 radius=radius,
                 angle=dim_angle,
                 text=dim_text,
-                dimstyle="CUSTOM_DIMSTYLE",
+                dimstyle=dimstyle_name,
                 # location=location,
                 dxfattribs={"layer": layer, "color": color, "linetype": linetype, "lineweight": lineweight},
                 override={"dimtoh": 1, "dimtix": 0}
@@ -261,7 +437,7 @@ def handle_arc(row, msp, layer, color, linetype, lineweight, input_file, line_nu
         end_angle = float(row["终止角度"])
         msp.add_arc(center, radius, start_angle, end_angle,
                     dxfattribs={"layer": layer, "color": color, "linetype": linetype, "lineweight": lineweight})
-    except ValueError:
+    except (ValueError, TypeError):
         messagebox.showwarning("警告",
                                f"文件 {input_file} 第 {line_num} 行的 ARC 实体坐标、半径或角度字段包含无效数据，将略过此数据。")
         logging.warning(f"文件 {input_file} 第 {line_num} 行的 ARC 实体坐标、半径或角度字段包含无效数据，将略过此数据。")
@@ -295,7 +471,7 @@ def handle_text(row, msp, layer, color, input_file, entity_type, line_num):
                     'style': 'CUSTOM_TEXTSTYLE'
                 }
             ).set_location(text_location)
-    except ValueError:
+    except (ValueError, TypeError):
         messagebox.showwarning("警告",
                                f"文件 {input_file} 第 {line_num} 行的 {entity_type} 实体文本相关字段包含无效数据，将略过此数据。")
         logging.warning(
@@ -311,7 +487,7 @@ def handle_hatch(row, msp, layer, color, input_file, line_num):
         if pattern_name == "AR-CONC":
             scale = 0.1
         else:
-            scale = float(scale_str)
+            scale = safe_float(scale_str)
     except ValueError:
         messagebox.showwarning("警告",
                                f"文件 {input_file} 第 {line_num} 行的 HATCH 实体缩放比例字段 '{scale_str}' 不是有效的数字，将使用默认值 1.0。")
@@ -350,7 +526,7 @@ def handle_hatch(row, msp, layer, color, input_file, line_num):
 
 
 # 块添加实体函数
-def block_add_virtual_entities(data, block, block_name, input_file):
+def block_add_virtual_entities(data, block, block_name, input_file, dimstyle_name):
     # 将模型空间设为块
     msp = block
     for line_num, row in enumerate(data, start=2):  # 从第 2 行开始计数
@@ -371,7 +547,7 @@ def block_add_virtual_entities(data, block, block_name, input_file):
                     elif entity_type == 'LWPOLYLINE':
                         handle_lwpolyline(row, msp, layer, color, linetype, lineweight, input_file, line_num)
                     elif entity_type == 'DIMENSION':
-                        handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, line_num)
+                        handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, line_num, dimstyle_name)
                     elif entity_type == 'ARC':
                         handle_arc(row, msp, layer, color, linetype, lineweight, input_file, line_num)
                     elif entity_type in ['TEXT', 'MTEXT']:
@@ -384,13 +560,13 @@ def block_add_virtual_entities(data, block, block_name, input_file):
 
 
 # 绘制块函数
-def handle_insert(data, row, msp, doc, layer, color, linetype, lineweight, input_file):
+def handle_insert(data, row, msp, doc, layer, color, linetype, lineweight, input_file, dimstyle_name):
     # 读取块名
     block_name = row["块名"].split(": ")[1]
     # 创建块
     block = doc.blocks.new(name=block_name)
     # 块添加实体
-    block_add_virtual_entities(data, block, block_name, input_file)
+    block_add_virtual_entities(data, block, block_name, input_file, dimstyle_name)
     # 根据块引用添加块
     block_location = (float(row["位置 X"]), float(row["位置 Y"]))
     try:
@@ -402,167 +578,16 @@ def handle_insert(data, row, msp, doc, layer, color, linetype, lineweight, input
                                                              'rotation': block_rotation})
 
 
-# csv转dxf主函数
-def csv_to_dxf(input_file, output_file):
+if __name__ == "__main__":
+# 测试转换函数
+    input_file = 'design/data/十一 copy.csv'
+    output_file = 'design/test_output.dxf'
+
+    print(f"开始转换: {input_file} -> {output_file}")
     try:
-        # 创建一个新的 DXF 文档
-        doc = ezdxf.new("R2018")
-        msp = doc.modelspace()
-        drawing(doc, msp, input_file, output_file)
-
-    except FileNotFoundError:
-        messagebox.showerror("错误", f"文件 {input_file} 未找到")
-        logging.error(f"文件 {input_file} 未找到")
+        csv_to_dxf(input_file, output_file)
+        print(f"转换完成")
     except Exception as e:
-        messagebox.showerror("错误", f"发生未知错误: {str(e)}")
-        logging.error(f"发生未知错误: {str(e)}")
-
-
-# csv转dxf主函数
-def csv_add_dxf(input_file, output_file):
-    try:
-        # 打开一个 DXF 文档
-        doc = ezdxf.readfile(output_file)
-        msp = doc.modelspace()
-        drawing(doc, msp, input_file, output_file)
-
-    except FileNotFoundError:
-        messagebox.showerror("错误", f"文件 {input_file} 未找到")
-        logging.error(f"文件 {input_file} 未找到")
-    except Exception as e:
-        messagebox.showerror("错误", f"发生未知错误: {str(e)}")
-        logging.error(f"发生未知错误: {str(e)}")
-
-def drawing(doc, msp, input_file, output_file):
-    global global_scale_factor  # 声明使用全局变量
-    # 创建自定义尺寸样式
-    # 定义标注样式名称
-    dimstyle_name = "CUSTOM_DIMSTYLE"
-    try:
-        # 检查是否已存在同名样式
-        if dimstyle_name in doc.dimstyles:
-            print(f"标注样式 '{dimstyle_name}' 已存在，直接使用")
-            dimstyle = doc.dimstyles.get(dimstyle_name)
-        else:
-            # 创建新样式
-            dimstyle = doc.dimstyles.new(dimstyle_name, dxfattribs={
-                "dimtxt": 3.5,          # 尺寸文本高度为3.5个绘图单位
-                "dimclrd": 3,           # 尺寸线和尺寸界线的颜色，值3通常代表绿色(根据CAD颜色索引表)
-                "dimasz": 3,            # 尺寸箭头大小为3个绘图单位
-                "dimtad": 1,            # 尺寸文本垂直位置：1=上方(相对于尺寸线)
-                "dimjust": 0,           # 尺寸文本水平对齐：0=左对齐
-                "dimlwd": 0.25,         # 尺寸线和尺寸界线的线宽为0.25个单位
-                "dimexo": 0,            # 尺寸界线超出尺寸线的长度为0
-                "dimscale": global_scale_factor,  # 尺寸标注全局比例因子，与图纸打印比例相关
-                "dimalt": 0,            # 是否启用替代单位：0=不启用
-                "dimadec": 3,           # 尺寸标注的小数位数精度：保留3位小数
-                "dimdsep": ord('.'),    # 尺寸标注的小数分隔符：使用英文句号(ASCII码值46)
-                # 其他可选参数...
-            })
-            print(f"成功创建标注样式 '{dimstyle_name}'")
-
-    except Exception as e:
-        print(f"处理标注样式时出错: {e}")
-        # 可选：回退到默认样式
-        dimstyle = doc.dimstyles.get("Standard")
-
-
-    layer_dict = {}
-
-    with open(input_file, 'r', encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile)
-        data = list(reader)
-
-    # 第一次遍历整个csv表格
-    for line_num, row in enumerate(data, start=2):  # 从第 2 行开始计数
-        line_num -= 1
-
-        if row["实体类型"] == "dimstyle":
-            dimstyle_name = row["类型/名称"]
-            if dimstyle_name in doc.dimstyles:
-                print(f"标注样式 '{dimstyle_name}' 已存在，直接使用")
-                dimstyle = doc.dimstyles.get(dimstyle_name)
-            else:
-                try:
-                    # 尝试从CSV获取缩放比例，如果失败则使用默认值
-                    scale_factor = float(row["缩放比例"])
-                except (ValueError, KeyError):
-                    scale_factor = global_scale_factor  # 使用默认值
-                    print(f"警告：无法获取有效的缩放比例，使用默认值 {scale_factor}")
-                
-                # 创建新样式
-                dimstyle = doc.dimstyles.new(dimstyle_name, dxfattribs={
-                    "dimtxt": 3.5,  # 尺寸文本高度为3.5个绘图单位
-                    "dimclrd": 3,  # 尺寸线和尺寸界线的颜色，值3通常代表绿色(根据CAD颜色索引表)
-                    "dimasz": 3,  # 尺寸箭头大小为3个绘图单位
-                    "dimtad": 1,  # 尺寸文本垂直位置：1=上方(相对于尺寸线)
-                    "dimjust": 0,  # 尺寸文本水平对齐：0=左对齐
-                    "dimlwd": 0.25,  # 尺寸线和尺寸界线的线宽为0.25个单位
-                    "dimexo": 0,  # 尺寸界线超出尺寸线的长度为0
-                    "dimscale": scale_factor,  # 使用获取的缩放比例
-                    "dimalt": 0,  # 是否启用替代单位：0=不启用
-                    "dimadec": 3,  # 尺寸标注的小数位数精度：保留3位小数
-                    "dimdsep": ord('.'),  # 尺寸标注的小数分隔符：使用英文句号(ASCII码值46)
-                    # 其他可选参数...
-                })
-                print(f"成功创建标注样式 '{dimstyle_name}'")
-
-
-
-
-
-
-        # 首先读取图层信息
-        if row["实体类型"] == "图层":
-            layer = row["图层"]
-            color = handle_color(row["颜色"])
-            linetype = row["线型"]
-            lineweight = int(row["线宽"])
-            linetype_description = row["线型描述"]
-            linetype_pattern_str = row["线型图案"]
-            linetype_pattern = handle_linetype_pattern(linetype_pattern_str, linetype, input_file, layer)
-            create_layer(doc, layer, color, linetype, lineweight, linetype_description, linetype_pattern,
-                         input_file)
-            layer_dict[layer] = (color, linetype, lineweight)
-        # 读取非块元素
-        elif not row["块名"]:
-            try:
-                entity_type = row["实体类型"]
-                layer = row["图层"]
-                color = handle_color(row["颜色"])
-                linetype = row["线型"]
-                lineweight = int(row["线宽"])
-
-                if entity_type == 'LINE':
-                    handle_line(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                elif entity_type == 'CIRCLE':
-                    handle_circle(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                elif entity_type == 'LWPOLYLINE':
-                    handle_lwpolyline(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                elif entity_type == 'DIMENSION':
-                    handle_dimension(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                elif entity_type == 'ARC':
-                    handle_arc(row, msp, layer, color, linetype, lineweight, input_file, line_num)
-                elif entity_type in ['TEXT', 'MTEXT']:
-                    handle_text(row, msp, layer, color, input_file, entity_type, line_num)
-                elif entity_type == 'HATCH':
-                    handle_hatch(row, msp, layer, color, input_file, line_num)
-            except Exception as e:
-                messagebox.showwarning("警告", f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
-                logging.warning(f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
-        # 读取块元素
-        elif row["实体类型"] == 'INSERT':
-            try:
-                layer = row["图层"]
-                color = handle_color(row["颜色"])
-                linetype = row["线型"]
-                lineweight = int(row["线宽"])
-                handle_insert(data, row, msp, doc, layer, color, linetype, lineweight, input_file)
-
-            except Exception as e:
-                messagebox.showwarning("警告", f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
-                logging.warning(f"文件 {input_file} 第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
-
-    # 保存 DXF 文件
-    doc.saveas(output_file)
-    logging.info(f"{input_file} 已成功转换为 {output_file} (CSV to DXF)")
+        print(f"转换失败: {str(e)}")
+        import traceback
+        traceback.print_exc()

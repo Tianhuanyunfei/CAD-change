@@ -145,10 +145,13 @@ def process_dimension(entity, row):
         #获取尺寸编码,尺寸类型,尺寸值
         dim_code = entity.dxf.dimtype
         dim_value = entity.get_measurement()
+        # 获取尺寸样式名称
+        dimstyle_name = entity.dxf.dimstyle
         row.update({
             '尺寸编码': str(dim_code),
             '类型/名称': DIMTYPE_MAPPING.get(dim_code, "UNKNOWN"),
             '值': format_number(dim_value),
+            '尺寸样式': dimstyle_name
         })
         # 处理线型尺寸
         if row["类型/名称"] in ["LINEAR", "ALIGNED", "LINEAR_HORIZONTAL", "LINEAR_VERTICAL", "LINEAR_ROTATED"]:
@@ -247,7 +250,43 @@ def process_dimension(entity, row):
     except AttributeError:
         logging.warning(f"DIMENSION 实体缺少必要属性，跳过此实体")
 
+# 写入dimstyle定义函数
+def write_dimstyle_info(doc, writer):
+    for dimstyle in doc.dimstyles:
+        dimstyle_name = str(dimstyle.dxf.name)
+        if dimstyle:
+            try:
+                # 收集dimstyle属性
+                dim_attribs = {
+                    'dimtxt': dimstyle.dxf.dimtxt,
+                    'dimclrd': dimstyle.dxf.dimclrd,
+                    'dimasz': dimstyle.dxf.dimasz,
+                    'dimtad': dimstyle.dxf.dimtad,
+                    'dimjust': dimstyle.dxf.dimjust,
+                    'dimlwd': dimstyle.dxf.dimlwd,
+                    'dimexo': dimstyle.dxf.dimexo,
+                    'dimscale': dimstyle.dxf.dimscale,
+                    'dimalt': dimstyle.dxf.dimalt,
+                    'dimadec': dimstyle.dxf.dimadec,
+                    'dimdsep': dimstyle.dxf.dimdsep
+                }
+                # 将属性转换为JSON字符串
+                import json
+                dim_attribs_str = json.dumps(dim_attribs)
+                
+                row = {
+                    "实体类型": "dimstyle",
+                    "类型/名称": dimstyle_name,
+                    "值": dim_attribs_str
+                }
+                writer.writerow(row)
+            except Exception as e:
+                import logging
+                logging.warning(f"处理dimstyle '{dimstyle_name}' 时发生错误: {str(e)}")
+
+
 # 文本
+
 def process_text(entity, row):
     try:
         if entity.dxftype() == 'TEXT':
@@ -358,19 +397,21 @@ def process_insert(entity, row, writer):
 
 # dxf转csv主函数
 def dxf_to_csv(input_file, output_file):
+    print(f"开始转换: {input_file} -> {output_file}")
     try:
         doc = ezdxf.readfile(input_file)
         msp = doc.modelspace()
+        print(f"成功打开DXF文件，模型空间有 {len(msp)} 个实体")
         fieldnames = [
             '实体类型', '图层', '颜色', '线型', '线宽', '线型描述', '线型图案',
             '类型/名称', '块名', '值', '覆盖值', '位置 X', '位置 Y', '起点 X', '起点 Y', '终点 X', '终点 Y',
             '圆心 X', '圆心 Y', '半径', '顶点数据', '闭合', '高度', '角度', '尺寸编码',
-            '起始角度', '终止角度', '缩放比例'
+            '起始角度', '终止角度', '缩放比例', '尺寸样式'
         ]
         with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
-            # 写入线型信息
+            # 写入图层信息
             write_layer_info(doc, writer)
 
             for entity in msp:
@@ -404,6 +445,9 @@ def dxf_to_csv(input_file, output_file):
                     writer.writerow(row)
                 elif entity.dxftype() == 'INSERT':
                     process_insert(entity, row, writer)
+
+            # 写入dimstyle信息
+            write_dimstyle_info(doc, writer)
 
 
         messagebox.showinfo("成功", f"转换完成！已保存到 {output_file}")
