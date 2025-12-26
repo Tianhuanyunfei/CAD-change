@@ -1,6 +1,5 @@
 import ezdxf
 import csv
-from tkinter import messagebox
 import logging
 import math
 

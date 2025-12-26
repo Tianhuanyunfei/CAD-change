@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, FolderOpen, Download, Plus, Trash2 } from 'lucide-react';
 import { useToast } from '../components/Toast';
 
@@ -36,27 +36,79 @@ const formatNumber = (num: number | string): string => {
 };
 
 const BrbDesigner: React.FC = () => {
-  const [projectName, setProjectName] = useState('');
-  const [totalQuantity, setTotalQuantity] = useState(0);
+  // 从localStorage加载初始状态
+  const loadInitialState = () => {
+    try {
+      const savedProjectName = localStorage.getItem('brb_projectName') || '';
+      const savedTotalQuantity = parseInt(localStorage.getItem('brb_totalQuantity') || '0', 10);
+      const savedParameterTables = localStorage.getItem('brb_parameterTables');
+      
+      const initialParameterTables = savedParameterTables ? 
+        JSON.parse(savedParameterTables) as ParameterTable[] :
+        [{
+          id: '1',
+          designForce: '',
+          width: '',
+          height: '',
+          thickness: '',
+          tubeWidth: '',
+          tubeThickness: '',
+          weld: '',
+          coreMaterial: 'Q235B',
+          template: '王一',
+          lengthQuantityTable: [{ length: '', quantity: '' }]
+        }];
+      
+      return {
+        projectName: savedProjectName,
+        totalQuantity: savedTotalQuantity,
+        parameterTables: initialParameterTables
+      };
+    } catch (error) {
+      console.error('加载初始状态失败:', error);
+      // 加载失败时返回默认状态
+      return {
+        projectName: '',
+        totalQuantity: 0,
+        parameterTables: [{
+          id: '1',
+          designForce: '',
+          width: '',
+          height: '',
+          thickness: '',
+          tubeWidth: '',
+          tubeThickness: '',
+          weld: '',
+          coreMaterial: 'Q235B',
+          template: '王一',
+          lengthQuantityTable: [{ length: '', quantity: '' }]
+        }]
+      };
+    }
+  };
+  
+  const initialState = loadInitialState();
+  
+  const [projectName, setProjectName] = useState(initialState.projectName);
+  const [totalQuantity, setTotalQuantity] = useState(initialState.totalQuantity);
   const { showToast } = useToast();
   // 添加生成文件列表状态
   const [generatedFiles, setGeneratedFiles] = useState<GeneratedFile[]>([]);
   
-  const [parameterTables, setParameterTables] = useState<ParameterTable[]>([
-    {
-      id: '1',
-      designForce: '',
-      width: '',
-      height: '',
-      thickness: '',
-      tubeWidth: '',
-      tubeThickness: '',
-      weld: '',
-      coreMaterial: 'Q235B',
-      template: '王一',
-      lengthQuantityTable: [{ length: '', quantity: '' }]
-    }
-  ]);
+  const [parameterTables, setParameterTables] = useState<ParameterTable[]>(initialState.parameterTables);
+  
+  // 监听状态变化并保存到localStorage
+  useEffect(() => {
+    localStorage.setItem('brb_projectName', projectName);
+  }, [projectName]);
+  
+  useEffect(() => {
+    localStorage.setItem('brb_totalQuantity', totalQuantity.toString());
+  }, [totalQuantity]);
+  
+  useEffect(() => {
+    localStorage.setItem('brb_parameterTables', JSON.stringify(parameterTables));
+  }, [parameterTables]);
   const [dragFromIndex, setDragFromIndex] = useState<number | null>(null);
   const [dragToIndex, setDragToIndex] = useState<number | null>(null);
   // 添加加载状态
@@ -742,6 +794,11 @@ const BrbDesigner: React.FC = () => {
       lengthQuantityTable: [{ length: '', quantity: '' }]
     }]);
     setTotalQuantity(0);
+    
+    // 清除localStorage中的数据
+    localStorage.removeItem('brb_projectName');
+    localStorage.removeItem('brb_totalQuantity');
+    localStorage.removeItem('brb_parameterTables');
   };
 
   // 加载项目数据
@@ -881,7 +938,7 @@ const BrbDesigner: React.FC = () => {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="container mx-auto px-4 py-6 space-y-6">
       {/* 页面标题 */}
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
@@ -933,10 +990,10 @@ const BrbDesigner: React.FC = () => {
 
       {/* 参数表区域 */}
       {/* 添加参数表按钮（移到参数表上方） */}
-      <div className="max-w-4xl">
+      <div className="mb-4">
         <button
           onClick={addParameterTable}
-          className="btn-secondary flex items-center justify-center space-x-2 mb-4 py-2 px-4 text-sm"
+          className="btn-secondary flex items-center justify-center space-x-2 py-2 px-4 text-sm"
         >
           <Plus className="h-3 w-3" />
           <span>添加参数表</span>
@@ -977,7 +1034,7 @@ const BrbDesigner: React.FC = () => {
               {/* 参数表卡片 */}
               <div 
                 className="card p-5 w-80 shrink-0 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
-                style={{ opacity: dragFromIndex === tableIndex ? 0.5 : 1 }}
+                style={{ opacity: dragFromIndex === tableIndex ? 0.5 : 1, minHeight: '500px' }}
                 onDragOver={(e) => handleDragOver(e, tableIndex)}
                 onDragLeave={handleDragLeave}
                 onDrop={(e) => handleDrop(e, tableIndex)}

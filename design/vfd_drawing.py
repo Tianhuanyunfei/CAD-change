@@ -1,6 +1,4 @@
 import csv
-import tkinter as tk
-from tkinter import messagebox
 import logging
 import os
 from csv_to_dxf import csv_to_dxf
@@ -240,7 +238,6 @@ def draw_vfd_design(csv_vfd_design, output_dxf_file, project_name, force, design
 
     except (IndexError, ValueError) as e:
         logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
-        messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
         raise  # 重新抛出异常，让上层调用者处理
 
 
@@ -267,7 +264,6 @@ def draw_vdf_QDE(csv_vfd_QDE, output_dxf_file, project_name, force, design_displ
 
     except (IndexError, ValueError) as e:
         logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
-        messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
         raise  # 重新抛出异常，让上层调用者处理
 
 
@@ -374,7 +370,6 @@ def offset(csv_data, offset_x, offset_y):
                     row[col_index["位置 Y"]] = element_offset(row[col_index["位置 Y"]], offset_y)
 
         except Exception as e:
-            messagebox.showwarning("警告", f"第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
             logging.warning(f"第 {line_num} 行发生未知错误: {str(e)}，将略过此数据。")
 
     return csv_data
@@ -404,8 +399,7 @@ def vfd_drawing(data_table):
             dt4 = int(row.get("dt4"))  # 轴后端伸出距离
             dt5 = int(row.get("dt5"))  # 轴 到 后盖 距离
         except Exception as e:
-            logging.error(f"处理数据行时出错: {str(e)}")
-            messagebox.showerror("错误", f"错误数据: {str(e)}，请确保为正确的值类型")
+            logging.error(f"处理数据行时出错: {str(e)}，请确保为正确的值类型")
 
     # 打开VFD-型号表，读取数据
     with open('data/vfd/VFD-型号表.csv', 'r', encoding='utf-8') as VFD_table:
@@ -448,7 +442,7 @@ def vfd_drawing(data_table):
             continue
 
     if not found:
-        messagebox.showerror("错误", f"未找到匹配的缸径({cylinder_diameter})和轴径({axis_diameter})组合")
+        logging.error(f"未找到匹配的缸径({cylinder_diameter})和轴径({axis_diameter})组合")
 
 
 # 测试

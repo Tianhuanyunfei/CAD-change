@@ -1,7 +1,5 @@
 import ezdxf
 import csv
-import tkinter as tk
-from tkinter import filedialog, messagebox
 import logging
 
 # 配置日志记录
@@ -204,8 +202,6 @@ def handle_linetype_pattern(linetype_pattern_str, linetype, input_file, layer):
                 linetype_pattern.append(value)
             except ValueError:
                 if linetype != "Continuous":
-                    messagebox.showwarning("警告",
-                                           f"文件 {input_file} 中图层 {layer} 的线型图案字段 '{linetype_pattern_str}' 包含无效数据，将使用空列表代替。")
                     logging.warning(
                         f"文件 {input_file} 中图层 {layer} 的线型图案字段 '{linetype_pattern_str}' 包含无效数据，将使用空列表代替。")
                 linetype_pattern = []
@@ -227,8 +223,6 @@ def create_layer(doc, layer, color, linetype, lineweight, linetype_description, 
                         description=linetype_description
                     )
                 elif linetype != "Continuous":
-                    messagebox.showwarning("警告",
-                                           f"文件 {input_file} 中图层 '{layer}' 使用了未知线型 '{linetype}'，将使用默认实线。")
                     logging.warning(f"文件 {input_file} 中图层 '{layer}' 使用了未知线型 '{linetype}'，将使用默认实线。")
                     linetype = "CONTINUOUS"
             doc.layers.new(name=layer, dxfattribs={
@@ -237,7 +231,6 @@ def create_layer(doc, layer, color, linetype, lineweight, linetype_description, 
                 "lineweight": lineweight
             })
         except ezdxf.DXFValueError:
-            messagebox.showwarning("警告", f"文件 {input_file} 中图层 '{layer}' 无法创建，可能是无效的线型或线宽。将使用默认设置。")
             logging.warning(f"文件 {input_file} 中图层 '{layer}' 无法创建，可能是无效的线型或线宽。将使用默认设置。")
             if layer not in doc.layers:
                 doc.layers.new(name=layer)

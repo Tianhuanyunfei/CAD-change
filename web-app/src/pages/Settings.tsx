@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useToast } from '../components/Toast';
 
 const Settings: React.FC = () => {
   const [backgroundColor, setBackgroundColor] = useState('#f9fafb'); // 默认的bg-gray-50的十六进制颜色
   const [customColor, setCustomColor] = useState('#f9fafb');
+  const { showToast } = useToast();
 
   // 预设颜色选项
   const presetColors = [
@@ -78,6 +80,47 @@ const Settings: React.FC = () => {
     applyBackgroundColor(defaultColor);
   };
 
+  // 清除所有localStorage数据
+  const clearAllLocalStorageData = () => {
+    // 弹出确认对话框
+    if (window.confirm('确定要清除所有本地缓存数据吗？此操作不可恢复，将清除所有设计参数和设置。')) {
+      try {
+        // 清除所有与应用相关的localStorage数据
+        const keysToRemove = [
+          // 应用设置
+          'backgroundColor',
+          // BRB设计器数据
+          'brb_projectName',
+          'brb_totalQuantity',
+          'brb_parameterTables',
+          // BRB图纸设计数据
+          'brb_drawing_projectName',
+          'brb_drawing_totalQuantity',
+          'brb_drawing_parameterTables',
+          // VFD设计器数据
+          'vfd_projectName',
+          'vfd_projectFolder',
+          'vfd_selectedModel',
+          'vfd_parameters',
+          // CSV编辑器数据
+          'csv_editor_data',
+          'csv_editor_headers'
+        ];
+
+        // 移除所有相关键
+        keysToRemove.forEach(key => {
+          localStorage.removeItem(key);
+        });
+
+        // 刷新页面以应用更改
+        window.location.reload();
+      } catch (error) {
+        console.error('清除本地数据时出错:', error);
+        showToast('清除本地数据失败', 'error');
+      }
+    }
+  };
+
   return (
     <div className="card p-8">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">系统设置</h1>
@@ -149,6 +192,24 @@ const Settings: React.FC = () => {
                   ></div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 数据管理部分 */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">数据管理</h2>
+          <div className="space-y-6">
+            <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+              <p className="text-sm text-yellow-800 mb-4">
+                <strong>注意：</strong>清除本地缓存数据将删除所有设计参数、项目设置和CSV编辑内容，此操作不可恢复。
+              </p>
+              <button
+                onClick={clearAllLocalStorageData}
+                className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200"
+              >
+                清除所有本地缓存数据
+              </button>
             </div>
           </div>
         </div>

@@ -3,8 +3,6 @@ import openpyxl
 from openpyxl.styles import Font, Alignment, Border, Side, PatternFill
 import os
 from datetime import datetime
-import tkinter as tk
-from tkinter import filedialog
 
 
 def generate_materials_excel(project_name, param_tables, project_folder=None, save_path=None):

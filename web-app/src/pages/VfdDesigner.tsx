@@ -1,18 +1,67 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Zap, FolderOpen, Download } from 'lucide-react';
 import { useToast } from '../components/Toast';
 
 const VfdDesigner: React.FC = () => {
-  const [projectName, setProjectName] = useState('');
-  const [projectFolder, setProjectFolder] = useState('');
-  const [selectedModel, setSelectedModel] = useState('');
+  // 从localStorage加载初始状态
+  const loadInitialState = () => {
+    try {
+      const savedProjectName = localStorage.getItem('vfd_projectName') || '';
+      const savedProjectFolder = localStorage.getItem('vfd_projectFolder') || '';
+      const savedSelectedModel = localStorage.getItem('vfd_selectedModel') || '';
+      const savedParameters = localStorage.getItem('vfd_parameters');
+      
+      return {
+        projectName: savedProjectName,
+        projectFolder: savedProjectFolder,
+        selectedModel: savedSelectedModel,
+        parameters: savedParameters ? JSON.parse(savedParameters) : {
+          diameter: '',
+          stroke: '',
+          force: '',
+          damping: ''
+        }
+      };
+    } catch (error) {
+      console.error('加载VFD设计器初始状态失败:', error);
+      return {
+        projectName: '',
+        projectFolder: '',
+        selectedModel: '',
+        parameters: {
+          diameter: '',
+          stroke: '',
+          force: '',
+          damping: ''
+        }
+      };
+    }
+  };
+  
+  const initialState = loadInitialState();
+  
+  const [projectName, setProjectName] = useState(initialState.projectName);
+  const [projectFolder, setProjectFolder] = useState(initialState.projectFolder);
+  const [selectedModel, setSelectedModel] = useState(initialState.selectedModel);
   const { showToast } = useToast();
-  const [parameters, setParameters] = useState({
-    diameter: '',
-    stroke: '',
-    force: '',
-    damping: ''
-  });
+  const [parameters, setParameters] = useState(initialState.parameters);
+  
+  // 监听状态变化并保存到localStorage
+  useEffect(() => {
+    localStorage.setItem('vfd_projectName', projectName);
+  }, [projectName]);
+  
+  useEffect(() => {
+    localStorage.setItem('vfd_projectFolder', projectFolder);
+  }, [projectFolder]);
+  
+  useEffect(() => {
+    localStorage.setItem('vfd_selectedModel', selectedModel);
+  }, [selectedModel]);
+  
+  useEffect(() => {
+    localStorage.setItem('vfd_parameters', JSON.stringify(parameters));
+  }, [parameters]);
 
   const vfdModels = [
     'VFD-100', 'VFD-150', 'VFD-200', 'VFD-250', 'VFD-300',
