@@ -34,13 +34,13 @@ def csv_to_dxf(input_file, output_file):
         doc = ezdxf.new("R2018")
         msp = doc.modelspace()
         drawing(doc, msp, input_file, output_file)
-
+        return output_file
     except FileNotFoundError:
-        messagebox.showerror("错误", f"文件 {input_file} 未找到")
         logging.error(f"文件 {input_file} 未找到")
+        return None
     except Exception as e:
-        messagebox.showerror("错误", f"发生未知错误: {str(e)}")
         logging.error(f"发生未知错误: {str(e)}")
+        return None
 
 
 # csv转dxf主函数，添加到已有的DXF文档
@@ -52,10 +52,8 @@ def csv_add_dxf(input_file, output_file):
         drawing(doc, msp, input_file, output_file)
 
     except FileNotFoundError:
-        messagebox.showerror("错误", f"文件 {input_file} 未找到")
         logging.error(f"文件 {input_file} 未找到")
     except Exception as e:
-        messagebox.showerror("错误", f"发生未知错误: {str(e)}")
         logging.error(f"发生未知错误: {str(e)}")
 
 # 绘制函数，用于绘制实体到DXF文档，根据输入文件类型选择不同的绘制方法

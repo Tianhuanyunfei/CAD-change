@@ -115,8 +115,8 @@ def generate_materials_excel(project_name, param_tables, project_folder=None, sa
         pipe_width_think_list = list[tuple[int,int]](set[tuple[int,int]](pipe_width_think_list)) # 去除重复元素
 
         for lq in length_quantity:
-            length = lq.get('length', '')
-            quantity = lq.get('quantity', '')             
+            length = lq[0] if isinstance(lq, tuple) else lq.get('length', '')
+            quantity = lq[1] if isinstance(lq, tuple) else lq.get('quantity', '')             
 
             # 2.1 表头
             headers1 = ["序号", "型号", "名称", "规格", "数量", "单重(Kg)", "总重(Kg)", "备注"]
@@ -388,7 +388,7 @@ def generate_materials_excel(project_name, param_tables, project_folder=None, sa
     print(pipe_width_think_list) # 打印方管宽度和厚度列表
 
     # 3.3.1 填写板厚数据
-    for idx, (core_material,think) in enumerate[tuple[str, int]](think_list, start=1):
+    for idx, (core_material,think) in enumerate(think_list, start=1):
         ws.cell(row=start_row, column=1, value=idx)  # 序号
         ws.cell(row=start_row, column=2, value=think).number_format = '0"mm钢板"'
         ws.cell(row=start_row, column=4, value=f"=SUMIFS($J:$J,$E:$E,B{start_row},$K:$K,F{start_row})").number_format = '0.00' # 总重
@@ -464,21 +464,18 @@ def generate_materials_excel(project_name, param_tables, project_folder=None, sa
 
     start_row += 1
     
-    # 保存文件
-    default_filename = f"{project_name}_材料单.xlsx"
-    # 使用project_folder作为保存目录，如果没有提供则使用当前目录
-    save_dir = project_folder if project_folder else os.getcwd()
-    
-    # 确保保存目录存在
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
-        
-    # 构建完整的保存路径
-    save_path = os.path.join(save_dir, default_filename)
-    
-    wb.save(save_path)
-    
-    return save_path
+    # 根据参数决定是否保存到磁盘
+    if save_path:
+        # 如果提供了保存路径，直接保存到该路径
+        wb.save(save_path)
+        return save_path
+    else:
+        # 否则，将文件保存到内存中
+        import io
+        output = io.BytesIO()
+        wb.save(output)
+        output.seek(0)
+        return output
 
 
 # 测试代码
@@ -547,5 +544,6 @@ if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     
     # 生成测试Excel文件，保存到脚本所在目录
-    excel_path = generate_materials_excel(test_project_name, test_param_tables, save_path=script_dir)
+    save_file_path = os.path.join(script_dir, f"{test_project_name}_BRB材料单.xlsx")
+    excel_path = generate_materials_excel(test_project_name, test_param_tables, save_path=save_file_path)
     print(f"测试材料单已生成：{excel_path}")

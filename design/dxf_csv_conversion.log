@@ -3024,3 +3024,123 @@
 2025-12-23 16:57:58,574 - INFO - did not write header var $INTERFEREVPVS, value is None.
 2025-12-23 16:57:58,618 - INFO - data\王一.csv 已成功转换为 C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf (CSV to DXF)
 2025-12-23 16:57:58,618 - INFO - 图纸生成成功: C:\Users\wfei0\Desktop\宜宾赛事中心项目\宜宾赛事中心项目 BRB-1000-L 方管宽200.dxf
+2025-12-24 16:58:07,613 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'length_quantity': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-24 16:58:07,620 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-24 16:58:07,620 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 310, 'height': 310, 'thickness': 30, 'force': 4500, 'tube_width': 350, 'tube_thickness': 6, 'weld': 25, 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-24 16:58:07,620 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-24 16:58:07,620 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-24 16:58:07,620 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'length_quantity': [(3000, 12), (2700, 20)]}
+2025-12-24 16:58:07,620 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-24 16:58:07,620 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 250, 'height': 250, 'thickness': 25, 'force': 3000, 'tube_width': 300, 'tube_thickness': 4, 'weld': 20, 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-24 16:58:07,622 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-24 16:58:07,622 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-24 16:58:07,622 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'length_quantity': [(4800, 19)]}
+2025-12-24 16:58:07,622 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-24 16:58:07,622 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 12, 'force': 1500, 'tube_width': 200, 'tube_thickness': 4, 'weld': 10, 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-24 16:58:07,622 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-24 16:58:07,622 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-24 16:58:07,622 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'length_quantity': [(3000, 16), (2700, 2)]}
+2025-12-24 16:58:07,622 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-24 16:58:07,622 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 8, 'force': 1000, 'tube_width': 200, 'tube_thickness': 4, 'weld': 6, 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-24 16:58:07,622 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-24 16:58:07,622 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:40,814 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'length_quantity': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:40,815 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:40,815 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 310, 'height': 310, 'thickness': 30, 'force': 4500, 'tube_width': 350, 'tube_thickness': 6, 'weld': 25, 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:40,815 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:40,816 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:40,816 - INFO - 开始处理数据行: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'length_quantity': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:40,816 - INFO - 解析参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:40,816 - INFO - 开始处理图纸生成，参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': 250, 'height': 250, 'thickness': 25, 'force': 3000, 'tube_width': 300, 'tube_thickness': 4, 'weld': 20, 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:40,816 - INFO - 使用CSV模板文件: design\data\王工.csv
+2025-12-25 11:22:40,816 - ERROR - 文件不存在: design\data\王工.csv
+2025-12-25 11:22:40,816 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'length_quantity': [(4800, 19)]}
+2025-12-25 11:22:40,816 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:22:40,816 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 12, 'force': 1500, 'tube_width': 200, 'tube_thickness': 4, 'weld': 10, 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:22:40,816 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:40,816 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:40,817 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'length_quantity': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:40,817 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:40,817 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 8, 'force': 1000, 'tube_width': 200, 'tube_thickness': 4, 'weld': 6, 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:40,817 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:40,817 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:56,911 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'length_quantity': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:56,912 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:56,912 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 310, 'height': 310, 'thickness': 30, 'force': 4500, 'tube_width': 350, 'tube_thickness': 6, 'weld': 25, 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:56,912 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:56,913 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:56,913 - INFO - 开始处理数据行: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'length_quantity': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:56,913 - INFO - 解析参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:56,913 - INFO - 开始处理图纸生成，参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': 250, 'height': 250, 'thickness': 25, 'force': 3000, 'tube_width': 300, 'tube_thickness': 4, 'weld': 20, 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:56,913 - INFO - 使用CSV模板文件: design\data\王工.csv
+2025-12-25 11:22:56,913 - ERROR - 文件不存在: design\data\王工.csv
+2025-12-25 11:22:56,913 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'length_quantity': [(4800, 19)]}
+2025-12-25 11:22:56,913 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:22:56,914 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 12, 'force': 1500, 'tube_width': 200, 'tube_thickness': 4, 'weld': 10, 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:22:56,914 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:56,914 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:56,914 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'length_quantity': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:56,914 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:56,914 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 8, 'force': 1000, 'tube_width': 200, 'tube_thickness': 4, 'weld': 6, 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:56,914 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:56,915 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:58,781 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'length_quantity': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:58,781 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:58,783 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 310, 'height': 310, 'thickness': 30, 'force': 4500, 'tube_width': 350, 'tube_thickness': 6, 'weld': 25, 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:22:58,783 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:58,783 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:58,783 - INFO - 开始处理数据行: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'length_quantity': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:58,783 - INFO - 解析参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:58,783 - INFO - 开始处理图纸生成，参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': 250, 'height': 250, 'thickness': 25, 'force': 3000, 'tube_width': 300, 'tube_thickness': 4, 'weld': 20, 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:22:58,783 - INFO - 使用CSV模板文件: design\data\王工.csv
+2025-12-25 11:22:58,783 - ERROR - 文件不存在: design\data\王工.csv
+2025-12-25 11:22:58,784 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'length_quantity': [(4800, 19)]}
+2025-12-25 11:22:58,784 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:22:58,784 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 12, 'force': 1500, 'tube_width': 200, 'tube_thickness': 4, 'weld': 10, 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:22:58,784 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:58,784 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:22:58,784 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'length_quantity': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:58,784 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:58,784 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 8, 'force': 1000, 'tube_width': 200, 'tube_thickness': 4, 'weld': 6, 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:22:58,784 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:22:58,785 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:23:03,854 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'length_quantity': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:23:03,854 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:23:03,854 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 310, 'height': 310, 'thickness': 30, 'force': 4500, 'tube_width': 350, 'tube_thickness': 6, 'weld': 25, 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:23:03,854 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:23:03,856 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:23:03,856 - INFO - 开始处理数据行: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'length_quantity': [(3000, 12), (2700, 20)]}
+2025-12-25 11:23:03,856 - INFO - 解析参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:23:03,856 - INFO - 开始处理图纸生成，参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': 250, 'height': 250, 'thickness': 25, 'force': 3000, 'tube_width': 300, 'tube_thickness': 4, 'weld': 20, 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:23:03,856 - INFO - 使用CSV模板文件: design\data\王工.csv
+2025-12-25 11:23:03,856 - ERROR - 文件不存在: design\data\王工.csv
+2025-12-25 11:23:03,856 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'length_quantity': [(4800, 19)]}
+2025-12-25 11:23:03,856 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:23:03,856 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 12, 'force': 1500, 'tube_width': 200, 'tube_thickness': 4, 'weld': 10, 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:23:03,856 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:23:03,857 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:23:03,857 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'length_quantity': [(3000, 16), (2700, 2)]}
+2025-12-25 11:23:03,857 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:23:03,857 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 8, 'force': 1000, 'tube_width': 200, 'tube_thickness': 4, 'weld': 6, 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:23:03,857 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:23:03,857 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:23:05,822 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'length_quantity': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:23:05,822 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '310', 'height': '310', 'thickness': '30', 'force': '4500', 'tube_width': '350', 'tube_thickness': '6', 'weld': '25', 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:23:05,823 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 310, 'height': 310, 'thickness': 30, 'force': 4500, 'tube_width': 350, 'tube_thickness': 6, 'weld': 25, 'core_material': 'LY160', 'table': [(5500, 2), (4800, 9), (2700, 2)]}
+2025-12-25 11:23:05,823 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:23:05,823 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:23:05,823 - INFO - 开始处理数据行: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'length_quantity': [(3000, 12), (2700, 20)]}
+2025-12-25 11:23:05,823 - INFO - 解析参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': '250', 'height': '250', 'thickness': '25', 'force': '3000', 'tube_width': '300', 'tube_thickness': '4', 'weld': '20', 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:23:05,823 - INFO - 开始处理图纸生成，参数: {'template': '王工', 'project_name': '宜宾赛事中心项目', 'width': 250, 'height': 250, 'thickness': 25, 'force': 3000, 'tube_width': 300, 'tube_thickness': 4, 'weld': 20, 'core_material': 'LY160', 'table': [(3000, 12), (2700, 20)]}
+2025-12-25 11:23:05,823 - INFO - 使用CSV模板文件: design\data\王工.csv
+2025-12-25 11:23:05,824 - ERROR - 文件不存在: design\data\王工.csv
+2025-12-25 11:23:05,824 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'length_quantity': [(4800, 19)]}
+2025-12-25 11:23:05,824 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '12', 'force': '1500', 'tube_width': '200', 'tube_thickness': '4', 'weld': '10', 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:23:05,824 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 12, 'force': 1500, 'tube_width': 200, 'tube_thickness': 4, 'weld': 10, 'core_material': 'Q235', 'table': [(4800, 19)]}
+2025-12-25 11:23:05,824 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:23:05,824 - ERROR - 文件不存在: design\data\王一.csv
+2025-12-25 11:23:05,824 - INFO - 开始处理数据行: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'length_quantity': [(3000, 16), (2700, 2)]}
+2025-12-25 11:23:05,824 - INFO - 解析参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': '140', 'height': '140', 'thickness': '8', 'force': '1000', 'tube_width': '200', 'tube_thickness': '4', 'weld': '6', 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:23:05,824 - INFO - 开始处理图纸生成，参数: {'template': '王一', 'project_name': '宜宾赛事中心项目', 'width': 140, 'height': 140, 'thickness': 8, 'force': 1000, 'tube_width': 200, 'tube_thickness': 4, 'weld': 6, 'core_material': 'Q235', 'table': [(3000, 16), (2700, 2)]}
+2025-12-25 11:23:05,824 - INFO - 使用CSV模板文件: design\data\王一.csv
+2025-12-25 11:23:05,824 - ERROR - 文件不存在: design\data\王一.csv

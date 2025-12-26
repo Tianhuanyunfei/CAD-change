@@ -54,7 +54,6 @@ def get_linetype_pattern(doc, linetype):
             elif linetype == "Continuous":
                 pattern = []
             else:
-                messagebox.showwarning("警告", f"无法获取线型 {linetype} 的图案信息，将使用空列表代替。")
                 logging.warning(f"无法获取线型 {linetype} 的图案信息，将使用空列表代替。")
     return pattern
 
@@ -450,11 +449,14 @@ def dxf_to_csv(input_file, output_file):
             write_dimstyle_info(doc, writer)
 
 
-        messagebox.showinfo("成功", f"转换完成！已保存到 {output_file}")
         logging.info(f"{input_file} 已成功转换为 {output_file} (DXF to CSV)")
+        return output_file
     except IOError:
-        messagebox.showerror("错误", f"文件 {input_file} 未找到或不是有效的 DXF 文件")
         logging.error(f"文件 {input_file} 未找到或不是有效的 DXF 文件")
+        return None
     except ezdxf.DXFStructureError:
-        messagebox.showerror("错误", f"文件 {input_file} 是无效或损坏的 DXF 文件")
         logging.error(f"文件 {input_file} 是无效或损坏的 DXF 文件")
+        return None
+    except Exception as e:
+        logging.error(f"转换过程中发生错误: {str(e)}")
+        return None

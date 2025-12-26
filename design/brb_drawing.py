@@ -1,9 +1,13 @@
 import csv
-import tkinter as tk
-from tkinter import messagebox, filedialog
 import logging
-from csv_to_dxf import csv_to_dxf
 import os  # 新增：导入os模块用于设置工作目录
+
+# 修复导入路径
+import sys
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, current_dir)
+
+from csv_to_dxf import csv_to_dxf
 
 
 """更新数据"""
@@ -92,7 +96,6 @@ def update_data1(csv_data, input_param, width, height, thick, force, tube_width,
 
     except (IndexError, ValueError) as e:
         logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
-        messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
         raise  # 重新抛出异常，让上层调用者处理
 
     return csv_data
@@ -176,7 +179,6 @@ def update_data2(csv_data, input_param, width, height, thick, force, tube_width,
 
     except (IndexError, ValueError) as e:
         logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
-        messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
         raise  # 重新抛出异常，让上层调用者处理
 
     return csv_data
@@ -266,7 +268,6 @@ def update_data3(csv_data, input_param, width, height, thick, force, tube_width,
 
     except (IndexError, ValueError) as e:
         logging.error(f"修改 CSV 数据时出现错误: {str(e)}")
-        messagebox.showerror("错误", "修改CSV数据时出现错误，请检查数据格式。")
         raise  # 重新抛出异常，让上层调用者处理
 
     return csv_data
@@ -274,15 +275,15 @@ def update_data3(csv_data, input_param, width, height, thick, force, tube_width,
 # 预加载模板配置，避免每次循环都重新创建
 template_configs = {
     '王工': {
-        'csv_file': 'data\\王工.csv',
+        'csv_file': 'design\\data\\王工.csv',
         'update_function': update_data1
     },
     '十一': {
-        'csv_file': 'data\\十一.csv',
+        'csv_file': 'design\\data\\十一.csv',
         'update_function': update_data2
     },
     '王一': {
-        'csv_file': 'data\\王一.csv',
+        'csv_file': 'design\\data\\王一.csv',
         'update_function': update_data3
     }
 }
@@ -293,8 +294,10 @@ def brb_drawing(data_table, project_folder=None):
     if not isinstance(data_table, list):
         data_table = [data_table]
 
+    generated_files = []
     for row in data_table:
         try:
+            logging.info(f"开始处理数据行: {row}")
             # 从数据行中获取各参数值，使用get方法并设置默认值
             parameters = {
                 "template": row.get("template"),  # 模版类型
@@ -309,6 +312,7 @@ def brb_drawing(data_table, project_folder=None):
                 "core_material": row.get("core_material", "Q235"),  # 芯板材料，默认值Q235
                 "table": row.get("length_quantity", [])  # 长度-数量表格
             }
+            logging.info(f"解析参数: {parameters}")
             print(parameters["core_material"])
 
             # 验证必要参数是否存在
@@ -323,15 +327,17 @@ def brb_drawing(data_table, project_folder=None):
             # 直接使用预加载的模板配置
             config = template_configs.get(parameters["template"])
             if config is None:
-                messagebox.showerror("错误", f"未知的模板类型: {parameters['template']}")
+                logging.error(f"未知的模板类型: {parameters['template']}")
                 continue
 
             # 处理并生成图纸
-            process_and_generate_drawing(parameters, config, project_folder)
+            file_path = process_and_generate_drawing(parameters, config, project_folder)
+            if file_path:
+                generated_files.append(file_path)
 
         except Exception as e:
             logging.error(f"处理数据行时出错: {str(e)}")
-            messagebox.showerror("错误", f"处理数据行时出错: {str(e)}")
+    return generated_files
 
 """验证必要参数是否存在"""
 def validate_required_parameters(params):
@@ -344,7 +350,7 @@ def validate_required_parameters(params):
             missing_params.append(param)
 
     if missing_params:
-        messagebox.showwarning("参数缺失", f"缺少必要参数: {', '.join(missing_params)}")
+        logging.warning(f"缺少必要参数: {', '.join(missing_params)}")
         return False
     return True
 
@@ -355,51 +361,84 @@ def convert_to_numeric(params):
         try:
             params[param] = int(params[param])
         except ValueError:
-            messagebox.showwarning("输入错误", f"'{param}' 必须为有效整数（如 123 ）！")
+            logging.warning(f"'{param}' 必须为有效整数（如 123 ）！")
             return None
     return params
 
 """生成图纸"""
 def process_and_generate_drawing(params, config, project_folder=None):
     try:
+        logging.info(f"开始处理图纸生成，参数: {params}")
+        logging.info(f"使用CSV模板文件: {config['csv_file']}")
         # 读取CSV文件
         with open(config['csv_file'], 'r', encoding='utf-8') as file:
             csv_reader = csv.reader(file)
             csv_data = list(csv_reader)
+        logging.info(f"成功读取CSV模板文件，共 {len(csv_data)} 行")
 
         # 输入参数并更新数据
-            csv_data = config['update_function'](csv_data, params["project_name"], params["width"],
-                                                 params["height"], params["thickness"], params["force"],
-                                                 params["tube_width"], params["tube_thickness"], params["weld"], params["core_material"], params["table"])
+        logging.info(f"调用更新函数: {config['update_function'].__name__}")
+        csv_data = config['update_function'](csv_data, params["project_name"], params["width"],
+                                             params["height"], params["thickness"], params["force"],
+                                             params["tube_width"], params["tube_thickness"], params["weld"], params["core_material"], params["table"])
+        logging.info("成功更新CSV数据")
 
         # 将修改后的数据写回到 CSV 文件
         with open(config['csv_file'], 'w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerows(csv_data)
+        logging.info(f"成功将修改后的数据写回到CSV文件: {config['csv_file']}")
 
         # 直接保存到项目文件夹，不弹出选择对话框
         default_filename = f'{params["project_name"]} BRB-{format_number(params["force"])}-L 方管宽{format_number(params["tube_width"])}.dxf'
-        # 设置保存目录为项目文件夹或当前目录
-        save_dir = project_folder if project_folder else os.getcwd()
         
-        # 确保保存目录存在
-        if not os.path.exists(save_dir):
-            os.makedirs(save_dir)
+        # 生成DXF文件
+        if project_folder:
+            # 如果提供了项目文件夹，将文件保存在该目录下的以项目名称命名的子文件夹中
+            save_dir = os.path.join(project_folder, params["project_name"])
             
-        # 构建完整的保存路径
-        output_dxf_file = os.path.join(save_dir, default_filename)
-        # 执行保存操作
-        csv_to_dxf(config['csv_file'], output_dxf_file)
-        logging.info(f"图纸生成成功: {output_dxf_file}")
-        # messagebox.showinfo("成功", f"图纸生成成功！文件已保存为: {os.path.basename(output_dxf_file)}")
-        # messagebox.showinfo("成功", f"图纸生成成功！文件已保存为: {output_dxf_file}")
+            # 确保保存目录存在
+            if not os.path.exists(save_dir):
+                os.makedirs(save_dir)
+                
+            # 构建完整的保存路径
+            output_dxf_file = os.path.join(save_dir, default_filename)
+            # 执行保存操作
+            csv_to_dxf(config['csv_file'], output_dxf_file)
+            logging.info(f"图纸生成成功并保存到磁盘: {output_dxf_file}")
+            return output_dxf_file
+        else:
+            # 如果没有提供项目文件夹，生成临时文件
+            import tempfile
+            import io
+            
+            # 创建临时文件
+            with tempfile.NamedTemporaryFile(suffix='.dxf', delete=False) as temp_file:
+                temp_dxf_path = temp_file.name
+            
+            # 执行保存操作到临时文件
+            csv_to_dxf(config['csv_file'], temp_dxf_path)
+            
+            # 读取临时文件内容到内存流
+            output = io.BytesIO()
+            with open(temp_dxf_path, 'rb') as f:
+                output.write(f.read())
+            output.seek(0)
+            
+            # 删除临时文件
+            os.remove(temp_dxf_path)
+            
+            logging.info("图纸生成成功并返回内存流")
+            return (output, default_filename)
 
     except FileNotFoundError:
         logging.error(f"文件不存在: {config['csv_file']}")
-        messagebox.showerror("错误", f"文件不存在: {config['csv_file']}")
+        return None
     except Exception as e:
         logging.error(f"处理文件时出错: {str(e)}")
-        messagebox.showerror("错误", f"处理文件时出错: {str(e)}")
+        return None
+    
+    return None
 
 
 """格式化数字，去除多余的零和小数点"""
