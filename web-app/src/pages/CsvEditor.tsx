@@ -322,11 +322,11 @@ const CsvEditor: React.FC = () => {
         
         {/* 数据表格 - 仅在有CSV文件时显示 */}
         {csvData.length > 0 && (
-          <div className="overflow-x-auto max-h-[calc(100vh-200px)] border border-gray-300 rounded-lg px-2" style={{ maxWidth: 'calc(100vw - 370px)', width: '100%' }}>
-            <table className="w-full table-auto">
+          <div className="overflow-x-auto max-h-[calc(100vh-200px)] border border-gray-200 rounded-xl" style={{ maxWidth: 'calc(100vw - 370px)', width: '100%' }}>
+            <table className="w-full table-auto border-collapse">
               <colgroup>
-                <col style={{minWidth: '3rem', sticky: 'left', background: 'white', zIndex: 10}} />
-                <col style={{minWidth: '4rem', sticky: 'left', background: 'white', zIndex: 10}} />
+                <col style={{minWidth: '3rem', background: 'white'}} />
+                <col style={{minWidth: '4rem', background: 'white'}} />
                 {headers.map((_, index) => (
                   <col key={index} style={{minWidth: '80px'}} />
                 ))}
@@ -334,19 +334,19 @@ const CsvEditor: React.FC = () => {
               <thead>
                 <tr className="sticky top-0 z-20 relative">
                   {/* 背景覆盖层 */}
-                  <th colSpan={headers.length + 2} className="absolute inset-0 bg-gray-100 z-10 pointer-events-none"></th>
+                  <th colSpan={headers.length + 2} className="absolute inset-0 bg-blue-500 z-10 pointer-events-none rounded-t-xl"></th>
                   
                   {/* 表头内容 */}
-                  <th className="px-1 py-0.5 text-left text-xs font-semibold text-gray-900 border border-gray-300 whitespace-nowrap relative z-30">
+                  <th className="px-3 py-2 text-left text-xs font-semibold text-white border border-blue-600 whitespace-nowrap relative z-30 rounded-tl-xl">
                     #
                   </th>
-                  <th className="px-1 py-0.5 text-left text-xs font-semibold text-gray-900 border border-gray-300 whitespace-nowrap relative z-30">
+                  <th className="px-3 py-2 text-left text-xs font-semibold text-white border border-blue-600 whitespace-nowrap relative z-30">
                     操作
                   </th>
                   {headers.map((header, index) => (
                     <th 
                       key={index} 
-                      className="px-1 py-0.5 text-left text-xs font-semibold text-gray-900 border border-gray-300 whitespace-nowrap relative z-30"
+                      className={`px-3 py-2 text-left text-xs font-semibold text-white border border-blue-600 whitespace-nowrap relative z-30 ${index === headers.length - 1 ? 'rounded-tr-xl' : ''}`}
                     >
                       {header}
                     </th>
@@ -356,18 +356,19 @@ const CsvEditor: React.FC = () => {
               <tbody className="text-sm">
                 {csvData.map((row, rowIndex) => {
                   const rowKey = `row-${rowIndex}`;
+                  const isEvenRow = rowIndex % 2 === 0;
                   
                   return (
-                    <tr key={rowKey} className="hover:bg-gray-100 transition-colors">
-                      <td className="px-1 py-0.5 border border-gray-300 text-gray-600 whitespace-nowrap bg-white z-10">
+                    <tr key={rowKey} className={`${isEvenRow ? 'bg-white' : 'bg-gray-50'} hover:bg-blue-50 transition-colors`}>
+                      <td className="px-3 py-1.5 border border-gray-200 text-gray-600 whitespace-nowrap font-medium">
                         {rowIndex + 1}
                       </td>
-                      <td className="px-1 py-0.5 border border-gray-300 whitespace-nowrap bg-white z-10">
+                      <td className="px-3 py-1.5 border border-gray-200 whitespace-nowrap">
                         <button
                           onClick={() => handleDeleteRow(rowIndex)}
-                          className="flex items-center justify-center w-5 h-5 text-red-600 hover:text-red-700 hover:bg-red-100 rounded transition-colors"
+                          className="flex items-center justify-center w-6 h-6 text-red-500 hover:text-red-700 hover:bg-red-50 rounded-full transition-colors"
                         >
-                          <Trash2 className="h-2.5 w-2.5" />
+                          <Trash2 className="h-3 w-3" />
                         </button>
                       </td>
                       {headers.map((header, colIndex) => {
@@ -375,17 +376,17 @@ const CsvEditor: React.FC = () => {
                         const cellValue = row[header] || '';
                         
                         // 根据值的内容提供不同的颜色
-                        let textColor = 'text-gray-900';
+                        let textColor = 'text-gray-800';
                         if (cellValue.includes('BYLAYER') || cellValue.includes('Continuous')) {
-                          textColor = 'text-blue-600';
+                          textColor = 'text-blue-700';
                         } else if (cellValue.match(/^[0-9.-]+$/)) {
-                          textColor = 'text-orange-600';
+                          textColor = 'text-indigo-700';
                         } else if (cellValue === '') {
                           textColor = 'text-gray-400';
                         }
                         
                         return (
-                          <td key={cellKey} className={`px-1 py-0.5 border border-gray-300 ${textColor} truncate`} style={{overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>
+                          <td key={cellKey} className={`px-3 py-1.5 border border-gray-200 ${textColor} truncate`} style={{overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>
                             {editingCell && editingCell.row === rowIndex && editingCell.col === colIndex ? (
                               <div className="flex space-x-0.5 items-center">
                                 <input
