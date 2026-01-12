@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import BrbDesigner from './pages/BrbDesigner';
 import BrbDrawing from './pages/BrbDrawing';
 import VfdDesigner from './pages/VfdDesigner';
+import VfdPeriodFrequencyCalculator from './pages/VfdPeriodFrequencyCalculator';
 import DxfToCsvConverter from './pages/DxfToCsvConverter';
 import CsvToDxfConverter from './pages/CsvToDxfConverter';
 import CsvEditor from './pages/CsvEditor';
@@ -21,34 +22,34 @@ function App() {
       
       // 应用到所有带有min-h-screen类的div元素（包括Layout和Dashboard组件中的）
       const minHeightDivs = document.querySelectorAll('.min-h-screen');
-      minHeightDivs.forEach(div => {
+      minHeightDivs.forEach((div) => {
         div.classList.remove('bg-gray-50');
-        div.style.backgroundColor = savedColor;
+        (div as HTMLElement).style.backgroundColor = savedColor;
       });
       
       // 应用到main元素
       const mainElement = document.querySelector('main');
       if (mainElement) {
-        mainElement.style.backgroundColor = savedColor;
+        (mainElement as HTMLElement).style.backgroundColor = savedColor;
       }
       
       // 应用到main内的div容器
       const mainDiv = document.querySelector('main > div');
       if (mainDiv) {
-        mainDiv.style.backgroundColor = savedColor;
+        (mainDiv as HTMLElement).style.backgroundColor = savedColor;
       }
       
       // 应用到所有卡片元素
       const cards = document.querySelectorAll('.card');
-      cards.forEach(card => {
+      cards.forEach((card) => {
         card.classList.remove('bg-white');
-        card.style.backgroundColor = '#ffffff'; // 保持卡片为白色，以便与背景形成对比
+        (card as HTMLElement).style.backgroundColor = '#ffffff'; // 保持卡片为白色，以便与背景形成对比
       });
       
       // 应用到Dashboard组件中的内容容器
       const dashboardContainers = document.querySelectorAll('.max-w-7xl.mx-auto');
-      dashboardContainers.forEach(container => {
-        container.style.backgroundColor = savedColor;
+      dashboardContainers.forEach((container) => {
+        (container as HTMLElement).style.backgroundColor = savedColor;
       });
     }
   }, []);
@@ -61,6 +62,7 @@ function App() {
           <Route path="/brb-designer" element={<BrbDesigner />} />
           <Route path="/brb-drawing" element={<BrbDrawing />} />
           <Route path="/vfd-designer" element={<VfdDesigner />} />
+          <Route path="/vfd-period-frequency" element={<VfdPeriodFrequencyCalculator />} />
           <Route path="/dxf-to-csv" element={<DxfToCsvConverter />} />
           <Route path="/csv-to-dxf" element={<CsvToDxfConverter />} />
           <Route path="/csv-editor" element={<CsvEditor />} />

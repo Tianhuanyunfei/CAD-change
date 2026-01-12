@@ -273,17 +273,19 @@ def update_data3(csv_data, input_param, width, height, thick, force, tube_width,
     return csv_data
 
 # 预加载模板配置，避免每次循环都重新创建
+# 使用绝对路径确保模板文件能正确找到
+current_dir = os.path.dirname(os.path.abspath(__file__))
 template_configs = {
     '王工': {
-        'csv_file': 'design\\data\\王工.csv',
+        'csv_file': os.path.join(current_dir, 'data', '王工.csv'),
         'update_function': update_data1
     },
     '十一': {
-        'csv_file': 'design\\data\\十一.csv',
+        'csv_file': os.path.join(current_dir, 'data', '十一.csv'),
         'update_function': update_data2
     },
     '王一': {
-        'csv_file': 'design\\data\\王一.csv',
+        'csv_file': os.path.join(current_dir, 'data', '王一.csv'),
         'update_function': update_data3
     }
 }
@@ -298,6 +300,11 @@ def brb_drawing(data_table, project_folder=None):
     for row in data_table:
         try:
             logging.info(f"开始处理数据行: {row}")
+            # 确保row是字典类型
+            if not isinstance(row, dict):
+                logging.error(f"数据行不是字典类型: {row}")
+                continue
+            
             # 从数据行中获取各参数值，使用get方法并设置默认值
             parameters = {
                 "template": row.get("template"),  # 模版类型
@@ -305,7 +312,7 @@ def brb_drawing(data_table, project_folder=None):
                 "width": row.get("width"),  # 截面宽度
                 "height": row.get("height"),  # 截面高度
                 "thickness": row.get("thickness"),  # 板厚
-                "force": row.get("force"),  # 力
+                "force": row.get("force") or row.get("design_force"),  # 力 - 同时支持force和design_force字段
                 "tube_width": row.get("tube_width"),  # 方管宽度
                 "tube_thickness": row.get("tube_thickness"),  # 方管厚度
                 "weld": row.get("weld"),  # 焊缝
@@ -313,7 +320,6 @@ def brb_drawing(data_table, project_folder=None):
                 "table": row.get("length_quantity", [])  # 长度-数量表格
             }
             logging.info(f"解析参数: {parameters}")
-            print(parameters["core_material"])
 
             # 验证必要参数是否存在
             if not validate_required_parameters(parameters):
@@ -326,9 +332,12 @@ def brb_drawing(data_table, project_folder=None):
 
             # 直接使用预加载的模板配置
             config = template_configs.get(parameters["template"])
+            
+            # 如果找不到模板配置，直接报错
             if config is None:
-                logging.error(f"未知的模板类型: {parameters['template']}")
-                continue
+                error_msg = f"未知的模板类型: {parameters['template']}，可用模板: {list(template_configs.keys())}"
+                logging.error(error_msg)
+                raise ValueError(error_msg)
 
             # 处理并生成图纸
             file_path = process_and_generate_drawing(parameters, config, project_folder)
@@ -341,12 +350,16 @@ def brb_drawing(data_table, project_folder=None):
 
 """验证必要参数是否存在"""
 def validate_required_parameters(params):
-
+    # 确保params是字典类型
+    if not isinstance(params, dict):
+        logging.error(f"参数不是字典类型: {params}")
+        return False
+        
     required_params = ["template", "project_name", "width", "height", "thickness", "force", "tube_width", "tube_thickness", "weld"]
     missing_params = []
 
     for param in required_params:
-        if params[param] is None:
+        if param not in params or params[param] is None:
             missing_params.append(param)
 
     if missing_params:
@@ -356,6 +369,11 @@ def validate_required_parameters(params):
 
 """将参数转换为数值类型"""
 def convert_to_numeric(params):
+    # 确保params是字典类型
+    if not isinstance(params, dict):
+        logging.error(f"参数不是字典类型: {params}")
+        return None
+        
     numeric_params = ["width", "height", "thickness", "force", "tube_width", "tube_thickness", "weld"]
     for param in numeric_params:
         try:

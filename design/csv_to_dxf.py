@@ -69,6 +69,11 @@ def drawing(doc, msp, input_file, output_file):
     dimstyle_name = ""  # 用于存储默认dimstyle名称
     for line_num, row in enumerate(data, start=2):  # 从第 2 行开始计数
         line_num -= 1
+        # 调试：检查row的数据类型
+        print(f"Row type at line {line_num}: {type(row)}")
+        print(f"Row content: {row}")
+        if not isinstance(row, dict):
+            print(f"ERROR: Row at line {line_num} is not a dict!")
        
         # 首先读取图层信息
         if row["实体类型"] == "图层":

@@ -35,7 +35,7 @@ const CsvToDxfConverter: React.FC = () => {
       formData.append('file', csvFile);
       
       // 调用后端API进行转换
-      const response = await fetch('http://localhost:8000/api/csv/to/dxf', {
+      const response = await fetch('/api/csv/to/dxf', {
         method: 'POST',
         body: formData
       });

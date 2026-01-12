@@ -6,6 +6,7 @@ import {
   FileText, 
   FileSpreadsheet, 
   Table,
+  Calculator,
   Settings,
   ChevronDown, 
   ChevronRight
@@ -35,6 +36,20 @@ const Dashboard: React.FC = () => {
           icon: Box,
           color: 'bg-orange-500',
           link: '/brb-drawing'
+        }
+      ]
+    },
+    {
+      id: 6,
+      name: '设计计算',
+      functions: [
+        {
+          id: 7,
+          title: '黏滞阻尼器周期频率计算表',
+          description: '计算黏滞阻尼器的周期频率相关参数',
+          icon: Calculator,
+          color: 'bg-blue-500',
+          link: '/vfd-period-frequency'
         }
       ]
     },

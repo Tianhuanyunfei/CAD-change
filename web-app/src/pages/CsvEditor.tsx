@@ -69,7 +69,7 @@ const CsvEditor: React.FC = () => {
         formData.append('file', file);
         
         // 调用后端API解析CSV文件
-        const response = await fetch('http://localhost:8000/api/csv/parse', {
+        const response = await fetch('/api/csv/parse', {
           method: 'POST',
           body: formData
         });

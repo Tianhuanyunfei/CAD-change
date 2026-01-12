@@ -25,6 +25,9 @@ except Exception as e:
 
 app = Flask(__name__)
 
+# 确保Flask应用正确处理UTF-8编码
+app.config['JSON_AS_ASCII'] = False
+
 # 配置CORS
 CORS(app)
 
@@ -126,31 +129,25 @@ def brb_drawing_download_api():
 @app.route('/api/brb/design', methods=['POST'])
 def brb_design_api():
     try:
-        print("接收到BRB设计API请求")
         data = request.get_json()
-        print(f"请求数据: {data}")
         
         if not data:
-            print("请求数据为空")
             return jsonify({'status': 'error', 'message': '无有效数据'}), 400
         
         project_name = data.get('projectName')
         project_folder = data.get('projectFolder')
         parameter_tables = data.get('parameterTables')
         
-        print(f"项目名称: {project_name}")
-        print(f"项目文件夹: {project_folder}")
-        print(f"参数表数量: {len(parameter_tables) if parameter_tables else 0}")
-        
         if not project_name or not parameter_tables:
-            print("缺少必要参数")
             return jsonify({'status': 'error', 'message': '缺少必要参数'}), 400
         
         # 转换数据格式以适应现有功能
         data_table = []
-        print("开始转换数据格式...")
         for i, table in enumerate(parameter_tables):
-            print(f"处理参数表 {i+1}")
+            # 确保table是字典类型
+            if not isinstance(table, dict):
+                continue
+                
             # 确保所有数值参数都有有效的默认值
             width = int(table.get("width", 0))
             height = int(table.get("height", 0))
@@ -161,7 +158,7 @@ def brb_design_api():
             weld = int(table.get("weld", 0))
             
             table_item = {
-                "template": table.get("template", "王工"),  # 从前端获取模板，如果没有则使用默认值
+                "template": table.get("template"),  # 从前端获取模板，不设置默认值
                 "project_name": project_name,
                 "width": width,
                 "height": height,
@@ -176,14 +173,9 @@ def brb_design_api():
                                   for lq in table.get("lengthQuantityTable", [])]
             }
             data_table.append(table_item)
-            print(f"参数表 {i+1} 处理完成")
-        
-        print(f"数据格式转换完成，共处理 {len(data_table)} 个参数表")
         
         # 调用BRB设计功能
-        print("开始调用BRB设计功能...")
         result = brb_drawing(data_table, project_folder)
-        print(f"BRB设计功能调用完成，结果类型: {type(result)}")
         
         # 处理返回结果
         if project_folder:
@@ -665,4 +657,4 @@ def delete_file():
         return jsonify({'status': 'error', 'message': f'文件删除过程出错: {str(e)}'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=8000, host='0.0.0.0')

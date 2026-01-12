@@ -69,7 +69,7 @@ const VfdDesigner: React.FC = () => {
   ];
 
   const handleParameterChange = (field: string, value: string) => {
-    setParameters(prev => ({
+    setParameters((prev: { [key: string]: string }) => ({
       ...prev,
       [field]: value
     }));
@@ -83,7 +83,7 @@ const VfdDesigner: React.FC = () => {
     
     try {
       // 调用后端API生成图纸
-      const response = await fetch('http://localhost:8000/api/vfd/design', {
+      const response = await fetch('/api/vfd/design', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

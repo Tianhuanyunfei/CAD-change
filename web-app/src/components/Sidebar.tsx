@@ -8,6 +8,7 @@ import {
   FileText, 
   FileSpreadsheet,
   Table,
+  Calculator,
   Settings,
   HelpCircle,
   ChevronDown, 
@@ -48,6 +49,17 @@ const Sidebar: React.FC = () => {
           path: '/brb-drawing',
           icon: Box,
           color: 'text-orange-600'
+        }
+      ]
+    },
+    {
+      category: '设计计算',
+      items: [
+        {
+          name: '黏滞阻尼器周期频率计算表',
+          path: '/vfd-period-frequency',
+          icon: Calculator,
+          color: 'text-blue-600'
         }
       ]
     },

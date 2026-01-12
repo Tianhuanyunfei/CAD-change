@@ -410,7 +410,7 @@ const BrbDesigner: React.FC = () => {
       }, 30000); // 30秒超时
       
       try {
-        const response = await fetch('http://localhost:8000/api/brb/design', {
+        const response = await fetch('/api/brb/design', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -579,7 +579,7 @@ const BrbDesigner: React.FC = () => {
         console.log('每个表的template值:', validParameterTables.map(t => t.template));
         console.log('每个表的template_type值:', validParameterTables.map(t => t.template_type));
 
-        const response = await fetch('http://localhost:8000/api/brb/materials', {
+        const response = await fetch('/api/brb/materials', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -914,6 +914,7 @@ const BrbDesigner: React.FC = () => {
         tubeThickness: '',
         weld: '',
         coreMaterial: 'Q235B',
+        template: '王一',
         lengthQuantityTable: [{ length: '', quantity: '' }]
       }];
       
@@ -1363,7 +1364,7 @@ const BrbDesigner: React.FC = () => {
                   });
 
                   // 调用新的批量下载API，支持所有生成的文件
-                  const response = await fetch('http://localhost:8000/api/brb/batch-download', {
+                  const response = await fetch('/api/brb/batch-download', {
                     method: 'POST',
                     headers: {
                       'Content-Type': 'application/json',
@@ -1441,7 +1442,7 @@ const BrbDesigner: React.FC = () => {
                                 };
                               });
                               
-                              response = await fetch('http://localhost:8000/api/brb/materials', {
+                              response = await fetch('/api/brb/materials', {
                                 method: 'POST',
                                 headers: {
                                   'Content-Type': 'application/json',
@@ -1474,7 +1475,7 @@ const BrbDesigner: React.FC = () => {
                               });
                               
                               // 调用专门的API获取单个图纸文件流
-                              response = await fetch('http://localhost:8000/api/brb/drawing-download', {
+                              response = await fetch('/api/brb/drawing-download', {
                                 method: 'POST',
                                 headers: {
                                   'Content-Type': 'application/json',
@@ -1519,7 +1520,7 @@ const BrbDesigner: React.FC = () => {
                             // 对于材料单和使用虚拟路径的图纸，我们不需要调用后端API来删除文件
                             if (file.type !== 'materials' && !file.path.startsWith('drawing_')) {
                               // 对于实际保存到磁盘的图纸，调用后端API删除文件
-                              const response = await fetch('http://localhost:8000/api/download/delete', {
+                              const response = await fetch('/api/download/delete', {
                                 method: 'POST',
                                 headers: {
                                   'Content-Type': 'application/json',
