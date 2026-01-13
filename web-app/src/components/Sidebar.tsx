@@ -11,6 +11,7 @@ import {
   Calculator,
   Settings,
   HelpCircle,
+  Shield,
   ChevronDown, 
   ChevronRight
 } from 'lucide-react';
@@ -60,6 +61,12 @@ const Sidebar: React.FC = () => {
             path: '/vfd-period-frequency',
             icon: Calculator,
             color: 'text-blue-600'
+          },
+          {
+            name: 'BRB稳定性核算',
+            path: '/brb-stability',
+            icon: Shield,
+            color: 'text-green-600'
           }
         ]
       },

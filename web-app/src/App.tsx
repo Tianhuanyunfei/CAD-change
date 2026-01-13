@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import BrbDesigner from './pages/BrbDesigner';
 import BrbDrawing from './pages/BrbDrawing';
+import BrbStabilityChecker from './pages/BrbStabilityChecker';
 import VfdDesigner from './pages/VfdDesigner';
 import VfdPeriodFrequencyCalculator from './pages/VfdPeriodFrequencyCalculator';
 import DxfToCsvConverter from './pages/DxfToCsvConverter';
@@ -61,6 +62,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/brb-designer" element={<BrbDesigner />} />
           <Route path="/brb-drawing" element={<BrbDrawing />} />
+          <Route path="/brb-stability" element={<BrbStabilityChecker />} />
           <Route path="/vfd-designer" element={<VfdDesigner />} />
           <Route path="/vfd-period-frequency" element={<VfdPeriodFrequencyCalculator />} />
           <Route path="/dxf-to-csv" element={<DxfToCsvConverter />} />

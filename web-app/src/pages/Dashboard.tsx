@@ -7,6 +7,7 @@ import {
   FileSpreadsheet, 
   Table,
   Calculator,
+  Shield,
   Settings,
   ChevronDown, 
   ChevronRight
@@ -50,6 +51,14 @@ const Dashboard: React.FC = () => {
           icon: Calculator,
           color: 'bg-blue-500',
           link: '/vfd-period-frequency'
+        },
+        {
+          id: 8,
+          title: 'BRB稳定性核算',
+          description: '核算屈曲约束支撑(BRB)的稳定性参数',
+          icon: Shield,
+          color: 'bg-green-500',
+          link: '/brb-stability'
         }
       ]
     },
