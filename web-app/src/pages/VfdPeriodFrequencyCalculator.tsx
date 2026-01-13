@@ -229,7 +229,7 @@ const VfdPeriodFrequencyCalculator: React.FC = () => {
     XLSX.utils.book_append_sheet(workbook, worksheet, '计算记录');
 
     // 导出Excel文件
-    XLSX.writeFile(workbook, `黏滞阻尼器周期频率计算表_${new Date().toISOString().slice(0, 10)}.xlsx`);
+    XLSX.writeFile(workbook, `VFD频率计算_${new Date().toISOString().slice(0, 10)}.xlsx`);
   };
 
   // 导出单个计算记录
@@ -339,7 +339,7 @@ const VfdPeriodFrequencyCalculator: React.FC = () => {
     XLSX.utils.book_append_sheet(workbook, worksheet, '计算记录');
 
     // 导出Excel文件
-    XLSX.writeFile(workbook, `黏滞阻尼器周期频率计算表_记录${recordNumber}_${new Date().toISOString().slice(0, 10)}.xlsx`);
+    XLSX.writeFile(workbook, `VFD频率计算_记录${recordNumber}_${new Date().toISOString().slice(0, 10)}.xlsx`);
   };
 
   return (
@@ -349,7 +349,7 @@ const VfdPeriodFrequencyCalculator: React.FC = () => {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">
             <Calculator className="inline-block mr-3" />
-            黏滞阻尼器周期频率计算表
+            VFD频率计算
           </h1>
           <p className="mt-2 text-lg text-gray-600">
             用于计算黏滞阻尼器的周期频率相关参数

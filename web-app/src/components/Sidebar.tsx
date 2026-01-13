@@ -53,16 +53,16 @@ const Sidebar: React.FC = () => {
       ]
     },
     {
-      category: '设计计算',
-      items: [
-        {
-          name: '黏滞阻尼器周期频率计算表',
-          path: '/vfd-period-frequency',
-          icon: Calculator,
-          color: 'text-blue-600'
-        }
-      ]
-    },
+        category: '设计计算',
+        items: [
+          {
+            name: 'VFD频率计算',
+            path: '/vfd-period-frequency',
+            icon: Calculator,
+            color: 'text-blue-600'
+          }
+        ]
+      },
     {
       category: '文件转换',
       items: [

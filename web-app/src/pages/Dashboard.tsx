@@ -45,7 +45,7 @@ const Dashboard: React.FC = () => {
       functions: [
         {
           id: 7,
-          title: '黏滞阻尼器周期频率计算表',
+          title: 'VFD频率计算',
           description: '计算黏滞阻尼器的周期频率相关参数',
           icon: Calculator,
           color: 'bg-blue-500',
